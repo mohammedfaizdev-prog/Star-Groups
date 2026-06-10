@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <title>About | Star Group Interiors - Crafting Luxury Spaces Across India</title>
+   <meta name="keywords"
+      content="about Star Group Interiors, luxury interior design Mysore, custom chandelier manufacturing, premium interiors India, Siddiq Sheikh, luxury spaces">
+   <meta name="description"
+      content="Star Group Interiors - Over a decade of excellence in premium interiors, exterior facades, and custom chandelier manufacturing. Serving residential and commercial clients across India with timeless elegance.">
+   <meta name="author" content="Star Group Interiors">
+
+   <!-- CSS Vendors (SAME AS INDEX.HTML) -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+   <link rel="icon" href="images/fevicon.png" type="image/gif">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+   <style>
+      /* ===== METALLIC GOLD / PURE BLACK THEME (SAME AS INDEX.HTML) ===== */
+      :root {
+         --gold-light: #F7D96B;
+         --gold-main: #D4A017;
+         --gold-deep: #8C5A0A;
+         --gold-gradient: linear-gradient(135deg, #F7D96B 0%, #D4A017 45%, #B27C0A 70%, #8C5A0A 100%);
+         --black-pure: #000000;
+         --black-rich: #0a0a0a;
+      }
+
+      * {
+         transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      body {
+         background: var(--black-pure);
+         color: #dddddd;
+         font-family: 'Montserrat', sans-serif;
+         border: 15px solid var(--black-rich);
+         overflow-x: hidden;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+         color: #ffffff;
+         letter-spacing: 0.5px;
+      }
+
+      .gold-text {
+         background: var(--gold-gradient);
+         -webkit-background-clip: text;
+         background-clip: text;
+         color: transparent;
+         font-weight: 800;
+      }
+
+      .section-title {
+         font-size: 42px;
+         font-weight: 800;
+         text-align: center;
+         margin-bottom: 50px;
+      }
+
+      .section-title span {
+         background: var(--gold-gradient);
+         -webkit-background-clip: text;
+         background-clip: text;
+         color: transparent;
+      }
+
+      /* Header Nav (SAME AS INDEX.HTML) */
+      .header_section {
+         background: #000000;
+         border-bottom: 1px solid rgba(212, 160, 23, 0.4);
+         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+      }
+
+      .bg-light {
+         background-color: #000000 !important;
+      }
+
+      .navbar-light .navbar-nav .nav-link {
+         color: #f5f5f5;
+         font-weight: 500;
+         letter-spacing: 0.3px;
+         position: relative;
+      }
+
+      .navbar-light .navbar-nav .nav-link:hover,
+      .navbar-light .navbar-nav .nav-link.active {
+         color: var(--gold-light);
+         text-shadow: 0 0 5px rgba(247, 217, 107, 0.6);
+      }
+
+      .navbar-light .navbar-nav .nav-link::after {
+         content: '';
+         position: absolute;
+         width: 0%;
+         height: 2px;
+         bottom: 0;
+         left: 0;
+         background: var(--gold-gradient);
+         transition: 0.3s;
+      }
+
+      .navbar-light .navbar-nav .nav-link:hover::after,
+      .navbar-light .navbar-nav .nav-link.active::after {
+         width: 100%;
+      }
+
+      .navbar-brand img {
+         filter: drop-shadow(0 0 6px #D4A01755);
+         max-height: 60px;
+         width: auto;
+      }
+
+      /* Footer Styles (SAME AS INDEX.HTML) */
+      .footer_section {
+         background: #020202;
+         border-top: 2px solid var(--gold-main);
+         padding: 40px 0;
+      }
+
+      .footer_taital {
+         color: var(--gold-light);
+      }
+
+      .footer_text {
+         color: #bbb;
+      }
+
+      .footer_menu ul {
+         list-style: none;
+         padding: 0;
+      }
+
+      .footer_menu ul li a {
+         color: #ccc;
+         text-decoration: none;
+      }
+
+      .footer_menu ul li a:hover {
+         color: var(--gold-main);
+      }
+
+      .location_text ul {
+         list-style: none;
+         padding: 0;
+      }
+
+      .location_text li a {
+         color: #ccc;
+         text-decoration: none;
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         margin-bottom: 10px;
+      }
+
+      .location_text li a:hover {
+         color: var(--gold-main);
+      }
+
+      .footer_social_icon ul {
+         display: flex;
+         justify-content: flex-end;
+         gap: 10px;
+         list-style: none;
+      }
+
+      .footer_social_icon li a {
+         background: #1a1a1a;
+         color: var(--gold-main);
+         border: 1px solid var(--gold-main);
+         width: 44px;
+         height: 44px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border-radius: 50%;
+         text-decoration: none;
+      }
+
+      .footer_social_icon li a:hover {
+         background: var(--gold-main);
+         color: #000;
+      }
+
+      .copyright_section {
+         background: #000;
+         border-top: 1px solid rgba(212, 160, 23, 0.3);
+         padding: 15px 0;
+      }
+
+      .copyright_text {
+         color: #aaa;
+         text-align: center;
+         margin: 0;
+      }
+
+      .copyright_text a {
+         color: var(--gold-main);
+         text-decoration: none;
+      }
+
+      /* Hero Banner */
+      .hero-about {
+         background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.7) 100%), url('images/hero1.png');
+         background-size: cover;
+         background-position: center;
+         padding: 140px 0;
+         text-align: center;
+      }
+
+      .hero-about h1 {
+         font-size: 58px;
+         font-weight: 800;
+         background: var(--gold-gradient);
+         -webkit-background-clip: text;
+         background-clip: text;
+         color: transparent;
+         margin-bottom: 20px;
+      }
+
+      .hero-about p {
+         font-size: 20px;
+         max-width: 700px;
+         margin: 0 auto 30px;
+         color: #eee;
+      }
+
+      .gold-btn {
+         background: var(--gold-gradient);
+         color: #000;
+         font-weight: 700;
+         border-radius: 40px;
+         padding: 12px 30px;
+         display: inline-block;
+         text-decoration: none;
+         margin: 0 10px;
+         border: none;
+      }
+
+      .gold-btn-outline {
+         background: transparent;
+         border: 2px solid var(--gold-main);
+         color: var(--gold-light);
+      }
+
+      .gold-btn:hover,
+      .gold-btn-outline:hover {
+         transform: translateY(-3px);
+         box-shadow: 0 10px 25px rgba(212, 160, 23, 0.5);
+         color: #000;
+         background: var(--gold-gradient);
+      }
+
+      /* Statistics Cards */
+      .stat-card {
+         background: linear-gradient(145deg, #0a0a0a, #000000);
+         border: 1px solid rgba(212, 160, 23, 0.4);
+         border-radius: 20px;
+         padding: 30px 20px;
+         text-align: center;
+         transition: 0.4s;
+         margin-bottom: 30px;
+      }
+
+      .stat-card:hover {
+         border-color: var(--gold-main);
+         transform: translateY(-8px);
+         box-shadow: 0 20px 40px rgba(212, 160, 23, 0.2);
+      }
+
+      .stat-number {
+         font-size: 48px;
+         font-weight: 800;
+         background: var(--gold-gradient);
+         -webkit-background-clip: text;
+         background-clip: text;
+         color: transparent;
+      }
+
+      .stat-label {
+         color: #ccc;
+         font-size: 18px;
+         margin-top: 10px;
+      }
+
+      /* Mission Cards */
+      .mission-card {
+         background: #0a0a0a;
+         border-radius: 24px;
+         padding: 35px 25px;
+         height: 100%;
+         border: 1px solid rgba(212, 160, 23, 0.3);
+         transition: 0.3s;
+         text-align: center;
+      }
+
+      .mission-card:hover {
+         border-color: var(--gold-main);
+         transform: translateY(-5px);
+      }
+
+      .mission-card i {
+         font-size: 48px;
+         color: var(--gold-main);
+         margin-bottom: 20px;
+      }
+
+      /* Founder Section */
+      .founder-section {
+         background: linear-gradient(135deg, #0a0a0a, #000);
+         padding: 80px 0;
+      }
+
+      .founder-quote {
+         font-size: 24px;
+         font-style: italic;
+         color: var(--gold-light);
+         border-left: 4px solid var(--gold-main);
+         padding-left: 25px;
+         margin: 25px 0;
+      }
+
+      /* Service Cards */
+      .service-card {
+         background: #0a0a0a;
+         border-radius: 20px;
+         padding: 30px 20px;
+         text-align: center;
+         margin-bottom: 30px;
+         border: 1px solid rgba(212, 160, 23, 0.3);
+      }
+
+      .service-card i {
+         font-size: 50px;
+         color: var(--gold-main);
+         margin-bottom: 20px;
+      }
+
+      /* Testimonials */
+      .testimonial-card {
+         background: #0a0a0a;
+         border-radius: 20px;
+         padding: 30px;
+         margin-bottom: 20px;
+         border: 1px solid rgba(212, 160, 23, 0.3);
+      }
+
+      .stars {
+         color: var(--gold-main);
+         font-size: 20px;
+         margin-bottom: 15px;
+      }
+
+      /* Location Badge */
+      .location-badge {
+         background: #0a0a0a;
+         border: 1px solid var(--gold-main);
+         border-radius: 40px;
+         padding: 10px 25px;
+         display: inline-block;
+         margin: 8px;
+         color: #ddd;
+      }
+
+      /* Gallery Grid */
+      .gallery-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+         gap: 20px;
+      }
+
+      .gallery-grid img {
+         width: 100%;
+         height: 280px;
+         object-fit: cover;
+         border-radius: 16px;
+         border: 1px solid rgba(212, 160, 23, 0.4);
+         transition: 0.3s;
+      }
+
+      .gallery-grid img:hover {
+         transform: scale(1.02);
+         border-color: var(--gold-main);
+      }
+
+      .layout_padding {
+         padding: 80px 0;
+      }
+
+      @media (max-width: 768px) {
+         body {
+            border-width: 8px;
+         }
+
+         .hero-about h1 {
+            font-size: 36px;
+         }
+
+         .section-title {
+            font-size: 32px;
+         }
+
+         .footer_social_icon ul {
+            justify-content: center;
+            margin-top: 20px;
+         }
+      }
+   </style>
+</head>
+
+<body>
+
+   <!-- Header (EXACT SAME AS INDEX.HTML) -->
+   <div class="header_section">
+      <div class="container-fluid">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="Star Group Interiors Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="design.html">Services</a></li>
+                  <li class="nav-item"><a class="nav-link" href="company.html">Projects</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+   </div>
+
+   <!-- Hero Banner -->
+   <div class="hero-about">
+      <div class="container">
+         <h1>Crafting Luxury Spaces Across India</h1>
+         <p>Over a decade of excellence in premium interiors, exterior facades, and custom chandelier manufacturing.</p>
+         <a href="company.html" class="gold-btn">View Projects</a>
+         <a href="contact.html" class="gold-btn gold-btn-outline">Contact Us</a>
+      </div>
+   </div>
+
+   <!-- Our Story -->
+   <div class="layout_padding" style="background: #000;">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-lg-6">
+               <h2 class="section-title" style="text-align: left;">Our <span>Journey</span></h2>
+               <p style="color:#ccc; font-size: 18px; line-height: 1.8;">
+                  Started in <strong class="gold-text">Mysore</strong> with a vision to redefine luxury, Star Group Interiors has grown exponentially over <strong>10+ years of experience</strong>. What began as a premium interior design studio has evolved into a full-spectrum firm specializing in <strong>exterior facades, turnkey execution, and custom chandelier manufacturing</strong>. Today, we proudly serve residential and commercial clients across India, delivering timeless elegance and impeccable craftsmanship.
+               </p>
+            </div>
+            <div class="col-lg-6">
+               <div style="border-radius: 20px; overflow: hidden; border: 1px solid rgba(212, 160, 23, 0.4);">
+                  <img src="images/w3.jpg" alt="Star Group Interiors Journey" style="width:100%; height:400px; object-fit:cover;">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Statistics -->
+   <div class="layout_padding" style="background: #0a0a0a;">
+      <div class="container">
+         <h2 class="section-title">Trust <span>Indicators</span></h2>
+         <div class="row">
+            <div class="col-md-3 col-6">
+               <div class="stat-card">
+                  <div class="stat-number">10+</div>
+                  <div class="stat-label">Years Experience</div>
+               </div>
+            </div>
+            <div class="col-md-3 col-6">
+               <div class="stat-card">
+                  <div class="stat-number">500+</div>
+                  <div class="stat-label">Projects Completed</div>
+               </div>
+            </div>
+            <div class="col-md-3 col-6">
+               <div class="stat-card">
+                  <div class="stat-number">100+</div>
+                  <div class="stat-label">Custom Chandeliers</div>
+               </div>
+            </div>
+            <div class="col-md-3 col-6">
+               <div class="stat-card">
+                  <div class="stat-number">50+</div>
+                  <div class="stat-label">Commercial Projects</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Mission & Vision -->
+   <div class="layout_padding" style="background: #000;">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6 mb-4">
+               <div class="mission-card">
+                  <i class="fa fa-bullseye"></i>
+                  <h3 style="margin-top: 20px;">Our Mission</h3>
+                  <p style="color:#ccc;">To create elegant and functional spaces that inspire and elevate everyday living through innovative design and unparalleled craftsmanship.</p>
+               </div>
+            </div>
+            <div class="col-md-6 mb-4">
+               <div class="mission-card">
+                  <i class="fa fa-eye"></i>
+                  <h3 style="margin-top: 20px;">Our Vision</h3>
+                  <p style="color:#ccc;">To become India's leading luxury interior and custom lighting brand, recognized globally for excellence and innovation.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Why Choose Us -->
+   <div class="layout_padding" style="background: #0a0a0a;">
+      <div class="container">
+         <h2 class="section-title">Why Choose <span>Star Group Interiors</span></h2>
+         <div class="row">
+            <div class="col-md-4 mb-4">
+               <div class="service-card">
+                  <i class="fa fa-diamond"></i>
+                  <h4>Premium Quality</h4>
+                  <p>Only high-grade materials sourced globally for lasting elegance.</p>
+               </div>
+            </div>
+            <div class="col-md-4 mb-4">
+               <div class="service-card">
+                  <i class="fa fa-paint-brush"></i>
+                  <h4>Custom Design</h4>
+                  <p>Every project is unique, tailored to your vision and space.</p>
+               </div>
+            </div>
+            <div class="col-md-4 mb-4">
+               <div class="service-card">
+                  <i class="fa fa-clock-o"></i>
+                  <h4>On-Time Delivery</h4>
+                  <p>Professional project execution with strict timelines.</p>
+               </div>
+            </div>
+            <div class="col-md-4 mb-4">
+               <div class="service-card">
+                  <i class="fa fa-users"></i>
+                  <h4>Expert Team</h4>
+                  <p>Skilled designers, architects, and master craftsmen.</p>
+               </div>
+            </div>
+            <div class="col-md-4 mb-4">
+               <div class="service-card">
+                  <i class="fa fa-map-marker"></i>
+                  <h4>Pan India Service</h4>
+                  <p>Projects delivered across all major Indian cities.</p>
+               </div>
+            </div>
+            <div class="col-md-4 mb-4">
+               <div class="service-card">
+                  <i class="fa fa-cogs"></i>
+                  <h4>End-to-End Solutions</h4>
+                  <p>Design → Manufacturing → Installation, all under one roof.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Founder Message -->
+   <div class="founder-section">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-md-7">
+               <h2 class="section-title" style="text-align: left;">Meet The <span>Founder</span></h2>
+               <p style="font-size:18px"><strong class="gold-text">Siddiq Sheikh</strong> – Founder & Lead Designer</p>
+               <div class="founder-quote">"Every project we undertake reflects our commitment to craftsmanship, innovation, and timeless elegance. Luxury is not just about aesthetics—it's about creating spaces that tell your story."<br>— Siddiq Sheikh</div>
+               <p style="color:#ccc;">With over a decade of hands-on experience, Siddiq has led Star Group Interiors to become a benchmark for luxury design in India. His leadership vision blends traditional artistry with modern technology, ensuring each project exceeds expectations.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Our Services -->
+   <div class="layout_padding" style="background: #000;">
+      <div class="container">
+         <h2 class="section-title">Our <span>Services</span></h2>
+         <div class="row">
+            <div class="col-md-4">
+               <div class="service-card">
+                  <i class="fa fa-home"></i>
+                  <h4>Residential Interiors</h4>
+                  <p>Luxury homes, villas, apartments.</p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="service-card">
+                  <i class="fa fa-building"></i>
+                  <h4>Commercial Interiors</h4>
+                  <p>Offices, retail spaces, hotels.</p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="service-card">
+                  <i class="fa fa-archive"></i>
+                  <h4>Exterior Facades</h4>
+                  <p>Architectural facade solutions.</p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="service-card">
+                  <i class="fa fa-lightbulb-o"></i>
+                  <h4>Custom Chandeliers</h4>
+                  <p>Signature chandelier manufacturing.</p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="service-card">
+                  <i class="fa fa-cube"></i>
+                  <h4>Furniture Design</h4>
+                  <p>Custom luxury furniture.</p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="service-card">
+                  <i class="fa fa-tasks"></i>
+                  <h4>Turnkey Execution</h4>
+                  <p>Complete project management.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Client Testimonials -->
+   <div class="layout_padding" style="background: #0a0a0a;">
+      <div class="container">
+         <h2 class="section-title">Client <span>Testimonials</span></h2>
+         <div class="row">
+            <div class="col-md-4">
+               <div class="testimonial-card">
+                  <div class="stars">★★★★★</div>
+                  <p>"Outstanding craftsmanship and beautiful custom chandelier. Star Group transformed our home into a palace."</p>
+                  <h5 class="gold-text">- Vikram Mehta</h5>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="testimonial-card">
+                  <div class="stars">★★★★★</div>
+                  <p>"Professional execution and timely delivery. Their team handled our 5-star hotel lobby project flawlessly."</p>
+                  <h5 class="gold-text">- Radisson Blu</h5>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="testimonial-card">
+                  <div class="stars">★★★★★</div>
+                  <p>"The custom chandeliers are breathtaking. Every detail was meticulously crafted. Highly recommended!"</p>
+                  <h5 class="gold-text">- Anjali Sharma</h5>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Service Locations -->
+   <div class="layout_padding" style="background: #000;">
+      <div class="container">
+         <h2 class="section-title">We Serve <span>Across India</span></h2>
+         <div class="row">
+            <div class="col-md-12 text-center">
+               <div style="margin-bottom: 30px;">
+                  <i class="fa fa-map-marker" style="font-size: 60px; color: var(--gold-main);"></i>
+               </div>
+               <div>
+                  <span class="location-badge">Mysore</span>
+                  <span class="location-badge">Bangalore</span>
+                  <span class="location-badge">Hyderabad</span>
+                  <span class="location-badge">Chennai</span>
+                  <span class="location-badge">Mumbai</span>
+                  <span class="location-badge">Delhi</span>
+                  <span class="location-badge">Pune</span>
+                  <span class="location-badge">Kochi</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Our Creations Gallery -->
+   <div class="layout_padding" style="background: #0a0a0a;">
+      <div class="container">
+         <h2 class="section-title">Our <span>Creations</span></h2>
+         <div class="gallery-grid">
+            <img src="images/w2.jpg" alt="Interiors">
+            <img src="images/p2.jpg" alt="Chandelier">
+            <img src="images/p3.jpg" alt="Facades">
+            <img src="images/p6.jpg" alt="Commercial">
+         </div>
+         <div class="text-center" style="margin-top: 40px;">
+            <a href="company.html" class="gold-btn">View All Projects</a>
+         </div>
+      </div>
+   </div>
+
+   <!-- Footer (EXACT SAME AS INDEX.HTML) -->
+   <div class="footer_section layout_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-3 col-md-6">
+               <div class="footer_logo"><img src="images/logo.jpg" alt="Star Group Interiors" style="max-width: 160px;">
+               </div>
+               <p class="footer_text">Over a decade of premium interior and exterior projects across India. Specialized
+                  in custom chandelier manufacturing.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <h3 class="footer_taital">LET US HELP YOU</h3>
+               <p class="footer_text">Contact us for a consultation on your next residential or commercial project.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <h3 class="footer_taital">INFORMATION</h3>
+               <div class="footer_menu">
+                  <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="about.html">About</a></li>
+                     <li><a href="design.html">Services</a></li>
+                     <li><a href="company.html">Projects</a></li>
+                     <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <h3 class="footer_taital">Contact Us</h3>
+               <div class="location_text">
+                  <ul>
+                     <li><a href="https://maps.app.goo.gl/xVfogbLmKNFhMVxr7" target="_blank"><i
+                              class="fa fa-map-marker"></i><span>Shop No 1, Belavatta Road, Kaveri Nagar, Bannimantapa,
+                              Mysore - 570015</span></a></li>
+                     <li><a href="tel:+919538588293"><i class="fa fa-phone"></i><span>+91 95385 88293 (Siddiq
+                              Sheikh)</span></a></li>
+                     <li><a href="tel:+919071098465"><i class="fa fa-phone"></i><span>+91 90710 98465
+                              (Office)</span></a></li>
+                     <li><a href="mailto:stargroupinteriors46@gmail.com"><i
+                              class="fa fa-envelope"></i><span>stargroupinteriors46@gmail.com</span></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="footer_section" style="border-top: none; padding-top: 0;">
+            <div class="row">
+               <div class="col-md-6"></div>
+               <div class="col-md-6">
+                  <div class="footer_social_icon">
+                     <ul>
+                        <li>
+                           <a href="https://www.facebook.com/star_group_interiors" target="_blank">
+                              <i class="fa fa-facebook"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://www.instagram.com/star_group_interiors/" target="_blank">
+                              <i class="fa fa-instagram"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://www.youtube.com/@StarGroupInteriors" target="_blank">
+                              <i class="fa fa-youtube-play"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="copyright_section">
+      <div class="container">
+         <p class="copyright_text">© 2025 Star Group Interiors. All Rights Reserved. | Metallic Gold Edition</p>
+      </div>
+   </div>
+
+   <!-- Scripts (SAME AS INDEX.HTML) -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/plugin.js"></script>
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+</body>
+
+</html>
