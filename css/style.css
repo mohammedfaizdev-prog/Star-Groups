@@ -17,6 +17,275 @@
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
+
+/* ===== METALLIC GOLD / PURE BLACK THEME - OVERRIDES ===== */
+/* This section overrides the default styles to match your gold theme */
+
+:root {
+  --gold-light: #F7D96B;
+  --gold-main: #D4A017;
+  --gold-deep: #8C5A0A;
+  --gold-gradient: linear-gradient(135deg, #F7D96B 0%, #D4A017 45%, #B27C0A 70%, #8C5A0A 100%);
+  --black-pure: #000000;
+  --black-rich: #0a0a0a;
+}
+
+body {
+  background: var(--black-pure) !important;
+  color: #dddddd !important;
+  border-color: var(--black-rich) !important;
+  background-color: var(--black-pure) !important;
+}
+
+/* Fix the hero slider height from style.css */
+.hero_slider .carousel,
+.hero_slider .carousel-inner,
+.hero_slider .carousel-item {
+  height: auto !important;
+  min-height: auto !important;
+}
+
+.hero_slide {
+  height: auto !important;
+  min-height: 600px !important;
+}
+
+/* Fix navbar colors */
+.header_section {
+  background: #000000 !important;
+  background-color: #000000 !important;
+}
+
+.bg-light {
+  background-color: #000000 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #f5f5f5 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--gold-light) !important;
+}
+
+/* Fix company section colors */
+.company_section {
+  background: #000000 !important;
+}
+
+.company_taital {
+  color: #ffffff !important;
+}
+
+.company_text {
+  color: #cccccc !important;
+}
+
+/* Fix client section */
+.client_section {
+  background: #ffffff !important;
+}
+
+.client_taital {
+  color: #000000 !important;
+}
+
+.moark_text {
+  color: var(--gold-deep) !important;
+}
+
+.client_text {
+  color: #2c2c2c !important;
+}
+
+/* Fix news section */
+.news_section {
+  background: #000000 !important;
+}
+
+.news_taital {
+  color: #ffffff !important;
+}
+
+.news_taital_1 {
+  color: var(--gold-light) !important;
+}
+
+.news_text {
+  color: #cccccc !important;
+}
+
+/* Fix contact section */
+.contact_section {
+  background: #000000 !important;
+}
+
+.contact_taital {
+  color: #ffffff !important;
+}
+
+/* Fix footer */
+.footer_section {
+  background: #020202 !important;
+  border-top: 2px solid var(--gold-main) !important;
+}
+
+.footer_taital {
+  color: var(--gold-light) !important;
+}
+
+.footer_text {
+  color: #bbbbbb !important;
+}
+
+.location_text li a {
+  color: #cccccc !important;
+}
+
+.location_text li a:hover {
+  color: var(--gold-main) !important;
+}
+
+.footer_social_icon li a {
+  background: #1a1a1a !important;
+  color: var(--gold-main) !important;
+  border: 1px solid var(--gold-main) !important;
+}
+
+.footer_social_icon li a:hover {
+  background: var(--gold-main) !important;
+  color: #000000 !important;
+}
+
+/* Fix copyright */
+.copyright_section {
+  background: #000000 !important;
+  border-top: 1px solid rgba(212, 160, 23, 0.3) !important;
+}
+
+.copyright_text {
+  color: #aaaaaa !important;
+}
+
+.copyright_text a {
+  color: var(--gold-main) !important;
+}
+
+/* Fix form elements */
+.mail_text,
+.massage-bt {
+  background: #1e1e1e !important;
+  border: 1px solid #333333 !important;
+  color: #ffffff !important;
+}
+
+.mail_text:focus,
+.massage-bt:focus {
+  border-color: var(--gold-main) !important;
+}
+
+input.mail_text::placeholder,
+textarea.massage-bt::placeholder {
+  color: #888888 !important;
+}
+
+/* Fix send button */
+.send_bt a {
+  background: var(--gold-gradient) !important;
+  color: #000000 !important;
+}
+
+.send_bt a:hover {
+  color: #000000 !important;
+  background: var(--gold-gradient) !important;
+  opacity: 0.85;
+}
+
+/* Fix read buttons */
+.read_bt a {
+  background: var(--gold-gradient) !important;
+  color: #000000 !important;
+}
+
+.read_bt a:hover {
+  color: #000000 !important;
+  opacity: 0.85;
+  background: var(--gold-gradient) !important;
+}
+
+/* Fix see more buttons */
+.seemore_bt a {
+  color: var(--gold-light) !important;
+}
+
+.seemore_bt a:hover {
+  color: var(--gold-main) !important;
+}
+
+/* Fix readmore buttons */
+.readmore_bt a {
+  color: var(--gold-light) !important;
+}
+
+.readmore_bt a:hover {
+  color: var(--gold-main) !important;
+}
+
+/* Fix hero button */
+.hero_btn {
+  background: var(--gold-gradient) !important;
+  color: #000000 !important;
+}
+
+.hero_btn:hover {
+  color: #000000 !important;
+  box-shadow: 0 10px 25px rgba(212, 160, 23, 0.5) !important;
+}
+
+/* Fix carousel controls */
+#main_slider .carousel-control-next,
+#main_slider .carousel-control-prev {
+  background: rgba(0, 0, 0, 0.7) !important;
+  border: 1px solid var(--gold-main) !important;
+  color: var(--gold-main) !important;
+}
+
+#main_slider .carousel-control-next:hover,
+#main_slider .carousel-control-prev:hover {
+  background: var(--gold-main) !important;
+  color: #000000 !important;
+}
+
+/* Fix company images border */
+.company_img img {
+  border: 1px solid rgba(212, 160, 23, 0.3) !important;
+  border-radius: 16px !important;
+}
+
+.company_img img:hover {
+  border-color: var(--gold-main) !important;
+}
+
+/* Fix news images */
+.news_img img {
+  border: 1px solid rgba(212, 160, 23, 0.3) !important;
+  border-radius: 16px !important;
+}
+
+/* Fix slider dots */
+.dot {
+  background-color: #555555 !important;
+}
+
+.dot.active {
+  background-color: var(--gold-main) !important;
+}
+
+.dot:hover {
+  background-color: var(--gold-light) !important;
+}
+
 * {
     box-sizing: border-box !important;
     transition: ease all 0.5s;

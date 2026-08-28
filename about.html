@@ -411,39 +411,55 @@
       }
 
       /* MOBILE NAVIGATION CLICK FIX (SAME AS INDEX.HTML) */
-      @media (max-width: 991px) {
-         .navbar-collapse {
-            position: relative;
-            z-index: 99999;
-            background: #000;
-            padding: 15px;
-         }
+      /* Add this to the <style> section in about.html - REPLACE the existing mobile nav rule */
+@media (max-width: 991px) {
+   .navbar-collapse {
+      position: absolute !important;
+      top: 100% !important;
+      left: 0 !important;
+      right: 0 !important;
+      background: #000 !important;
+      padding: 15px !important;
+      border-bottom: 2px solid var(--gold-main) !important;
+      z-index: 99999 !important;
+   }
 
-         .navbar-nav {
-            position: relative;
-            z-index: 99999;
-         }
+   .navbar-nav {
+      position: relative !important;
+      z-index: 99999 !important;
+   }
 
-         .navbar-nav .nav-item {
-            position: relative;
-            z-index: 99999;
-         }
+   .navbar-nav .nav-item {
+      position: relative !important;
+      z-index: 99999 !important;
+   }
 
-         .navbar-nav .nav-link {
-            display: block;
-            padding: 12px 15px;
-            position: relative;
-            z-index: 99999;
-            pointer-events: auto;
-         }
+   .navbar-nav .nav-link {
+      display: block !important;
+      padding: 10px 15px !important;
+      position: relative !important;
+      z-index: 99999 !important;
+      pointer-events: auto !important;
+      color: #f5f5f5 !important;
+   }
 
-         .hero-about,
-         .layout_padding,
-         .founder-section {
-            position: relative;
-            z-index: 1;
-         }
-      }
+   .navbar-nav .nav-link:hover,
+   .navbar-nav .nav-link.active {
+      background: rgba(212, 160, 23, 0.12) !important;
+      color: var(--gold-light) !important;
+   }
+
+   .navbar-nav .nav-link::after {
+      display: none !important;
+   }
+
+   .hero-about,
+   .layout_padding,
+   .founder-section {
+      position: relative !important;
+      z-index: 1 !important;
+   }
+}
 
       @media (max-width: 768px) {
          body {
