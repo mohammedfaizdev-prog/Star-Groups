@@ -5,11 +5,75 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>D ARC BUILD EXPO 2026 | Star Group Interiors</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    
+    <!-- ===== UPDATED SEO TITLE ===== -->
+    <title>D ARC BUILD EXPO 2026 | Star Group Interiors, Mysore</title>
+    
+    <!-- ===== UPDATED META DESCRIPTION ===== -->
     <meta name="description"
         content="Star Group Interiors at D ARC BUILD EXPO 2026 in Bangalore. Showcasing luxury interiors, custom chandeliers and gold-accented designs. Visit us June 26-28.">
     <meta name="author" content="Star Group Interiors">
     <link rel="canonical" href="https://star-groups.in/expo.html">
+
+    <!-- ===== EVENT SCHEMA (JSON-LD) ===== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "D ARC BUILD EXPO 2026",
+            "description": "Star Group Interiors showcasing luxury interiors, custom chandeliers, and gold-accented designs at India's premier architecture and design exhibition.",
+            "startDate": "2026-06-26",
+            "endDate": "2026-06-28",
+            "location": {
+                "@type": "Place",
+                "name": "Bangalore",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Bangalore",
+                    "addressRegion": "Karnataka",
+                    "addressCountry": "IN"
+                }
+            },
+            "organizer": {
+                "@type": "Organization",
+                "name": "D ARC BUILD"
+            },
+            "performer": {
+                "@type": "LocalBusiness",
+                "name": "Star Group Interiors",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Shop No 1, Belavatta Road, Kaveri Nagar, Bannimantapa",
+                    "addressLocality": "Mysore",
+                    "addressRegion": "Karnataka",
+                    "postalCode": "570015",
+                    "addressCountry": "IN"
+                },
+                "telephone": "+919538588293",
+                "email": "stargroupinteriors46@gmail.com"
+            }
+        }
+    </script>
+
+    <!-- ===== BREADCRUMB SCHEMA ===== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://star-groups.in/"
+            }, {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Expo 2026",
+                "item": "https://star-groups.in/expo.html"
+            }]
+        }
+    </script>
 
     <!-- CSS Vendors -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -697,28 +761,43 @@
         /* MOBILE NAVIGATION CLICK FIX (SAME AS INDEX.HTML) */
         @media (max-width: 991px) {
             .navbar-collapse {
-                position: relative;
-                z-index: 99999;
-                background: #000;
-                padding: 15px;
+                position: absolute !important;
+                top: 100% !important;
+                left: 0 !important;
+                right: 0 !important;
+                background: #000 !important;
+                padding: 15px !important;
+                border-bottom: 2px solid var(--gold-main) !important;
+                z-index: 99999 !important;
             }
 
             .navbar-nav {
-                position: relative;
-                z-index: 99999;
+                position: relative !important;
+                z-index: 99999 !important;
             }
 
             .navbar-nav .nav-item {
-                position: relative;
-                z-index: 99999;
+                position: relative !important;
+                z-index: 99999 !important;
             }
 
             .navbar-nav .nav-link {
-                display: block;
-                padding: 12px 15px;
-                position: relative;
-                z-index: 99999;
-                pointer-events: auto;
+                display: block !important;
+                padding: 10px 15px !important;
+                position: relative !important;
+                z-index: 99999 !important;
+                pointer-events: auto !important;
+                color: #f5f5f5 !important;
+            }
+
+            .navbar-nav .nav-link:hover,
+            .navbar-nav .nav-link.active {
+                background: rgba(212, 160, 23, 0.12) !important;
+                color: var(--gold-light) !important;
+            }
+
+            .navbar-nav .nav-link::after {
+                display: none !important;
             }
 
             .expo-hero,
@@ -727,8 +806,8 @@
             .video-gallery,
             .image-gallery,
             .expo-cta {
-                position: relative;
-                z-index: 1;
+                position: relative !important;
+                z-index: 1 !important;
             }
 
             .video-grid {
@@ -868,8 +947,9 @@
     <div class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="index.html"><img src="images/logo.jpg"
-                        alt="Star Group Interiors Logo"></a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.jpg" alt="Star Group Interiors Logo - Luxury Interior Designers in Mysore">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -909,7 +989,7 @@
                     Star Group Interiors proudly showcased our
                     <strong>premium interiors, custom chandeliers,</strong>
                     and <strong>gold-accented luxury designs</strong>
-                    at India's premier architecture &amp; design exhibition.
+                    at India's premier architecture &amp; design exhibition in <strong>Bangalore</strong>, from our headquarters in <strong>Mysore, Karnataka</strong>.
                 </p>
 
             </div>
@@ -958,13 +1038,13 @@
             </div>
             <p class="expo-description-text">
                 Star Group Interiors made a spectacular debut at the <strong>D ARC BUILD EXPO 2026</strong>,
-                one of India's most prestigious architecture and design exhibitions. Over three incredible days
-                (June 26-28), we captivated visitors with our <strong>bespoke chandelier collections</strong>,
+                one of India's most prestigious architecture and design exhibitions held in <strong>Bangalore</strong>. 
+                Over three incredible days (June 26-28), we captivated visitors with our <strong>bespoke chandelier collections</strong>,
                 <strong>luxury interior mockups</strong>, and <strong>gold-accented architectural solutions</strong>.
                 <br><br>
                 From interior designers and architects to homeowners and commercial developers, our booth attracted
                 enthusiastic crowds who experienced firsthand the <strong>craftsmanship and innovation</strong>
-                that defines Star Group Interiors. Our team of experts was on hand to discuss custom projects,
+                that defines Star Group Interiors. Our team of experts from <strong>Mysore</strong> was on hand to discuss custom projects,
                 showcase our portfolio, and share the vision behind our <strong>gold luxury aesthetic</strong>.
             </p>
         </div>
@@ -1036,8 +1116,7 @@
     <div class="expo-cta">
         <div class="container">
             <h2>Inspired by Our <span>Expo Collection?</span></h2>
-            <p>Get in touch with our team to explore custom interiors, chandeliers, and luxury designs for your space.
-            </p>
+            <p>Get in touch with our team in <strong>Mysore</strong> to explore custom interiors, chandeliers, and luxury designs for your space in Bangalore, Kerala, or anywhere in India.</p>
             <a href="contact.html" class="cta-btn">✦ Contact Us Today</a>
         </div>
     </div>
@@ -1047,15 +1126,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
-                    <div class="footer_logo"><img src="images/logo.jpg" alt="Star Group Interiors"
-                            style="max-width: 160px;"></div>
-                    <p class="footer_text">Over a decade of premium interior and exterior projects across India.
-                        Specialized in custom chandelier manufacturing.</p>
+                    <div class="footer_logo">
+                        <img src="images/logo.jpg" alt="Star Group Interiors Logo - Luxury Interior Designers in Mysore" style="max-width: 160px;">
+                    </div>
+                    <p class="footer_text">Over a decade of premium interior and exterior projects across India. Specialized in custom chandelier manufacturing in Mysore.</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="footer_taital">LET US HELP YOU</h3>
-                    <p class="footer_text">Contact us for a consultation on your next residential or commercial project.
-                    </p>
+                    <p class="footer_text">Contact us for a consultation on your next residential or commercial project in Mysore, Bangalore, Kerala, or anywhere in India.</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="footer_taital">INFORMATION</h3>
@@ -1074,15 +1152,30 @@
                     <h3 class="footer_taital">Contact Us</h3>
                     <div class="location_text">
                         <ul>
-                            <li><a href="https://maps.app.goo.gl/xVfogbLmKNFhMVxr7" target="_blank"><i
-                                        class="fa fa-map-marker"></i><span>Shop No 1, Belavatta Road, Kaveri Nagar,
-                                        Bannimantapa, Mysore - 570015</span></a></li>
-                            <li><a href="tel:+919538588293"><i class="fa fa-phone"></i><span>+91 95385 88293 (Siddiq
-                                        Sheikh)</span></a></li>
-                            <li><a href="tel:+919071098465"><i class="fa fa-phone"></i><span>+91 90710 98465
-                                        (Office)</span></a></li>
-                            <li><a href="mailto:stargroupinteriors46@gmail.com"><i
-                                        class="fa fa-envelope"></i><span>stargroupinteriors46@gmail.com</span></a></li>
+                            <li>
+                                <a href="https://maps.app.goo.gl/xVfogbLmKNFhMVxr7" target="_blank" rel="noopener">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>Shop No 1, Belavatta Road, Kaveri Nagar, Bannimantapa, Mysore - 570015</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+919538588293">
+                                    <i class="fa fa-phone"></i>
+                                    <span>+91 95385 88293 (Siddiq Sheikh)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+919071098465">
+                                    <i class="fa fa-phone"></i>
+                                    <span>+91 90710 98465 (Office)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:stargroupinteriors46@gmail.com">
+                                    <i class="fa fa-envelope"></i>
+                                    <span>stargroupinteriors46@gmail.com</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -1093,17 +1186,17 @@
                     <div class="footer_social_icon">
                         <ul>
                             <li>
-                                <a href="https://www.facebook.com/star_group_interiors" target="_blank">
+                                <a href="https://www.facebook.com/star_group_interiors" target="_blank" rel="noopener" aria-label="Facebook">
                                     <i class="fa fa-facebook"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/star_group_interiors/" target="_blank">
+                                <a href="https://www.instagram.com/star_group_interiors/" target="_blank" rel="noopener" aria-label="Instagram">
                                     <i class="fa fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/@StarGroupInteriors" target="_blank">
+                                <a href="https://www.youtube.com/@StarGroupInteriors" target="_blank" rel="noopener" aria-label="YouTube">
                                     <i class="fa fa-youtube-play"></i>
                                 </a>
                             </li>
@@ -1117,7 +1210,7 @@
     <!-- ===== COPYRIGHT SECTION (EXACT SAME AS INDEX.HTML) ===== -->
     <div class="copyright_section">
         <div class="container">
-            <p class="copyright_text">© 2025 Star Group Interiors. All Rights Reserved. | Metallic Gold Edition</p>
+            <p class="copyright_text">© 2025 Star Group Interiors. All Rights Reserved. | Luxury Interior Designers in Mysore, Karnataka</p>
         </div>
     </div>
 
@@ -1144,7 +1237,7 @@
                 var item = document.createElement('div');
                 item.className = 'gallery-item';
                 item.innerHTML = `
-                   <img src="images/${name}" alt="D ARC BUILD EXPO 2026 exhibition by Star Group Interiors" loading="lazy">
+                   <img src="images/${name}" alt="D ARC BUILD EXPO 2026 exhibition by Star Group Interiors from Mysore" loading="lazy">
                    <div class="overlay"><i class="fa fa-search-plus"></i></div>
                 `;
                 item.addEventListener('click', function () {
@@ -1203,13 +1296,13 @@
     </script>
 
     <!-- Required JS Libraries (SAME AS INDEX.HTML) -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/popper.min.js" defer></script>
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/jquery-3.0.0.min.js" defer></script>
+    <script src="js/plugin.js" defer></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js" defer></script>
+    <script src="js/custom.js" defer></script>
 
 </body>
 

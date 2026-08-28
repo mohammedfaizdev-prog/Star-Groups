@@ -2,1155 +2,1270 @@
 <html lang="en">
 
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Interior Design Projects in Kerala | Star Group Interiors</title>
-   <meta name="description"
-      content="Explore Star Group Interiors' interior design and lighting projects across Kerala, including luxury jewellery showrooms, wedding venues, commercial spaces, offices and custom chandelier installations.">
-   <meta name="author" content="Star Group Interiors">
-   <link rel="canonical" href="https://star-groups.in/company.html">
-
-   <!-- CSS Vendors (SAME AS INDEX.HTML) -->
-   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-   <link rel="stylesheet" type="text/css" href="css/style.css">
-   <link rel="stylesheet" href="css/responsive.css">
-   <link rel="icon" href="images/fevicon.png" type="image/gif">
-   <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet">
-   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-
-   <style>
-      /* ===== METALLIC GOLD / PURE BLACK THEME (SAME AS INDEX.HTML) ===== */
-      :root {
-         --gold-light: #F7D96B;
-         --gold-main: #D4A017;
-         --gold-deep: #8C5A0A;
-         --gold-gradient: linear-gradient(135deg, #F7D96B 0%, #D4A017 45%, #B27C0A 70%, #8C5A0A 100%);
-         --black-pure: #000000;
-         --black-rich: #0a0a0a;
-      }
-
-      * {
-         transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-      }
-
-      body {
-         background: var(--black-pure);
-         color: #dddddd;
-         font-family: 'Montserrat', sans-serif;
-         border: 15px solid var(--black-rich);
-         overflow-x: hidden;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-         color: #ffffff;
-         letter-spacing: 0.5px;
-      }
-
-      .gold-text {
-         background: var(--gold-gradient);
-         -webkit-background-clip: text;
-         background-clip: text;
-         color: transparent;
-         font-weight: 800;
-      }
-
-      .section-title {
-         font-size: 42px;
-         font-weight: 800;
-         text-align: center;
-         margin-bottom: 20px;
-      }
-
-      .section-title span {
-         background: var(--gold-gradient);
-         -webkit-background-clip: text;
-         background-clip: text;
-         color: transparent;
-      }
-
-      .section-sub {
-         text-align: center;
-         color: #ccc;
-         max-width: 800px;
-         margin: 0 auto 50px;
-         font-size: 18px;
-      }
-
-      /* Header Nav (SAME AS INDEX.HTML) */
-      .header_section {
-         background: #000000;
-         border-bottom: 1px solid rgba(212, 160, 23, 0.4);
-         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
-      }
-
-      .bg-light {
-         background-color: #000000 !important;
-      }
-
-      .navbar-light .navbar-nav .nav-link {
-         color: #f5f5f5;
-         font-weight: 500;
-         letter-spacing: 0.3px;
-         position: relative;
-      }
-
-      .navbar-light .navbar-nav .nav-link:hover,
-      .navbar-light .navbar-nav .nav-link.active {
-         color: var(--gold-light);
-         text-shadow: 0 0 5px rgba(247, 217, 107, 0.6);
-      }
-
-      .navbar-light .navbar-nav .nav-link::after {
-         content: '';
-         position: absolute;
-         width: 0%;
-         height: 2px;
-         bottom: 0;
-         left: 0;
-         background: var(--gold-gradient);
-         transition: 0.3s;
-      }
-
-      .navbar-light .navbar-nav .nav-link:hover::after,
-      .navbar-light .navbar-nav .nav-link.active::after {
-         width: 100%;
-      }
-
-      .navbar-brand img {
-         filter: drop-shadow(0 0 6px #D4A01755);
-         max-height: 60px;
-         width: auto;
-      }
-
-      .navbar-toggler {
-         background-color: var(--gold-main);
-         border: none;
-      }
-
-      /* Footer Styles (SAME AS INDEX.HTML) */
-      .footer_section {
-         background: #020202;
-         border-top: 2px solid var(--gold-main);
-         padding: 40px 0;
-      }
-
-      .footer_taital {
-         color: var(--gold-light);
-      }
-
-      .footer_text {
-         color: #bbb;
-      }
-
-      .footer_menu ul {
-         list-style: none;
-         padding: 0;
-      }
-
-      .footer_menu ul li a {
-         color: #ccc;
-         text-decoration: none;
-      }
-
-      .footer_menu ul li a:hover {
-         color: var(--gold-main);
-      }
-
-      .location_text ul {
-         list-style: none;
-         padding: 0;
-      }
-
-      .location_text li a {
-         color: #ccc;
-         text-decoration: none;
-         display: flex;
-         align-items: center;
-         gap: 10px;
-         margin-bottom: 10px;
-      }
-
-      .location_text li a:hover {
-         color: var(--gold-main);
-      }
-
-      .footer_social_icon ul {
-         display: flex;
-         justify-content: flex-end;
-         gap: 10px;
-         list-style: none;
-      }
-
-      .footer_social_icon li a {
-         background: #1a1a1a;
-         color: var(--gold-main);
-         border: 1px solid var(--gold-main);
-         width: 44px;
-         height: 44px;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         border-radius: 50%;
-         text-decoration: none;
-      }
-
-      .footer_social_icon li a:hover {
-         background: var(--gold-main);
-         color: #000;
-      }
-
-      .copyright_section {
-         background: #000;
-         border-top: 1px solid rgba(212, 160, 23, 0.3);
-         padding: 15px 0;
-      }
-
-      .copyright_text {
-         color: #aaa;
-         text-align: center;
-         margin: 0;
-      }
-
-      .copyright_text a {
-         color: var(--gold-main);
-         text-decoration: none;
-      }
-
-      /* Hero Banner */
-      .hero-projects {
-         background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.7) 100%), url('images/hero1.png');
-         background-size: cover;
-         background-position: center;
-         padding: 120px 0;
-         text-align: center;
-      }
-
-      .hero-projects h1 {
-         font-size: 56px;
-         font-weight: 800;
-         background: var(--gold-gradient);
-         -webkit-background-clip: text;
-         background-clip: text;
-         color: transparent;
-      }
-
-      .hero-projects p {
-         font-size: 20px;
-         margin: 20px 0;
-         color: #eee;
-         max-width: 700px;
-         margin-left: auto;
-         margin-right: auto;
-      }
-
-      .gold-btn {
-         background: var(--gold-gradient);
-         color: #000;
-         font-weight: 700;
-         border-radius: 40px;
-         padding: 12px 30px;
-         display: inline-block;
-         text-decoration: none;
-         margin: 0 10px;
-         border: none;
-      }
-
-      .gold-btn-outline {
-         background: transparent;
-         border: 2px solid var(--gold-main);
-         color: var(--gold-light);
-      }
-
-      .gold-btn:hover,
-      .gold-btn-outline:hover {
-         transform: translateY(-3px);
-         box-shadow: 0 10px 25px rgba(212, 160, 23, 0.5);
-         background: var(--gold-gradient);
-         color: #000;
-      }
-
-      /* Project Cards */
-      .project-card {
-         background: #0a0a0a;
-         border-radius: 24px;
-         overflow: hidden;
-         margin-bottom: 40px;
-         border: 1px solid rgba(212, 160, 23, 0.3);
-         transition: 0.4s;
-      }
-
-      .project-card:hover {
-         transform: translateY(-8px);
-         border-color: var(--gold-main);
-         box-shadow: 0 20px 35px rgba(212, 160, 23, 0.15);
-      }
-
-      .project-img {
-         width: 100%;
-         height: 500px;
-         object-fit: cover;
-         border-bottom: 2px solid rgba(212, 160, 23, 0.3);
-      }
-
-      .project-content {
-         padding: 25px;
-      }
-
-      .project-title {
-         font-size: 28px;
-         font-weight: 700;
-         color: var(--gold-light);
-         margin-bottom: 10px;
-      }
-
-      .project-location {
-         color: #aaa;
-         margin-bottom: 15px;
-         font-size: 14px;
-      }
-
-      .project-location i {
-         color: var(--gold-main);
-         margin-right: 5px;
-      }
-
-      .project-category {
-         display: inline-block;
-         background: rgba(212, 160, 23, 0.2);
-         color: var(--gold-light);
-         padding: 5px 15px;
-         border-radius: 30px;
-         font-size: 12px;
-         margin-bottom: 15px;
-      }
-
-      .project-desc {
-         color: #ccc;
-         line-height: 1.6;
-         margin-bottom: 20px;
-      }
-
-      .service-tags {
-         display: flex;
-         flex-wrap: wrap;
-         gap: 10px;
-         margin-bottom: 20px;
-      }
-
-      .service-tag {
-         background: #1a1a1a;
-         color: #ddd;
-         padding: 5px 12px;
-         border-radius: 20px;
-         font-size: 12px;
-         border-left: 2px solid var(--gold-main);
-      }
-
-      .project-btn {
-         display: inline-block;
-         background: transparent;
-         border: 1px solid var(--gold-main);
-         color: var(--gold-light);
-         padding: 8px 25px;
-         border-radius: 40px;
-         text-decoration: none;
-         font-size: 14px;
-         transition: 0.3s;
-      }
-
-      .project-btn:hover {
-         background: var(--gold-main);
-         color: #000;
-      }
-
-      /* Video Showcase */
-      .video-showcase-wrapper {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: center;
-         gap: 40px;
-         margin-top: 30px;
-         margin-bottom: 30px;
-      }
-
-      .video-portrait-card {
-         flex: 1;
-         min-width: 260px;
-         max-width: 320px;
-         background: #0a0a0a;
-         border-radius: 28px;
-         overflow: hidden;
-         border: 2px solid rgba(212, 160, 23, 0.5);
-         transition: 0.3s;
-         box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-      }
-
-      .video-portrait-card:hover {
-         border-color: var(--gold-main);
-         transform: translateY(-6px);
-         box-shadow: 0 25px 40px rgba(212, 160, 23, 0.2);
-      }
-
-      .video-portrait-card video {
-         width: 100%;
-         height: auto;
-         aspect-ratio: 9 / 16;
-         object-fit: cover;
-         display: block;
-         background: #000;
-      }
-
-      .video-caption {
-         padding: 15px;
-         text-align: center;
-         background: #0a0a0a;
-      }
-
-      .video-caption h3 {
-         color: var(--gold-light);
-         margin: 0 0 5px;
-         font-weight: 600;
-         font-size: 16px;
-      }
-
-      .video-caption p {
-         color: #aaa;
-         font-size: 12px;
-         margin: 0;
-      }
-
-      /* Masonry Gallery */
-      .masonry-grid {
-         display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-         gap: 20px;
-      }
-
-      .masonry-item {
-         position: relative;
-         overflow: hidden;
-         border-radius: 20px;
-         cursor: pointer;
-      }
-
-      .masonry-item img {
-         width: 100%;
-         height: 280px;
-         object-fit: cover;
-         border: 1px solid rgba(212, 160, 23, 0.3);
-         border-radius: 20px;
-         transition: 0.4s;
-      }
-
-      .masonry-item:hover img {
-         transform: scale(1.03);
-         border-color: var(--gold-main);
-      }
-
-      /* Stats Section */
-      .stat-card {
-         background: #0a0a0a;
-         border-radius: 20px;
-         padding: 30px;
-         text-align: center;
-         border: 1px solid rgba(212, 160, 23, 0.4);
-         margin-bottom: 20px;
-      }
-
-      .stat-number {
-         font-size: 48px;
-         font-weight: 800;
-         background: var(--gold-gradient);
-         -webkit-background-clip: text;
-         background-clip: text;
-         color: transparent;
-      }
-
-      .stat-label {
-         color: #ccc;
-         margin-top: 10px;
-      }
-
-      /* Location Badges */
-      .location-badge {
-         background: #0a0a0a;
-         border: 1px solid var(--gold-main);
-         border-radius: 40px;
-         padding: 10px 25px;
-         display: inline-block;
-         margin: 8px;
-         color: #ddd;
-         transition: 0.3s;
-      }
-
-      .location-badge:hover {
-         background: var(--gold-main);
-         color: #000;
-      }
-
-      /* Testimonial Cards */
-      .testimonial-card {
-         background: #0a0a0a;
-         border-radius: 20px;
-         padding: 25px;
-         margin-bottom: 25px;
-         border: 1px solid rgba(212, 160, 23, 0.3);
-      }
-
-      .stars {
-         color: var(--gold-main);
-         font-size: 18px;
-         margin-bottom: 15px;
-      }
-
-      /* CTA */
-      .cta-section {
-         background: linear-gradient(135deg, #0a0a0a, #000);
-         text-align: center;
-         padding: 70px 0;
-         border-top: 1px solid var(--gold-main);
-         border-bottom: 1px solid var(--gold-main);
-      }
-
-      .layout_padding {
-         padding: 80px 0;
-      }
-
-      /* MOBILE NAVIGATION CLICK FIX (SAME AS INDEX.HTML) */
-      @media (max-width: 991px) {
-         .navbar-collapse {
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    
+    <!-- ===== UPDATED SEO TITLE ===== -->
+    <title>Interior Design Projects in Kerala | Star Group Interiors, Mysore</title>
+    
+    <!-- ===== UPDATED META DESCRIPTION ===== -->
+    <meta name="description"
+        content="Explore Star Group Interiors' luxury interior design and lighting projects across Kerala. Featuring jewellery showrooms, wedding venues, commercial spaces, offices & custom chandelier installations in Kerala and India.">
+    <meta name="author" content="Star Group Interiors">
+    <link rel="canonical" href="https://star-groups.in/company.html">
+
+    <!-- ===== COLLECTION PAGE SCHEMA ===== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Interior Design Projects in Kerala",
+            "description": "Explore Star Group Interiors' luxury interior design and lighting projects across Kerala, featuring jewellery showrooms, wedding venues, commercial spaces, offices and custom chandelier installations.",
+            "url": "https://star-groups.in/company.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "Star Group Interiors",
+                "url": "https://star-groups.in/"
+            },
+            "about": {
+                "@type": "LocalBusiness",
+                "name": "Star Group Interiors",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Shop No 1, Belavatta Road, Kaveri Nagar, Bannimantapa",
+                    "addressLocality": "Mysore",
+                    "addressRegion": "Karnataka",
+                    "postalCode": "570015",
+                    "addressCountry": "IN"
+                },
+                "telephone": "+919538588293"
+            }
+        }
+    </script>
+
+    <!-- ===== BREADCRUMB SCHEMA ===== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://star-groups.in/"
+            }, {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Projects",
+                "item": "https://star-groups.in/company.html"
+            }]
+        }
+    </script>
+
+    <!-- ===== ITEM LIST SCHEMA FOR PROJECTS ===== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Interior Design Projects in Kerala",
+            "description": "Featured interior design and lighting projects by Star Group Interiors across Kerala.",
+            "numberOfItems": 14,
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Radhas - Punalur, Kerala",
+                "url": "https://star-groups.in/company.html#radhas"
+            }, {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "RK Wedding Mall - Kollam, Kerala",
+                "url": "https://star-groups.in/company.html#rk-wedding"
+            }, {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Yes Bharat - Karunagapally, Kerala",
+                "url": "https://star-groups.in/company.html#yes-bharat-karunagapally"
+            }, {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Wed Land - Kollam, Kerala",
+                "url": "https://star-groups.in/company.html#wed-land"
+            }, {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Yes Bharat - Sultan Bathery, Kerala",
+                "url": "https://star-groups.in/company.html#yes-bharat-sultan"
+            }, {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "Yes Bharat - Kalpetta, Kerala",
+                "url": "https://star-groups.in/company.html#yes-bharat-kalpetta"
+            }, {
+                "@type": "ListItem",
+                "position": 7,
+                "name": "Mall - Hyderabad, Telangana",
+                "url": "https://star-groups.in/company.html#mall-hyderabad"
+            }, {
+                "@type": "ListItem",
+                "position": 8,
+                "name": "Lulu Gold - Kuttyadi, Kerala",
+                "url": "https://star-groups.in/company.html#lulu-gold"
+            }, {
+                "@type": "ListItem",
+                "position": 9,
+                "name": "Raj Kumari Gold - Pathanamthitta, Kerala",
+                "url": "https://star-groups.in/company.html#raj-kumari"
+            }, {
+                "@type": "ListItem",
+                "position": 10,
+                "name": "Raj Kumari Gold & Diamond - Pothencode, Kerala",
+                "url": "https://star-groups.in/company.html#raj-kumari-pothencode"
+            }, {
+                "@type": "ListItem",
+                "position": 11,
+                "name": "Bridal Craft - Tirur, Kerala",
+                "url": "https://star-groups.in/company.html#bridal-craft"
+            }, {
+                "@type": "ListItem",
+                "position": 12,
+                "name": "Adoro - Manjeri, Kerala",
+                "url": "https://star-groups.in/company.html#adoro"
+            }, {
+                "@type": "ListItem",
+                "position": 13,
+                "name": "R & Co Corporate Office - Malappuram, Kerala",
+                "url": "https://star-groups.in/company.html#r-co"
+            }, {
+                "@type": "ListItem",
+                "position": 14,
+                "name": "Wed Land Convention Centre - Attingal, Kerala",
+                "url": "https://star-groups.in/company.html#wed-land-convention"
+            }]
+        }
+    </script>
+
+    <!-- CSS Vendors (SAME AS INDEX.HTML) -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="images/fevicon.png" type="image/gif">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+    <style>
+        /* ===== METALLIC GOLD / PURE BLACK THEME (SAME AS INDEX.HTML) ===== */
+        :root {
+            --gold-light: #F7D96B;
+            --gold-main: #D4A017;
+            --gold-deep: #8C5A0A;
+            --gold-gradient: linear-gradient(135deg, #F7D96B 0%, #D4A017 45%, #B27C0A 70%, #8C5A0A 100%);
+            --black-pure: #000000;
+            --black-rich: #0a0a0a;
+        }
+
+        * {
+            transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--black-pure);
+            color: #dddddd;
+            font-family: 'Montserrat', sans-serif;
+            border: 15px solid var(--black-rich);
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #ffffff;
+            letter-spacing: 0.5px;
+        }
+
+        .gold-text {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 800;
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section-title span {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .section-sub {
+            text-align: center;
+            color: #ccc;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            font-size: 18px;
+        }
+
+        /* Header Nav (SAME AS INDEX.HTML) */
+        .header_section {
+            background: #000000;
+            border-bottom: 1px solid rgba(212, 160, 23, 0.4);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        .bg-light {
+            background-color: #000000 !important;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #f5f5f5;
+            font-weight: 500;
+            letter-spacing: 0.3px;
             position: relative;
-            z-index: 99999;
-            background: #000;
-            padding: 15px;
-         }
+        }
 
-         .navbar-nav {
-            position: relative;
-            z-index: 99999;
-         }
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-nav .nav-link.active {
+            color: var(--gold-light);
+            text-shadow: 0 0 5px rgba(247, 217, 107, 0.6);
+        }
 
-         .navbar-nav .nav-item {
-            position: relative;
-            z-index: 99999;
-         }
+        .navbar-light .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: var(--gold-gradient);
+            transition: 0.3s;
+        }
 
-         .navbar-nav .nav-link {
-            display: block;
-            padding: 12px 15px;
-            position: relative;
-            z-index: 99999;
-            pointer-events: auto;
-         }
-
-         .hero-projects,
-         .layout_padding,
-         .cta-section {
-            position: relative;
-            z-index: 1;
-         }
-      }
-
-      @media (max-width: 768px) {
-         body {
-            border-width: 8px;
-         }
-
-         .hero-projects h1 {
-            font-size: 36px;
-         }
-
-         .section-title {
-            font-size: 32px;
-         }
-
-         .footer_social_icon ul {
-            justify-content: center;
-            margin-top: 20px;
-         }
-
-         .project-img {
-            height: 300px;
-         }
-      }
-
-      @media (max-width: 576px) {
-         .hero-projects {
-            padding: 80px 0;
-         }
-
-         .hero-projects h1 {
-            font-size: 28px;
-         }
-
-         .project-img {
-            height: 220px;
-         }
-
-         .project-title {
-            font-size: 22px;
-         }
-
-         .video-showcase-wrapper {
-            flex-direction: column;
-            align-items: center;
-         }
-
-         .video-portrait-card {
-            max-width: 100%;
+        .navbar-light .navbar-nav .nav-link:hover::after,
+        .navbar-light .navbar-nav .nav-link.active::after {
             width: 100%;
-         }
+        }
 
-         .masonry-grid {
-            grid-template-columns: 1fr;
-         }
+        .navbar-brand img {
+            filter: drop-shadow(0 0 6px #D4A01755);
+            max-height: 60px;
+            width: auto;
+        }
 
-         .masonry-item img {
-            height: 220px;
-         }
-      }
-   </style>
+        .navbar-toggler {
+            background-color: var(--gold-main);
+            border: none;
+        }
+
+        /* Footer Styles (SAME AS INDEX.HTML) */
+        .footer_section {
+            background: #020202;
+            border-top: 2px solid var(--gold-main);
+            padding: 40px 0;
+        }
+
+        .footer_taital {
+            color: var(--gold-light);
+        }
+
+        .footer_text {
+            color: #bbb;
+        }
+
+        .footer_menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer_menu ul li a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer_menu ul li a:hover {
+            color: var(--gold-main);
+        }
+
+        .location_text ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .location_text li a {
+            color: #ccc;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .location_text li a:hover {
+            color: var(--gold-main);
+        }
+
+        .footer_social_icon ul {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .footer_social_icon li a {
+            background: #1a1a1a;
+            color: var(--gold-main);
+            border: 1px solid var(--gold-main);
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+
+        .footer_social_icon li a:hover {
+            background: var(--gold-main);
+            color: #000;
+        }
+
+        .copyright_section {
+            background: #000;
+            border-top: 1px solid rgba(212, 160, 23, 0.3);
+            padding: 15px 0;
+        }
+
+        .copyright_text {
+            color: #aaa;
+            text-align: center;
+            margin: 0;
+        }
+
+        .copyright_text a {
+            color: var(--gold-main);
+            text-decoration: none;
+        }
+
+        /* Hero Banner */
+        .hero-projects {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.7) 100%), url('images/hero1.png');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .hero-projects h1 {
+            font-size: 56px;
+            font-weight: 800;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero-projects p {
+            font-size: 20px;
+            margin: 20px 0;
+            color: #eee;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gold-btn {
+            background: var(--gold-gradient);
+            color: #000;
+            font-weight: 700;
+            border-radius: 40px;
+            padding: 12px 30px;
+            display: inline-block;
+            text-decoration: none;
+            margin: 0 10px;
+            border: none;
+        }
+
+        .gold-btn-outline {
+            background: transparent;
+            border: 2px solid var(--gold-main);
+            color: var(--gold-light);
+        }
+
+        .gold-btn:hover,
+        .gold-btn-outline:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(212, 160, 23, 0.5);
+            background: var(--gold-gradient);
+            color: #000;
+        }
+
+        /* Project Cards */
+        .project-card {
+            background: #0a0a0a;
+            border-radius: 24px;
+            overflow: hidden;
+            margin-bottom: 40px;
+            border: 1px solid rgba(212, 160, 23, 0.3);
+            transition: 0.4s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold-main);
+            box-shadow: 0 20px 35px rgba(212, 160, 23, 0.15);
+        }
+
+        .project-img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-bottom: 2px solid rgba(212, 160, 23, 0.3);
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
+        .project-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--gold-light);
+            margin-bottom: 10px;
+        }
+
+        .project-location {
+            color: #aaa;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .project-location i {
+            color: var(--gold-main);
+            margin-right: 5px;
+        }
+
+        .project-category {
+            display: inline-block;
+            background: rgba(212, 160, 23, 0.2);
+            color: var(--gold-light);
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        .project-desc {
+            color: #ccc;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .service-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .service-tag {
+            background: #1a1a1a;
+            color: #ddd;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            border-left: 2px solid var(--gold-main);
+        }
+
+        .project-btn {
+            display: inline-block;
+            background: transparent;
+            border: 1px solid var(--gold-main);
+            color: var(--gold-light);
+            padding: 8px 25px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .project-btn:hover {
+            background: var(--gold-main);
+            color: #000;
+        }
+
+        /* Video Showcase */
+        .video-showcase-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .video-portrait-card {
+            flex: 1;
+            min-width: 260px;
+            max-width: 320px;
+            background: #0a0a0a;
+            border-radius: 28px;
+            overflow: hidden;
+            border: 2px solid rgba(212, 160, 23, 0.5);
+            transition: 0.3s;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-portrait-card:hover {
+            border-color: var(--gold-main);
+            transform: translateY(-6px);
+            box-shadow: 0 25px 40px rgba(212, 160, 23, 0.2);
+        }
+
+        .video-portrait-card video {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 9 / 16;
+            object-fit: cover;
+            display: block;
+            background: #000;
+        }
+
+        .video-caption {
+            padding: 15px;
+            text-align: center;
+            background: #0a0a0a;
+        }
+
+        .video-caption h3 {
+            color: var(--gold-light);
+            margin: 0 0 5px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .video-caption p {
+            color: #aaa;
+            font-size: 12px;
+            margin: 0;
+        }
+
+        /* Masonry Gallery */
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .masonry-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .masonry-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border: 1px solid rgba(212, 160, 23, 0.3);
+            border-radius: 20px;
+            transition: 0.4s;
+        }
+
+        .masonry-item:hover img {
+            transform: scale(1.03);
+            border-color: var(--gold-main);
+        }
+
+        /* Stats Section */
+        .stat-card {
+            background: #0a0a0a;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid rgba(212, 160, 23, 0.4);
+            margin-bottom: 20px;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 800;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .stat-label {
+            color: #ccc;
+            margin-top: 10px;
+        }
+
+        /* Location Badges */
+        .location-badge {
+            background: #0a0a0a;
+            border: 1px solid var(--gold-main);
+            border-radius: 40px;
+            padding: 10px 25px;
+            display: inline-block;
+            margin: 8px;
+            color: #ddd;
+            transition: 0.3s;
+        }
+
+        .location-badge:hover {
+            background: var(--gold-main);
+            color: #000;
+        }
+
+        /* Testimonial Cards */
+        .testimonial-card {
+            background: #0a0a0a;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(212, 160, 23, 0.3);
+        }
+
+        .stars {
+            color: var(--gold-main);
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        /* CTA */
+        .cta-section {
+            background: linear-gradient(135deg, #0a0a0a, #000);
+            text-align: center;
+            padding: 70px 0;
+            border-top: 1px solid var(--gold-main);
+            border-bottom: 1px solid var(--gold-main);
+        }
+
+        .layout_padding {
+            padding: 80px 0;
+        }
+
+        /* MOBILE NAVIGATION CLICK FIX (SAME AS INDEX.HTML) */
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                position: absolute !important;
+                top: 100% !important;
+                left: 0 !important;
+                right: 0 !important;
+                background: #000 !important;
+                padding: 15px !important;
+                border-bottom: 2px solid var(--gold-main) !important;
+                z-index: 99999 !important;
+            }
+
+            .navbar-nav {
+                position: relative !important;
+                z-index: 99999 !important;
+            }
+
+            .navbar-nav .nav-item {
+                position: relative !important;
+                z-index: 99999 !important;
+            }
+
+            .navbar-nav .nav-link {
+                display: block !important;
+                padding: 10px 15px !important;
+                position: relative !important;
+                z-index: 99999 !important;
+                pointer-events: auto !important;
+                color: #f5f5f5 !important;
+            }
+
+            .navbar-nav .nav-link:hover,
+            .navbar-nav .nav-link.active {
+                background: rgba(212, 160, 23, 0.12) !important;
+                color: var(--gold-light) !important;
+            }
+
+            .navbar-nav .nav-link::after {
+                display: none !important;
+            }
+
+            .hero-projects,
+            .layout_padding,
+            .cta-section {
+                position: relative !important;
+                z-index: 1 !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                border-width: 8px;
+            }
+
+            .hero-projects h1 {
+                font-size: 36px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .footer_social_icon ul {
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .project-img {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-projects {
+                padding: 80px 0;
+            }
+
+            .hero-projects h1 {
+                font-size: 28px;
+            }
+
+            .project-img {
+                height: 220px;
+            }
+
+            .project-title {
+                font-size: 22px;
+            }
+
+            .video-showcase-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .video-portrait-card {
+                max-width: 100%;
+                width: 100%;
+            }
+
+            .masonry-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .masonry-item img {
+                height: 220px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-   <!-- Header (EXACT SAME AS INDEX.HTML) -->
-   <div class="header_section">
-      <div class="container-fluid">
-         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="Star Group Interiors Logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                  <li class="nav-item"><a class="nav-link" href="design.html">Services</a></li>
-                  <li class="nav-item active"><a class="nav-link" href="company.html">Projects</a></li>
-                  <li class="nav-item"><a class="nav-link" href="expo.html">Expo 2026</a></li>
-                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-               </ul>
-            </div>
-         </nav>
-      </div>
-   </div>
+    <!-- Header (EXACT SAME AS INDEX.HTML) -->
+    <div class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.jpg" alt="Star Group Interiors Logo - Luxury Interior Designers in Mysore">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="design.html">Services</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="company.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="expo.html">Expo 2026</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
 
-   <!-- Hero Banner -->
-   <div class="hero-projects">
-      <div class="container">
-         <h1>Our <span class="gold-text">Interior Design Projects</span> in Kerala</h1>
-         <p>Explore our completed luxury interior, lighting and custom chandelier projects across Kerala and selected
-            locations in India.</p>
-         <a href="#featured" class="gold-btn">View Projects</a>
-         <a href="contact.html" class="gold-btn gold-btn-outline">Start Your Project</a>
-      </div>
-   </div>
+    <!-- Hero Banner -->
+    <div class="hero-projects">
+        <div class="container">
+            <h1>Our <span class="gold-text">Interior Design Projects</span> in Kerala</h1>
+            <p>Explore our completed luxury interior, lighting and custom chandelier projects across <strong>Kerala</strong> and selected locations in India, from our headquarters in <strong>Mysore, Karnataka</strong>.</p>
+            <a href="#featured" class="gold-btn">View Projects</a>
+            <a href="contact.html" class="gold-btn gold-btn-outline">Start Your Project</a>
+        </div>
+    </div>
 
-   <!-- Featured Kerala Projects Section -->
-   <div id="featured" class="layout_padding" style="background: #000;">
-      <div class="container">
-         <h2 class="section-title">Featured <span>Interior Design Projects in Kerala</span></h2>
-         <p class="section-sub">Explore completed residential, commercial, hospitality, jewellery showroom and wedding
-            venue projects delivered with precision and attention to detail.</p>
+    <!-- Featured Kerala Projects Section -->
+    <div id="featured" class="layout_padding" style="background: #000;">
+        <div class="container">
+            <h2 class="section-title">Featured <span>Interior Design Projects in Kerala</span></h2>
+            <p class="section-sub">Explore completed residential, commercial, hospitality, jewellery showroom and wedding venue projects delivered with precision and attention to detail by Star Group Interiors.</p>
 
-         <!-- RADHAS PUNALUR -->
-         <div class="project-card">
-            <img src="images/radha-kerala.jpeg"
-               alt="Radhas Punalur hospitality interior and chandelier project in Kerala" class="project-img">
-            <div class="project-content">
-               <div class="project-category">🏨 Hospitality</div>
-               <h3 class="project-title">Radhas, Punalur, Kerala</h3>
-               <div class="project-location"><i class="fa fa-map-marker"></i> Punalur, Kollam District, Kerala</div>
-               <p class="project-desc">A premium hospitality interior and lighting project featuring elegant
-                  chandeliers, custom decorative lighting, and luxury interior finishes designed to enhance the guest
-                  experience.</p>
-               <div class="service-tags"><span class="service-tag">Interior Design</span><span
-                     class="service-tag">Custom Chandeliers</span><span class="service-tag">Decorative Lighting</span>
-               </div>
-               <a href="contact.html" class="project-btn">View Gallery →</a>
+            <!-- RADHAS PUNALUR -->
+            <div class="project-card" id="radhas">
+                <img src="images/radha-kerala.jpeg"
+                    alt="Radhas Punalur hospitality interior and chandelier project in Kerala by Star Group Interiors" class="project-img">
+                <div class="project-content">
+                    <div class="project-category">🏨 Hospitality</div>
+                    <h3 class="project-title">Radhas, Punalur, Kerala</h3>
+                    <div class="project-location"><i class="fa fa-map-marker"></i> Punalur, Kollam District, Kerala</div>
+                    <p class="project-desc">A premium hospitality interior and lighting project featuring elegant chandeliers, custom decorative lighting, and luxury interior finishes designed to enhance the guest experience in Kerala.</p>
+                    <div class="service-tags"><span class="service-tag">Interior Design</span><span class="service-tag">Custom Chandeliers</span><span class="service-tag">Decorative Lighting</span></div>
+                    <a href="contact.html" class="project-btn">View Gallery →</a>
+                </div>
             </div>
-         </div>
 
-         <!-- RK Wedding Mall Kollam Kerala -->
-         <div class="project-card">
-            <img src="images/RK-wedding-k.jpeg"
-               alt="RK Wedding Mall luxury interior and chandelier project in Kollam, Kerala" class="project-img">
-            <div class="project-content">
-               <div class="project-category">💒 Wedding Mall / Venue</div>
-               <h3 class="project-title">RK Wedding Mall, Kollam, Kerala</h3>
-               <div class="project-location"><i class="fa fa-map-marker"></i> Kollam, Kerala</div>
-               <p class="project-desc">A landmark wedding destination featuring grand chandeliers, opulent interiors,
-                  and architectural lighting that transforms celebrations into unforgettable experiences.</p>
-               <div class="service-tags"><span class="service-tag">Grand Chandeliers</span><span
-                     class="service-tag">Wedding Venue Design</span><span class="service-tag">Architectural
-                     Lighting</span></div>
-               <a href="contact.html" class="project-btn">View Gallery →</a>
+            <!-- RK Wedding Mall Kollam Kerala -->
+            <div class="project-card" id="rk-wedding">
+                <img src="images/RK-wedding-k.jpeg"
+                    alt="RK Wedding Mall luxury interior and chandelier project in Kollam, Kerala by Star Group Interiors" class="project-img">
+                <div class="project-content">
+                    <div class="project-category">💒 Wedding Mall / Venue</div>
+                    <h3 class="project-title">RK Wedding Mall, Kollam, Kerala</h3>
+                    <div class="project-location"><i class="fa fa-map-marker"></i> Kollam, Kerala</div>
+                    <p class="project-desc">A landmark wedding destination in Kerala featuring grand chandeliers, opulent interiors, and architectural lighting that transforms celebrations into unforgettable experiences.</p>
+                    <div class="service-tags"><span class="service-tag">Grand Chandeliers</span><span class="service-tag">Wedding Venue Design</span><span class="service-tag">Architectural Lighting</span></div>
+                    <a href="contact.html" class="project-btn">View Gallery →</a>
+                </div>
             </div>
-         </div>
 
-         <!-- Yes Bharat karunagapally Kerala -->
-         <div class="project-card">
-            <img src="images/yes-bharat-k.jpeg"
-               alt="Yes Bharat commercial interior and lighting project in Karunagapally, Kerala" class="project-img">
-            <div class="project-content">
-               <div class="project-category">🏪 Retail / Commercial</div>
-               <h3 class="project-title">Yes Bharat, Karunagapally, Kerala</h3>
-               <div class="project-location"><i class="fa fa-map-marker"></i> Karunagapally, Kollam, Kerala</div>
-               <p class="project-desc">Premium commercial interior project with modern lighting solutions and elegant
-                  finishes, enhancing customer experience and brand presence.</p>
-               <div class="service-tags"><span class="service-tag">Commercial Interiors</span><span
-                     class="service-tag">Modern Lighting</span><span class="service-tag">Retail Design</span></div>
-               <a href="contact.html" class="project-btn">View Gallery →</a>
+            <!-- Yes Bharat karunagapally Kerala -->
+            <div class="project-card" id="yes-bharat-karunagapally">
+                <img src="images/yes-bharat-k.jpeg"
+                    alt="Yes Bharat commercial interior and lighting project in Karunagapally, Kerala by Star Group Interiors" class="project-img">
+                <div class="project-content">
+                    <div class="project-category">🏪 Retail / Commercial</div>
+                    <h3 class="project-title">Yes Bharat, Karunagapally, Kerala</h3>
+                    <div class="project-location"><i class="fa fa-map-marker"></i> Karunagapally, Kollam, Kerala</div>
+                    <p class="project-desc">Premium commercial interior project in Kerala with modern lighting solutions and elegant finishes, enhancing customer experience and brand presence.</p>
+                    <div class="service-tags"><span class="service-tag">Commercial Interiors</span><span class="service-tag">Modern Lighting</span><span class="service-tag">Retail Design</span></div>
+                    <a href="contact.html" class="project-btn">View Gallery →</a>
+                </div>
             </div>
-         </div>
 
-         <!-- Wed land Kollam Kerala -->
-         <div class="project-card">
-            <img src="images/wed-land.jpeg"
-               alt="Wed Land wedding venue interior and chandelier project in Kollam, Kerala" class="project-img">
-            <div class="project-content">
-               <div class="project-category">🎉 Wedding Venue</div>
-               <h3 class="project-title">Wed Land, Kollam, Kerala</h3>
-               <div class="project-location"><i class="fa fa-map-marker"></i> Kollam, Kerala</div>
-               <p class="project-desc">Spectacular wedding venue featuring majestic custom chandeliers, decorative
-                  ceilings, and luxury interior design that sets a new standard for celebrations.</p>
-               <div class="service-tags"><span class="service-tag">Custom Chandeliers</span><span
-                     class="service-tag">Decorative Ceiling</span><span class="service-tag">Event Space</span></div>
-               <a href="contact.html" class="project-btn">View Gallery →</a>
+            <!-- Wed land Kollam Kerala -->
+            <div class="project-card" id="wed-land">
+                <img src="images/wed-land.jpeg"
+                    alt="Wed Land wedding venue interior and chandelier project in Kollam, Kerala by Star Group Interiors" class="project-img">
+                <div class="project-content">
+                    <div class="project-category">🎉 Wedding Venue</div>
+                    <h3 class="project-title">Wed Land, Kollam, Kerala</h3>
+                    <div class="project-location"><i class="fa fa-map-marker"></i> Kollam, Kerala</div>
+                    <p class="project-desc">Spectacular wedding venue in Kerala featuring majestic custom chandeliers, decorative ceilings, and luxury interior design that sets a new standard for celebrations.</p>
+                    <div class="service-tags"><span class="service-tag">Custom Chandeliers</span><span class="service-tag">Decorative Ceiling</span><span class="service-tag">Event Space</span></div>
+                    <a href="contact.html" class="project-btn">View Gallery →</a>
+                </div>
             </div>
-         </div>
 
-         <!-- Yes Bharat Sultan Bathery -->
-         <div class="project-card">
-            <img src="images/yes-bharat-sultan-b.jpeg"
-               alt="Yes Bharat retail interior and lighting project in Sultan Bathery, Kerala" class="project-img">
-            <div class="project-content">
-               <div class="project-category">🏪 Commercial / Retail</div>
-               <h3 class="project-title">Yes Bharat, Sultan Bathery, Kerala</h3>
-               <div class="project-location"><i class="fa fa-map-marker"></i> Sultan Bathery, Wayanad, Kerala</div>
-               <p class="project-desc">State-of-the-art commercial interior project with contemporary lighting solutions
-                  and premium finishes, delivering a superior retail experience.</p>
-               <div class="service-tags"><span class="service-tag">Retail Lighting</span><span
-                     class="service-tag">Premium Finishes</span><span class="service-tag">Interior Design</span></div>
-               <a href="contact.html" class="project-btn">View Gallery →</a>
+            <!-- Yes Bharat Sultan Bathery -->
+            <div class="project-card" id="yes-bharat-sultan">
+                <img src="images/yes-bharat-sultan-b.jpeg"
+                    alt="Yes Bharat retail interior and lighting project in Sultan Bathery, Kerala by Star Group Interiors" class="project-img">
+                <div class="project-content">
+                    <div class="project-category">🏪 Commercial / Retail</div>
+                    <h3 class="project-title">Yes Bharat, Sultan Bathery, Kerala</h3>
+                    <div class="project-location"><i class="fa fa-map-marker"></i> Sultan Bathery, Wayanad, Kerala</div>
+                    <p class="project-desc">State-of-the-art commercial interior project in Wayanad with contemporary lighting solutions and premium finishes, delivering a superior retail experience.</p>
+                    <div class="service-tags"><span class="service-tag">Retail Lighting</span><span class="service-tag">Premium Finishes</span><span class="service-tag">Interior Design</span></div>
+                    <a href="contact.html" class="project-btn">View Gallery →</a>
+                </div>
             </div>
-         </div>
 
-         <!-- Yes Bharat kalpetta Wayanad Kerala -->
-         <div class="project-card">
-            <img src="images/yes-bharat-k.jpeg"
-               alt="Yes Bharat commercial interior design project in Kalpetta, Wayanad, Kerala" class="project-img">
-            <div class="project-content">
-               <div class="project-category">🏪 Retail Destination</div>
-               <h3 class="project-title">Yes Bharat, Kalpetta, Wayanad, Kerala</h3>
-               <div class="project-location"><i class="fa fa-map-marker"></i> Kalpetta, Wayanad, Kerala</div>
-               <p class="project-desc">Exquisite commercial space with custom lighting, elegant interiors, and
-                  thoughtful design to elevate brand identity and customer engagement.</p>
-               <div class="service-tags"><span class="service-tag">Custom Lighting</span><span
-                     class="service-tag">Commercial Design</span><span class="service-tag">Elegant Interiors</span>
-               </div>
-               <a href="contact.html" class="project-btn">View Gallery →</a>
+            <!-- Yes Bharat kalpetta Wayanad Kerala -->
+            <div class="project-card" id="yes-bharat-kalpetta">
+                <img src="images/yes-bharat-k.jpeg"
+                    alt="Yes Bharat commercial interior design project in Kalpetta, Wayanad, Kerala by Star Group Interiors" class="project-img">
+                <div class="project-content">
+                    <div class="project-category">🏪 Retail Destination</div>
+                    <h3 class="project-title">Yes Bharat, Kalpetta, Wayanad, Kerala</h3>
+                    <div class="project-location"><i class="fa fa-map-marker"></i> Kalpetta, Wayanad, Kerala</div>
+                    <p class="project-desc">Exquisite commercial space in Wayanad with custom lighting, elegant interiors, and thoughtful design to elevate brand identity and customer engagement.</p>
+                    <div class="service-tags"><span class="service-tag">Custom Lighting</span><span class="service-tag">Commercial Design</span><span class="service-tag">Elegant Interiors</span></div>
+                    <a href="contact.html" class="project-btn">View Gallery →</a>
+                </div>
             </div>
-         </div>
 
-         <!-- Mall Hyderabad -->
-         <div class="project-card">
-            <img src="images/mall-of-hyderabad.jpeg"
-               alt="Shopping mall interior and designer lighting project in Hyderabad, Telangana" class="project-img">
-            <div class="project-content">
-               <div class="project-category">🛍️ Shopping Mall</div>
-               <h3 class="project-title">Mall, Hyderabad, Telangana</h3>
-               <div class="project-location"><i class="fa fa-map-marker"></i> Hyderabad, Telangana</div>
-               <p class="project-desc">Large-scale mall interior project featuring designer lighting, premium flooring,
-                  and sophisticated common areas that enhance shopper experience.</p>
-               <div class="service-tags"><span class="service-tag">Mall Interiors</span><span
-                     class="service-tag">Designer Lighting</span><span class="service-tag">Premium Flooring</span></div>
-               <a href="contact.html" class="project-btn">View Gallery →</a>
+            <!-- Mall Hyderabad -->
+            <div class="project-card" id="mall-hyderabad">
+                <img src="images/mall-of-hyderabad.jpeg"
+                    alt="Shopping mall interior and designer lighting project in Hyderabad, Telangana by Star Group Interiors" class="project-img">
+                <div class="project-content">
+                    <div class="project-category">🛍️ Shopping Mall</div>
+                    <h3 class="project-title">Mall, Hyderabad, Telangana</h3>
+                    <div class="project-location"><i class="fa fa-map-marker"></i> Hyderabad, Telangana</div>
+                    <p class="project-desc">Large-scale mall interior project in Hyderabad featuring designer lighting, premium flooring, and sophisticated common areas that enhance shopper experience.</p>
+                    <div class="service-tags"><span class="service-tag">Mall Interiors</span><span class="service-tag">Designer Lighting</span><span class="service-tag">Premium Flooring</span></div>
+                    <a href="contact.html" class="project-btn">View Gallery →</a>
+                </div>
             </div>
-         </div>
 
-         <!-- Lulu gold Kuttyadi Kerala -->
-         <div class="project-card">
-            <img src="images/luke-gold-k.jpeg"
-               alt="Lulu Gold jewellery showroom interior and lighting project in Kuttyadi, Kerala" class="project-img">
-            <div class="project-content">
-               <div class="project-category">💎 Jewellery Showroom</div>
-               <h3 class="project-title">Lulu Gold, Kuttyadi, Kerala</h3>
-               <div class="project-location"><i class="fa fa-map-marker"></i> Kuttyadi, Kozhikode, Kerala</div>
-               <p class="project-desc">High-end jewellery showroom with bespoke lighting, luxurious display cases, and
-                  elegant interiors designed to showcase precious ornaments in their best light.</p>
-               <div class="service-tags"><span class="service-tag">Bespoke Lighting</span><span
-                     class="service-tag">Jewellery Display</span><span class="service-tag">Luxury Interiors</span></div>
-               <a href="contact.html" class="project-btn">View Gallery →</a>
+            <!-- Lulu gold Kuttyadi Kerala -->
+            <div class="project-card" id="lulu-gold">
+                <img src="images/luke-gold-k.jpeg"
+                    alt="Lulu Gold jewellery showroom interior and lighting project in Kuttyadi, Kerala by Star Group Interiors" class="project-img">
+                <div class="project-content">
+                    <div class="project-category">💎 Jewellery Showroom</div>
+                    <h3 class="project-title">Lulu Gold, Kuttyadi, Kerala</h3>
+                    <div class="project-location"><i class="fa fa-map-marker"></i> Kuttyadi, Kozhikode, Kerala</div>
+                    <p class="project-desc">High-end jewellery showroom in Kozhikode with bespoke lighting, luxurious display cases, and elegant interiors designed to showcase precious ornaments in their best light.</p>
+                    <div class="service-tags"><span class="service-tag">Bespoke Lighting</span><span class="service-tag">Jewellery Display</span><span class="service-tag">Luxury Interiors</span></div>
+                    <a href="contact.html" class="project-btn">View Gallery →</a>
+                </div>
             </div>
-         </div>
 
-         <!-- Raj Kumari gold Pathanamthitta Kerala -->
-         <div class="project-card">
-            <img src="images/raj-kumari.jpeg"
-               alt="Raj Kumari Gold jewellery showroom interior project in Pathanamthitta, Kerala" class="project-img">
-            <div class="project-content">
-               <div class="project-category">💍 Jewellery Showroom</div>
-               <h3 class="project-title">Raj Kumari Gold, Pathanamthitta, Kerala</h3>
-               <div class="project-location"><i class="fa fa-map-marker"></i> Pathanamthitta, Kerala</div>
-               <p class="project-desc">Iconic jewellery showroom project with sophisticated lighting concepts, premium
-                  display solutions, and elegant interiors highlighting luxury collections.</p>
-               <div class="service-tags"><span class="service-tag">Sophisticated Lighting</span><span
-                     class="service-tag">Premium Displays</span><span class="service-tag">Retail Excellence</span></div>
-               <a href="contact.html" class="project-btn">View Gallery →</a>
+            <!-- Raj Kumari gold Pathanamthitta Kerala -->
+            <div class="project-card" id="raj-kumari">
+                <img src="images/raj-kumari.jpeg"
+                    alt="Raj Kumari Gold jewellery showroom interior project in Pathanamthitta, Kerala by Star Group Interiors" class="project-img">
+                <div class="project-content">
+                    <div class="project-category">💍 Jewellery Showroom</div>
+                    <h3 class="project-title">Raj Kumari Gold, Pathanamthitta, Kerala</h3>
+                    <div class="project-location"><i class="fa fa-map-marker"></i> Pathanamthitta, Kerala</div>
+                    <p class="project-desc">Iconic jewellery showroom project in Pathanamthitta with sophisticated lighting concepts, premium display solutions, and elegant interiors highlighting luxury collections.</p>
+                    <div class="service-tags"><span class="service-tag">Sophisticated Lighting</span><span class="service-tag">Premium Displays</span><span class="service-tag">Retail Excellence</span></div>
+                    <a href="contact.html" class="project-btn">View Gallery →</a>
+                </div>
             </div>
-         </div>
 
-         <!-- Raj Kumari gold and diamond Pothencode Kerala -->
-         <div class="project-card">
-            <img src="images/radhas-pulnar-k.jpeg"
-               alt="Raj Kumari Gold and Diamond luxury showroom project in Pothencode, Kerala" class="project-img">
-            <div class="project-content">
-               <div class="project-category">💎 Luxury Jewellery</div>
-               <h3 class="project-title">Raj Kumari Gold & Diamond, Pothencode, Kerala</h3>
-               <div class="project-location"><i class="fa fa-map-marker"></i> Pothencode, Thiruvananthapuram, Kerala
-               </div>
-               <p class="project-desc">Elite jewellery boutique featuring exclusive crystal chandeliers, diamond-like
-                  lighting accents, and opulent interiors for a premium shopping experience.</p>
-               <div class="service-tags"><span class="service-tag">Crystal Chandeliers</span><span
-                     class="service-tag">Elite Interiors</span><span class="service-tag">Accent Lighting</span></div>
-               <a href="contact.html" class="project-btn">View Gallery →</a>
+            <!-- Raj Kumari gold and diamond Pothencode Kerala -->
+            <div class="project-card" id="raj-kumari-pothencode">
+                <img src="images/radhas-pulnar-k.jpeg"
+                    alt="Raj Kumari Gold and Diamond luxury showroom project in Pothencode, Kerala by Star Group Interiors" class="project-img">
+                <div class="project-content">
+                    <div class="project-category">💎 Luxury Jewellery</div>
+                    <h3 class="project-title">Raj Kumari Gold &amp; Diamond, Pothencode, Kerala</h3>
+                    <div class="project-location"><i class="fa fa-map-marker"></i> Pothencode, Thiruvananthapuram, Kerala</div>
+                    <p class="project-desc">Elite jewellery boutique in Thiruvananthapuram featuring exclusive crystal chandeliers, diamond-like lighting accents, and opulent interiors for a premium shopping experience.</p>
+                    <div class="service-tags"><span class="service-tag">Crystal Chandeliers</span><span class="service-tag">Elite Interiors</span><span class="service-tag">Accent Lighting</span></div>
+                    <a href="contact.html" class="project-btn">View Gallery →</a>
+                </div>
             </div>
-         </div>
 
-         <!-- Bridal craft Tirur Kerala -->
-         <div class="project-card">
-            <img src="images/bridal-craft.jpeg"
-               alt="Bridal Craft boutique interior and lighting project in Tirur, Kerala" class="project-img">
-            <div class="project-content">
-               <div class="project-category">👰 Bridal / Wedding Store</div>
-               <h3 class="project-title">Bridal Craft, Tirur, Kerala</h3>
-               <div class="project-location"><i class="fa fa-map-marker"></i> Tirur, Malappuram, Kerala</div>
-               <p class="project-desc">Specialty bridal store with elegant lighting, chic interiors, and a warm ambiance
-                  designed to enhance the wedding shopping experience.</p>
-               <div class="service-tags"><span class="service-tag">Bridal Boutique</span><span class="service-tag">Chic
-                     Interiors</span><span class="service-tag">Warm Lighting</span></div>
-               <a href="contact.html" class="project-btn">View Gallery →</a>
+            <!-- Bridal craft Tirur Kerala -->
+            <div class="project-card" id="bridal-craft">
+                <img src="images/bridal-craft.jpeg"
+                    alt="Bridal Craft boutique interior and lighting project in Tirur, Kerala by Star Group Interiors" class="project-img">
+                <div class="project-content">
+                    <div class="project-category">👰 Bridal / Wedding Store</div>
+                    <h3 class="project-title">Bridal Craft, Tirur, Kerala</h3>
+                    <div class="project-location"><i class="fa fa-map-marker"></i> Tirur, Malappuram, Kerala</div>
+                    <p class="project-desc">Specialty bridal store in Malappuram with elegant lighting, chic interiors, and a warm ambiance designed to enhance the wedding shopping experience.</p>
+                    <div class="service-tags"><span class="service-tag">Bridal Boutique</span><span class="service-tag">Chic Interiors</span><span class="service-tag">Warm Lighting</span></div>
+                    <a href="contact.html" class="project-btn">View Gallery →</a>
+                </div>
             </div>
-         </div>
 
-         <!-- Adoro manjeri Kerala -->
-         <div class="project-card">
-            <img src="images/adoro-k.jpeg"
-               alt="Adoro lifestyle store interior and designer lighting project in Manjeri, Kerala"
-               class="project-img">
-            <div class="project-content">
-               <div class="project-category">👗 Fashion / Lifestyle</div>
-               <h3 class="project-title">Adoro, Manjeri, Kerala</h3>
-               <div class="project-location"><i class="fa fa-map-marker"></i> Manjeri, Malappuram, Kerala</div>
-               <p class="project-desc">Trendsetting lifestyle store with contemporary interiors, designer lighting
-                  fixtures, and modern aesthetics that redefine retail elegance.</p>
-               <div class="service-tags"><span class="service-tag">Contemporary Design</span><span
-                     class="service-tag">Designer Lighting</span><span class="service-tag">Retail Elegance</span></div>
-               <a href="contact.html" class="project-btn">View Gallery →</a>
+            <!-- Adoro manjeri Kerala -->
+            <div class="project-card" id="adoro">
+                <img src="images/adoro-k.jpeg"
+                    alt="Adoro lifestyle store interior and designer lighting project in Manjeri, Kerala by Star Group Interiors" class="project-img">
+                <div class="project-content">
+                    <div class="project-category">👗 Fashion / Lifestyle</div>
+                    <h3 class="project-title">Adoro, Manjeri, Kerala</h3>
+                    <div class="project-location"><i class="fa fa-map-marker"></i> Manjeri, Malappuram, Kerala</div>
+                    <p class="project-desc">Trendsetting lifestyle store in Malappuram with contemporary interiors, designer lighting fixtures, and modern aesthetics that redefine retail elegance.</p>
+                    <div class="service-tags"><span class="service-tag">Contemporary Design</span><span class="service-tag">Designer Lighting</span><span class="service-tag">Retail Elegance</span></div>
+                    <a href="contact.html" class="project-btn">View Gallery →</a>
+                </div>
             </div>
-         </div>
 
-         <!-- R & Co Corporate Office -->
-         <div class="project-card">
-            <img src="images/r-co-office.jpeg"
-               alt="R & Co corporate office interior design project in Malappuram, Kerala" class="project-img">
-            <div class="project-content">
-               <div class="project-category">🏢 Corporate Office</div>
-               <h3 class="project-title">R & Co Corporate Office, Malappuram, Kerala</h3>
-               <div class="project-location"><i class="fa fa-map-marker"></i> Malappuram, Kerala</div>
-               <p class="project-desc">Modern corporate workspace with contemporary interiors, statement lighting, and
-                  efficient space planning boosting productivity and brand identity.</p>
-               <div class="service-tags"><span class="service-tag">Office Interiors</span><span
-                     class="service-tag">Statement Lighting</span><span class="service-tag">Space Planning</span></div>
-               <a href="contact.html" class="project-btn">View Gallery →</a>
+            <!-- R & Co Corporate Office -->
+            <div class="project-card" id="r-co">
+                <img src="images/r-co-office.jpeg"
+                    alt="R & Co corporate office interior design project in Malappuram, Kerala by Star Group Interiors" class="project-img">
+                <div class="project-content">
+                    <div class="project-category">🏢 Corporate Office</div>
+                    <h3 class="project-title">R &amp; Co Corporate Office, Malappuram, Kerala</h3>
+                    <div class="project-location"><i class="fa fa-map-marker"></i> Malappuram, Kerala</div>
+                    <p class="project-desc">Modern corporate workspace in Malappuram with contemporary interiors, statement lighting, and efficient space planning boosting productivity and brand identity.</p>
+                    <div class="service-tags"><span class="service-tag">Office Interiors</span><span class="service-tag">Statement Lighting</span><span class="service-tag">Space Planning</span></div>
+                    <a href="contact.html" class="project-btn">View Gallery →</a>
+                </div>
             </div>
-         </div>
 
-         <!-- Wed Land Convention Centre Attingal -->
-         <div class="project-card">
-            <img src="images/w12.jpg"
-               alt="Wed Land Convention Centre interior and chandelier project in Attingal, Kerala" class="project-img">
-            <div class="project-content">
-               <div class="project-category">🎉 Convention Centre</div>
-               <h3 class="project-title">Wed Land Convention Centre, Attingal, Kerala</h3>
-               <div class="project-location"><i class="fa fa-map-marker"></i> Attingal, Thiruvananthapuram, Kerala</div>
-               <p class="project-desc">Grand event venue project featuring custom chandeliers, decorative ceiling
-                  lighting, and luxurious interiors for unforgettable celebrations.</p>
-               <div class="service-tags"><span class="service-tag">Custom Chandeliers</span><span
-                     class="service-tag">Decorative Ceiling</span><span class="service-tag">Event Space Design</span>
-               </div>
-               <a href="contact.html" class="project-btn">View Gallery →</a>
+            <!-- Wed Land Convention Centre Attingal -->
+            <div class="project-card" id="wed-land-convention">
+                <img src="images/w12.jpg"
+                    alt="Wed Land Convention Centre interior and chandelier project in Attingal, Kerala by Star Group Interiors" class="project-img">
+                <div class="project-content">
+                    <div class="project-category">🎉 Convention Centre</div>
+                    <h3 class="project-title">Wed Land Convention Centre, Attingal, Kerala</h3>
+                    <div class="project-location"><i class="fa fa-map-marker"></i> Attingal, Thiruvananthapuram, Kerala</div>
+                    <p class="project-desc">Grand event venue project in Thiruvananthapuram featuring custom chandeliers, decorative ceiling lighting, and luxurious interiors for unforgettable celebrations.</p>
+                    <div class="service-tags"><span class="service-tag">Custom Chandeliers</span><span class="service-tag">Decorative Ceiling</span><span class="service-tag">Event Space Design</span></div>
+                    <a href="contact.html" class="project-btn">View Gallery →</a>
+                </div>
             </div>
-         </div>
 
-      </div>
-   </div>
+        </div>
+    </div>
 
-   <!-- Project Walkthrough Videos Section -->
-   <div class="layout_padding" style="background: #0a0a0a;">
-      <div class="container">
-         <h2 class="section-title">Project <span>Walkthrough Videos</span></h2>
-         <p class="section-sub">Watch walkthrough videos showcasing our interior design, custom chandelier and lighting
-            projects across Kerala.</p>
-         <div class="video-showcase-wrapper">
-            <div class="video-portrait-card">
-               <video autoplay muted loop playsinline>
-                  <source src="video/radhas.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-               </video>
-               <div class="video-caption">
-                  <h3><i class="fa fa-diamond"></i> Radhas – Punalur, Kerala</h3>
-                  <p>Hospitality interior & custom chandelier showcase</p>
-               </div>
+    <!-- Project Walkthrough Videos Section -->
+    <div class="layout_padding" style="background: #0a0a0a;">
+        <div class="container">
+            <h2 class="section-title">Project <span>Walkthrough Videos</span></h2>
+            <p class="section-sub">Watch walkthrough videos showcasing our interior design, custom chandelier and lighting projects across Kerala.</p>
+            <div class="video-showcase-wrapper">
+                <div class="video-portrait-card">
+                    <video autoplay muted loop playsinline>
+                        <source src="video/radhas.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-caption">
+                        <h3><i class="fa fa-diamond"></i> Radhas – Punalur, Kerala</h3>
+                        <p>Hospitality interior & custom chandelier showcase</p>
+                    </div>
+                </div>
+                <div class="video-portrait-card">
+                    <video autoplay muted loop playsinline>
+                        <source src="video/raj.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-caption">
+                        <h3><i class="fa fa-diamond"></i> Raj Kumari Jewellers – Pathanamthitta</h3>
+                        <p>Luxury showroom lighting & premium interiors in Kerala</p>
+                    </div>
+                </div>
             </div>
-            <div class="video-portrait-card">
-               <video autoplay muted loop playsinline>
-                  <source src="video/raj.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-               </video>
-               <div class="video-caption">
-                  <h3><i class="fa fa-diamond"></i> Raj Kumari Jewellers – Pathanamthitta</h3>
-                  <p>Luxury showroom lighting & premium interiors</p>
-               </div>
+            <div class="text-center mt-4">
+                <p style="color: #aaa;"><i class="fa fa-info-circle"></i> Vertical format showcases our attention to detail</p>
             </div>
-         </div>
-         <div class="text-center mt-4">
-            <p style="color: #aaa;"><i class="fa fa-info-circle"></i> Vertical format showcases our attention to detail
-            </p>
-         </div>
-      </div>
-   </div>
+        </div>
+    </div>
 
-   <!-- Project Photo Gallery -->
-   <div class="layout_padding" style="background: #000;">
-      <div class="container">
-         <h2 class="section-title">Project <span>Photo Gallery</span></h2>
-         <p class="section-sub">View completed interior design, lighting and custom chandelier installations from Star
-            Group Interiors projects across Kerala.</p>
-         <div class="masonry-grid">
-            <div class="masonry-item"><img src="images/w17.jpg"
-                  alt="Custom chandelier installation by Star Group Interiors"></div>
-            <div class="masonry-item"><img src="images/p2.jpg"
-                  alt="Luxury jewellery showroom interior by Star Group Interiors"></div>
-            <div class="masonry-item"><img src="images/p3.jpg" alt="Modern chandelier design by Star Group Interiors">
+    <!-- Project Photo Gallery -->
+    <div class="layout_padding" style="background: #000;">
+        <div class="container">
+            <h2 class="section-title">Project <span>Photo Gallery</span></h2>
+            <p class="section-sub">View completed interior design, lighting and custom chandelier installations from Star Group Interiors projects across Kerala and India.</p>
+            <div class="masonry-grid">
+                <div class="masonry-item"><img src="images/w17.jpg" alt="Custom chandelier installation by Star Group Interiors in Kerala"></div>
+                <div class="masonry-item"><img src="images/p2.jpg" alt="Luxury jewellery showroom interior by Star Group Interiors in Kerala"></div>
+                <div class="masonry-item"><img src="images/p3.jpg" alt="Modern chandelier design by Star Group Interiors"></div>
+                <div class="masonry-item"><img src="images/p4.jpg" alt="Luxury villa interior design by Star Group Interiors"></div>
+                <div class="masonry-item"><img src="images/p5.jpg" alt="Residential interior project by Star Group Interiors"></div>
+                <div class="masonry-item"><img src="images/p6.jpg" alt="Commercial interior design by Star Group Interiors"></div>
+                <div class="masonry-item"><img src="images/w2.jpg" alt="Decorative lighting installation by Star Group Interiors"></div>
+                <div class="masonry-item"><img src="images/w7.jpg" alt="Premium interior finish by Star Group Interiors"></div>
             </div>
-            <div class="masonry-item"><img src="images/p4.jpg"
-                  alt="Luxury villa interior design by Star Group Interiors"></div>
-            <div class="masonry-item"><img src="images/p5.jpg"
-                  alt="Residential interior project by Star Group Interiors"></div>
-            <div class="masonry-item"><img src="images/p6.jpg" alt="Commercial interior design by Star Group Interiors">
-            </div>
-            <div class="masonry-item"><img src="images/w2.jpg"
-                  alt="Decorative lighting installation by Star Group Interiors"></div>
-            <div class="masonry-item"><img src="images/w7.jpg" alt="Premium interior finish by Star Group Interiors">
-            </div>
-         </div>
-      </div>
-   </div>
+        </div>
+    </div>
 
-   <!-- Projects Across Kerala Section -->
-   <div class="layout_padding" style="background: #0a0a0a;">
-      <div class="container">
-         <h2 class="section-title">Projects Across <span>Kerala</span></h2>
-         <p class="section-sub">Star Group Interiors delivers luxury interior design, custom chandeliers, lighting and
-            architectural solutions across Kerala and selected locations in India.</p>
-         <div class="text-center">
-            <span class="location-badge"><i class="fa fa-map-marker"></i> Punalur</span>
-            <span class="location-badge"><i class="fa fa-map-marker"></i> Pathanamthitta</span>
-            <span class="location-badge"><i class="fa fa-map-marker"></i> Malappuram</span>
-            <span class="location-badge"><i class="fa fa-map-marker"></i> Attingal</span>
-            <span class="location-badge"><i class="fa fa-map-marker"></i> Kollam</span>
-            <span class="location-badge"><i class="fa fa-map-marker"></i> Karunagapally</span>
-            <span class="location-badge"><i class="fa fa-map-marker"></i> Sultan Bathery</span>
-            <span class="location-badge"><i class="fa fa-map-marker"></i> Kalpetta</span>
-            <span class="location-badge"><i class="fa fa-map-marker"></i> Kuttyadi</span>
-            <span class="location-badge"><i class="fa fa-map-marker"></i> Pothencode</span>
-            <span class="location-badge"><i class="fa fa-map-marker"></i> Tirur</span>
-            <span class="location-badge"><i class="fa fa-map-marker"></i> Manjeri</span>
-            <span class="location-badge"><i class="fa fa-map-marker"></i> Mysore</span>
-            <span class="location-badge"><i class="fa fa-map-marker"></i> Hyderabad</span>
-         </div>
-      </div>
-   </div>
+    <!-- Projects Across Kerala Section -->
+    <div class="layout_padding" style="background: #0a0a0a;">
+        <div class="container">
+            <h2 class="section-title">Projects Across <span>Kerala</span></h2>
+            <p class="section-sub">Star Group Interiors delivers luxury interior design, custom chandeliers, lighting and architectural solutions across Kerala and selected locations in India, from our headquarters in <strong>Mysore, Karnataka</strong>.</p>
+            <div class="text-center">
+                <span class="location-badge"><i class="fa fa-map-marker"></i> Punalur</span>
+                <span class="location-badge"><i class="fa fa-map-marker"></i> Pathanamthitta</span>
+                <span class="location-badge"><i class="fa fa-map-marker"></i> Malappuram</span>
+                <span class="location-badge"><i class="fa fa-map-marker"></i> Attingal</span>
+                <span class="location-badge"><i class="fa fa-map-marker"></i> Kollam</span>
+                <span class="location-badge"><i class="fa fa-map-marker"></i> Karunagapally</span>
+                <span class="location-badge"><i class="fa fa-map-marker"></i> Sultan Bathery</span>
+                <span class="location-badge"><i class="fa fa-map-marker"></i> Kalpetta</span>
+                <span class="location-badge"><i class="fa fa-map-marker"></i> Kuttyadi</span>
+                <span class="location-badge"><i class="fa fa-map-marker"></i> Pothencode</span>
+                <span class="location-badge"><i class="fa fa-map-marker"></i> Tirur</span>
+                <span class="location-badge"><i class="fa fa-map-marker"></i> Manjeri</span>
+                <span class="location-badge"><i class="fa fa-map-marker"></i> Mysore</span>
+                <span class="location-badge"><i class="fa fa-map-marker"></i> Hyderabad</span>
+            </div>
+        </div>
+    </div>
 
-   <!-- Project Statistics -->
-   <div class="layout_padding" style="background: #000;">
-      <div class="container">
-         <h2 class="section-title">Project <span>Statistics</span></h2>
-         <div class="row">
-            <div class="col-md-3 col-6">
-               <div class="stat-card">
-                  <div class="stat-number">15+</div>
-                  <div class="stat-label">Major Kerala Projects</div>
-               </div>
+    <!-- Project Statistics -->
+    <div class="layout_padding" style="background: #000;">
+        <div class="container">
+            <h2 class="section-title">Project <span>Statistics</span></h2>
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Major Kerala Projects</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Custom Chandeliers</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3 col-6">
-               <div class="stat-card">
-                  <div class="stat-number">150+</div>
-                  <div class="stat-label">Custom Chandeliers</div>
-               </div>
-            </div>
-            <div class="col-md-3 col-6">
-               <div class="stat-card">
-                  <div class="stat-number">500+</div>
-                  <div class="stat-label">Projects Completed</div>
-               </div>
-            </div>
-            <div class="col-md-3 col-6">
-               <div class="stat-card">
-                  <div class="stat-number">10+</div>
-                  <div class="stat-label">Years Experience</div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
+        </div>
+    </div>
 
-   <!-- Client Testimonials -->
-   <div class="layout_padding" style="background: #0a0a0a;">
-      <div class="container">
-         <h2 class="section-title">Client <span>Testimonials</span></h2>
-         <div class="row">
-            <div class="col-md-4">
-               <div class="testimonial-card">
-                  <div class="stars">★★★★★</div>
-                  <p>"Star Group Interiors transformed our wedding venue with stunning chandeliers. The craftsmanship is
-                     unmatched."</p>
-                  <h5 class="gold-text">- Wed Land Management</h5>
-               </div>
+    <!-- Client Testimonials -->
+    <div class="layout_padding" style="background: #0a0a0a;">
+        <div class="container">
+            <h2 class="section-title">Client <span>Testimonials</span></h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Star Group Interiors transformed our wedding venue in Kerala with stunning chandeliers. The craftsmanship is unmatched."</p>
+                        <h5 class="gold-text">- Wed Land Management, Kollam</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The team delivered our jewellery showroom in Kerala on time with exquisite lighting designs. Highly professional."</p>
+                        <h5 class="gold-text">- Raj Kumari Jewellers, Pathanamthitta</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Our corporate office in Malappuram looks world-class thanks to their interior solutions. Excellent service from the Mysore team."</p>
+                        <h5 class="gold-text">- R &amp; Co, Malappuram</h5>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-               <div class="testimonial-card">
-                  <div class="stars">★★★★★</div>
-                  <p>"The team delivered our jewellery showroom on time with exquisite lighting designs. Highly
-                     professional."</p>
-                  <h5 class="gold-text">- Raj Kumari Jewellers</h5>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="testimonial-card">
-                  <div class="stars">★★★★★</div>
-                  <p>"Our corporate office looks world-class thanks to their interior solutions. Excellent service."</p>
-                  <h5 class="gold-text">- R & Co</h5>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
+        </div>
+    </div>
 
-   <!-- Contact CTA -->
-   <div class="cta-section">
-      <div class="container">
-         <h2 style="font-size: 42px; font-weight:800;">Ready to Start Your Project?</h2>
-         <p style="font-size:20px; margin:20px 0;">Let's bring your vision to life with premium interiors and custom
-            lighting.</p>
-         <a href="contact.html" class="gold-btn">Get Free Consultation</a>
-         <a href="tel:+919538588293" class="gold-btn gold-btn-outline">Call Now</a>
-         <a href="https://wa.me/919538588293" class="gold-btn gold-btn-outline">WhatsApp Us</a>
-      </div>
-   </div>
+    <!-- Contact CTA -->
+    <div class="cta-section">
+        <div class="container">
+            <h2 style="font-size: 42px; font-weight:800;">Ready to Start Your Project?</h2>
+            <p style="font-size:20px; margin:20px 0;">Let's bring your vision to life with premium interiors and custom lighting in Kerala or anywhere in India.</p>
+            <a href="contact.html" class="gold-btn">Get Free Consultation</a>
+            <a href="tel:+919538588293" class="gold-btn gold-btn-outline">Call Now</a>
+            <a href="https://wa.me/919538588293" class="gold-btn gold-btn-outline">WhatsApp Us</a>
+        </div>
+    </div>
 
-   <!-- Footer (EXACT SAME AS INDEX.HTML) -->
-   <div class="footer_section layout_padding">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-3 col-md-6">
-               <div class="footer_logo"><img src="images/logo.jpg" alt="Star Group Interiors" style="max-width: 160px;">
-               </div>
-               <p class="footer_text">Over a decade of premium interior and exterior projects across India. Specialized
-                  in custom chandelier manufacturing.</p>
+    <!-- Footer (EXACT SAME AS INDEX.HTML) -->
+    <div class="footer_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer_logo">
+                        <img src="images/logo.jpg" alt="Star Group Interiors Logo - Luxury Interior Designers in Mysore" style="max-width: 160px;">
+                    </div>
+                    <p class="footer_text">Over a decade of premium interior and exterior projects across India. Specialized in custom chandelier manufacturing in Mysore and serving Kerala.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer_taital">LET US HELP YOU</h3>
+                    <p class="footer_text">Contact us for a consultation on your next residential or commercial project in Kerala, Mysore or anywhere in India.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer_taital">INFORMATION</h3>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="design.html">Services</a></li>
+                            <li><a href="company.html">Projects</a></li>
+                            <li><a href="expo.html">Expo 2026</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer_taital">Contact Us</h3>
+                    <div class="location_text">
+                        <ul>
+                            <li>
+                                <a href="https://maps.app.goo.gl/xVfogbLmKNFhMVxr7" target="_blank" rel="noopener">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>Shop No 1, Belavatta Road, Kaveri Nagar, Bannimantapa, Mysore - 570015</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+919538588293">
+                                    <i class="fa fa-phone"></i>
+                                    <span>+91 95385 88293 (Siddiq Sheikh)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+919071098465">
+                                    <i class="fa fa-phone"></i>
+                                    <span>+91 90710 98465 (Office)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:stargroupinteriors46@gmail.com">
+                                    <i class="fa fa-envelope"></i>
+                                    <span>stargroupinteriors46@gmail.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-               <h3 class="footer_taital">LET US HELP YOU</h3>
-               <p class="footer_text">Contact us for a consultation on your next residential or commercial project.</p>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <div class="footer_social_icon">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/star_group_interiors" target="_blank" rel="noopener" aria-label="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/star_group_interiors/" target="_blank" rel="noopener" aria-label="Instagram">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/@StarGroupInteriors" target="_blank" rel="noopener" aria-label="YouTube">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-               <h3 class="footer_taital">INFORMATION</h3>
-               <div class="footer_menu">
-                  <ul>
-                     <li><a href="index.html">Home</a></li>
-                     <li><a href="about.html">About</a></li>
-                     <li><a href="design.html">Services</a></li>
-                     <li><a href="company.html">Projects</a></li>
-                     <li><a href="expo.html">Expo 2026</a></li>
-                     <li><a href="contact.html">Contact Us</a></li>
-                  </ul>
-               </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-               <h3 class="footer_taital">Contact Us</h3>
-               <div class="location_text">
-                  <ul>
-                     <li><a href="https://maps.app.goo.gl/xVfogbLmKNFhMVxr7" target="_blank"><i
-                              class="fa fa-map-marker"></i><span>Shop No 1, Belavatta Road, Kaveri Nagar, Bannimantapa,
-                              Mysore - 570015</span></a></li>
-                     <li><a href="tel:+919538588293"><i class="fa fa-phone"></i><span>+91 95385 88293 (Siddiq
-                              Sheikh)</span></a></li>
-                     <li><a href="tel:+919071098465"><i class="fa fa-phone"></i><span>+91 90710 98465
-                              (Office)</span></a></li>
-                     <li><a href="mailto:stargroupinteriors46@gmail.com"><i
-                              class="fa fa-envelope"></i><span>stargroupinteriors46@gmail.com</span></a></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <div class="row" style="margin-top: 20px;">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-               <div class="footer_social_icon">
-                  <ul>
-                     <li>
-                        <a href="https://www.facebook.com/star_group_interiors" target="_blank">
-                           <i class="fa fa-facebook"></i>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="https://www.instagram.com/star_group_interiors/" target="_blank">
-                           <i class="fa fa-instagram"></i>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="https://www.youtube.com/@StarGroupInteriors" target="_blank">
-                           <i class="fa fa-youtube-play"></i>
-                        </a>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
+        </div>
+    </div>
 
-   <!-- Copyright Section (EXACT SAME AS INDEX.HTML) -->
-   <div class="copyright_section">
-      <div class="container">
-         <p class="copyright_text">© 2025 Star Group Interiors. All Rights Reserved. | Metallic Gold Edition</p>
-      </div>
-   </div>
+    <!-- Copyright Section (EXACT SAME AS INDEX.HTML) -->
+    <div class="copyright_section">
+        <div class="container">
+            <p class="copyright_text">© 2025 Star Group Interiors. All Rights Reserved. | Luxury Interior Designers in Mysore, Serving Kerala &amp; India</p>
+        </div>
+    </div>
 
-   <!-- Scripts (SAME AS INDEX.HTML) -->
-   <script src="js/jquery.min.js"></script>
-   <script src="js/popper.min.js"></script>
-   <script src="js/bootstrap.bundle.min.js"></script>
-   <script src="js/jquery-3.0.0.min.js"></script>
-   <script src="js/plugin.js"></script>
-   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-   <script src="js/custom.js"></script>
+    <!-- Scripts (SAME AS INDEX.HTML) -->
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/popper.min.js" defer></script>
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/jquery-3.0.0.min.js" defer></script>
+    <script src="js/plugin.js" defer></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js" defer></script>
+    <script src="js/custom.js" defer></script>
 </body>
 
 </html>

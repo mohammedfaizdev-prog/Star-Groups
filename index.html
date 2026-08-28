@@ -2,13 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+   <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-   <title>Star Group Interiors | Luxury Interior Designers in Mysore</title>
+
+   <!-- ===== UPDATED TITLE & META DESCRIPTION FOR BETTER SEO ===== -->
+   <title>Star Group Interiors | Luxury Interior Designers in Mysore, Karnataka</title>
    <meta name="description"
-      content="Star Group Interiors is a luxury interior design company in Mysore, Karnataka, specializing in residential and commercial interiors, custom chandeliers, lighting and architectural design.">
+      content="Star Group Interiors: Award-winning luxury interior designers in Mysore. Specializing in residential, commercial interiors &amp; custom chandeliers. Get a free quote today!">
    <meta name="author" content="Star Group Interiors">
    <link rel="canonical" href="https://star-groups.in/">
 
@@ -22,6 +24,40 @@
       rel="stylesheet">
    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+   <!-- ===== LOCAL BUSINESS SCHEMA (JSON-LD) ===== -->
+   <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Star Group Interiors",
+            "image": "https://star-groups.in/images/logo.jpg",
+            "description": "Luxury interior designers in Mysore specializing in residential, commercial interiors, and custom chandeliers.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Shop No 1, Belavatta Road, Kaveri Nagar, Bannimantapa",
+                "addressLocality": "Mysore",
+                "addressRegion": "Karnataka",
+                "postalCode": "570015",
+                "addressCountry": "IN"
+            },
+            "telephone": "+919538588293",
+            "email": "stargroupinteriors46@gmail.com",
+            "openingHours": "Mo-Fr 09:00-18:00",
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "12.312345",
+                "longitude": "76.634567"
+            },
+            "sameAs": [
+                "https://www.facebook.com/star_group_interiors",
+                "https://www.instagram.com/star_group_interiors/",
+                "https://www.youtube.com/@StarGroupInteriors"
+            ],
+            "priceRange": "₹₹₹₹"
+        }
+    </script>
+
    <style>
       /* ===== METALLIC GOLD / PURE BLACK THEME ===== */
       :root {
@@ -56,6 +92,21 @@
       h6 {
          color: #ffffff;
          letter-spacing: 0.5px;
+      }
+
+      h1 {
+         font-size: 42px;
+         font-weight: 800;
+      }
+
+      h2 {
+         font-size: 36px;
+         font-weight: 800;
+      }
+
+      h3 {
+         font-size: 24px;
+         font-weight: 700;
       }
 
       /* navbar styles */
@@ -120,6 +171,13 @@
          background-clip: text;
          color: transparent;
          font-weight: 800;
+      }
+
+      .gold-text {
+         background: var(--gold-gradient);
+         -webkit-background-clip: text;
+         background-clip: text;
+         color: transparent;
       }
 
       .hero_btn {
@@ -193,6 +251,90 @@
 
       .about_video_wrapper:hover {
          border-color: var(--gold-main);
+      }
+
+      /* ===== NEW SERVICES SECTION ===== */
+      .services_section {
+         background: #0a0a0a;
+         padding: 80px 0;
+         border-top: 1px solid rgba(212, 160, 23, 0.2);
+         border-bottom: 1px solid rgba(212, 160, 23, 0.2);
+      }
+
+      .services_taital {
+         font-weight: 800;
+         font-size: 42px;
+         text-align: center;
+         margin-bottom: 20px;
+      }
+
+      .services_taital span {
+         background: var(--gold-gradient);
+         -webkit-background-clip: text;
+         background-clip: text;
+         color: transparent;
+      }
+
+      .services_subtext {
+         text-align: center;
+         max-width: 800px;
+         margin: 0 auto 50px;
+         color: #cccccc;
+         font-size: 18px;
+         line-height: 1.8;
+      }
+
+      .service_card {
+         background: #111111;
+         border: 1px solid rgba(212, 160, 23, 0.2);
+         border-radius: 16px;
+         padding: 30px 25px;
+         height: 100%;
+         transition: all 0.3s ease;
+      }
+
+      .service_card:hover {
+         transform: translateY(-8px);
+         border-color: var(--gold-main);
+         box-shadow: 0 10px 30px rgba(212, 160, 23, 0.15);
+      }
+
+      .service_icon {
+         font-size: 40px;
+         margin-bottom: 15px;
+         display: block;
+      }
+
+      .service_card h3 {
+         color: #ffffff;
+         font-weight: 700;
+         margin-bottom: 12px;
+      }
+
+      .service_card h3 span {
+         background: var(--gold-gradient);
+         -webkit-background-clip: text;
+         background-clip: text;
+         color: transparent;
+      }
+
+      .service_card p {
+         color: #bbbbbb;
+         line-height: 1.7;
+         font-size: 15px;
+      }
+
+      .service_link {
+         color: var(--gold-main);
+         font-weight: 600;
+         text-decoration: none;
+         display: inline-block;
+         margin-top: 10px;
+      }
+
+      .service_link:hover {
+         color: var(--gold-light);
+         letter-spacing: 0.5px;
       }
 
       /* Design Section - Image Slider (FIXED - No overlapping) */
@@ -575,13 +717,22 @@
             border-width: 8px;
          }
 
+         h1 {
+            font-size: 30px;
+         }
+
+         h2 {
+            font-size: 28px;
+         }
+
          .hero_content h1 {
             font-size: 30px;
          }
 
          .about_taital,
          .design_taital,
-         .company_taital {
+         .company_taital,
+         .services_taital {
             font-size: 32px;
          }
 
@@ -609,6 +760,10 @@
          .footer_social_icon ul {
             justify-content: center;
             margin-top: 20px;
+         }
+
+         .service_card {
+            margin-bottom: 20px;
          }
       }
 
@@ -666,6 +821,7 @@
 
          .hero_slider,
          .about_section,
+         .services_section,
          .design_section,
          .company_section,
          .client_section,
@@ -679,10 +835,13 @@
 </head>
 
 <body>
+   <!-- ===== HEADER ===== -->
    <div class="header_section">
       <div class="container-fluid">
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="Star Group Interiors Logo"></a>
+            <a class="navbar-brand" href="index.html">
+               <img src="images/logo.jpg" alt="Star Group Interiors Logo - Luxury Interior Designers in Mysore">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
@@ -701,7 +860,7 @@
       </div>
    </div>
 
-   <!-- Hero Slider -->
+   <!-- ===== HERO SLIDER ===== -->
    <div class="hero_slider">
       <div id="heroSlider" class="carousel slide" data-ride="carousel" data-interval="5000">
          <ol class="carousel-indicators">
@@ -714,8 +873,9 @@
                <div class="hero_slide"
                   style="background-image: url('images/hero1.png'); min-height: 600px; background-size: cover; background-position: center;">
                   <div class="hero_content" style="text-align: center; padding: 100px 20px;">
-                     <h1>Premium Interiors & <span class="gold-text">Golden Lighting</span></h1>
-                     <p>Transform your space with our expert interior design solutions.</p>
+                     <h1>Premium Interiors &amp; <span class="gold-text">Golden Lighting</span></h1>
+                     <p style="color: #fff; font-size: 18px;">Transform your space with our expert interior design
+                        solutions in Mysore.</p>
                      <a href="contact.html" class="hero_btn">Get a Quote →</a>
                   </div>
                </div>
@@ -725,7 +885,8 @@
                   style="background-image: url('images/hero2.png'); min-height: 600px; background-size: cover; background-position: center;">
                   <div class="hero_content" style="text-align: center; padding: 100px 20px;">
                      <h1>Custom <span class="gold-text">Chandelier</span> Manufacturing</h1>
-                     <p>Bespoke lighting fixtures made to order for your unique space.</p>
+                     <p style="color: #fff; font-size: 18px;">Bespoke lighting fixtures made to order for your unique
+                        space.</p>
                      <a href="design.html" class="hero_btn">View Collection →</a>
                   </div>
                </div>
@@ -734,22 +895,24 @@
                <div class="hero_slide"
                   style="background-image: url('images/hero3.png'); min-height: 600px; background-size: cover; background-position: center;">
                   <div class="hero_content" style="text-align: center; padding: 100px 20px;">
-                     <h1>Architectural <span class="gold-text">Facades & Decor</span></h1>
-                     <p>Elevate your building's exterior with gold-accented facades.</p>
+                     <h1>Architectural <span class="gold-text">Facades &amp; Decor</span></h1>
+                     <p style="color: #fff; font-size: 18px;">Elevate your building's exterior with gold-accented
+                        facades.</p>
                      <a href="company.html" class="hero_btn">Explore Projects →</a>
                   </div>
                </div>
             </div>
          </div>
-         <a class="carousel-control-prev" href="#heroSlider" role="button" data-slide="prev"><span
-               class="carousel-control-prev-icon"></span></a>
-         <a class="carousel-control-next" href="#heroSlider" role="button" data-slide="next"><span
-               class="carousel-control-next-icon"></span></a>
+         <a class="carousel-control-prev" href="#heroSlider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+         </a>
+         <a class="carousel-control-next" href="#heroSlider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+         </a>
       </div>
    </div>
 
-
-   <!-- ===== EXPO BANNER (NEW) ===== -->
+   <!-- ===== EXPO BANNER ===== -->
    <div class="expo-banner"
       style="background: linear-gradient(135deg, #0a0a0a 0%, #1a1505 50%, #0a0a0a 100%); padding: 50px 0; border-bottom: 1px solid rgba(212,160,23,0.2); border-top: 1px solid rgba(212,160,23,0.2);">
       <div class="container">
@@ -759,36 +922,47 @@
                   <span
                      style="background: var(--gold-gradient); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 28px; font-weight: 800;">✦</span>
                   <div>
-                     <h3 style="color: #ffffff; font-weight: 700; margin: 0; font-size: 24px;">We Shined at <span
+                     <h3 style="color: #ffffff; font-weight: 700; margin: 0; font-size: 24px;">
+                        We Shined at <span
                            style="background: var(--gold-gradient); -webkit-background-clip: text; background-clip: text; color: transparent;">D
-                           ARC BUILD EXPO 2026</span></h3>
-                     <p style="color: #aaaaaa; margin: 5px 0 0; font-size: 15px;">June 26-28 · Showcasing our premium
-                        interiors & custom chandeliers</p>
+                           ARC BUILD EXPO 2026</span>
+                     </h3>
+                     <p style="color: #aaaaaa; margin: 5px 0 0; font-size: 15px;">
+                        June 26-28 · Showcasing our premium interiors &amp; custom chandeliers in Mysore
+                     </p>
                   </div>
                </div>
             </div>
             <div class="col-md-4 text-md-right" style="margin-top: 15px;">
                <a href="expo.html"
-                  style="display: inline-block; background: var(--gold-gradient); color: #000000; font-weight: 700; padding: 12px 35px; border-radius: 50px; text-decoration: none; transition: all 0.3s ease;">View
-                  Expo →</a>
+                  style="display: inline-block; background: var(--gold-gradient); color: #000000; font-weight: 700; padding: 12px 35px; border-radius: 50px; text-decoration: none; transition: all 0.3s ease;">
+                  View Expo →
+               </a>
             </div>
          </div>
       </div>
    </div>
 
-   <!-- About Section with Video (Smaller Size) -->
+   <!-- ===== ABOUT SECTION ===== -->
    <div class="about_section layout_padding">
       <div class="container">
          <div class="row align-items-center">
             <div class="col-md-6">
-               <div class="about_taital">About <span>Star Group Interiors</span></div>
-               <p class="about_text">Star Group Interiors is a premier, full-service design and execution firm based
-                  proudly in Mysore, Karnataka. With over a decade of rich industry experience, we successfully deliver
-                  premium interior and exterior projects for commercial and residential clients all across India.
-                  Renowned for our meticulous craftsmanship and professional execution, we have earned distinct
-                  recognition for our specialized division in custom chandelier manufacturing. Our expertise bridges the
-                  gap between classic luxury and contemporary design, creating stunning, tailor-made lighting fixtures
-                  ranging from traditional, grand crystal chandeliers to sleek, minimalist modern designs.</p>
+               <h1 class="about_taital">About <span>Star Group Interiors</span></h1>
+               <p class="about_text">
+                  <strong>Star Group Interiors</strong> is a premier, full-service design and execution firm based
+                  proudly in <strong>Mysore, Karnataka</strong>. With over a decade of rich industry experience, we
+                  successfully deliver premium interior and exterior projects for commercial and residential clients all
+                  across India. Renowned for our meticulous craftsmanship and professional execution, we have earned
+                  distinct recognition for our specialized division in <strong>custom chandelier manufacturing</strong>.
+                  Our expertise bridges the gap between classic luxury and contemporary design, creating stunning,
+                  tailor-made lighting fixtures ranging from traditional, grand crystal chandeliers to sleek, minimalist
+                  modern designs.
+               </p>
+               <p class="about_text">
+                  Our interior design projects span across <strong>Mysore, including Vijay Nagar, Jayalakshmipuram, and
+                     the city center</strong>, as well as major cities across Karnataka and India.
+               </p>
             </div>
             <div class="col-md-6">
                <div class="about_video_wrapper">
@@ -802,24 +976,87 @@
       </div>
    </div>
 
-   <!-- Design Section with Image Slider (Fixed - No Overlapping) -->
+   <!-- ===== NEW SERVICES SECTION ===== -->
+   <div class="services_section layout_padding">
+      <div class="container">
+         <h2 class="services_taital">Our Premium <span>Services</span></h2>
+         <p class="services_subtext">
+            We offer a comprehensive range of interior design and architectural services for residential and commercial
+            clients across Mysore and India.
+         </p>
+         <div class="row">
+            <div class="col-md-4">
+               <div class="service_card">
+                  <span class="service_icon">🏠</span>
+                  <h3>Residential <span>Interiors</span></h3>
+                  <p>
+                     From luxury villas to cozy apartments, we design living spaces that reflect your unique style and
+                     personality. Our residential interior design services in Mysore cover everything from concept to
+                     execution with meticulous attention to detail.
+                  </p>
+                  <a href="company.html" class="service_link">View Projects →</a>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="service_card">
+                  <span class="service_icon">🏢</span>
+                  <h3>Commercial <span>Interiors</span></h3>
+                  <p>
+                     Our team creates inspiring and functional workspaces for offices, restaurants, hotels, and retail
+                     stores. We design commercial interiors that boost productivity and brand image across Mysore and
+                     India.
+                  </p>
+                  <a href="company.html" class="service_link">View Projects →</a>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="service_card">
+                  <span class="service_icon">✨</span>
+                  <h3>Custom <span>Chandeliers</span></h3>
+                  <p>
+                     A bespoke lighting piece from our workshop is more than a fixture; it's a work of art. We
+                     manufacture custom chandeliers, from classic crystal to contemporary gold installations, tailored
+                     to your space.
+                  </p>
+                  <a href="design.html" class="service_link">View Collection →</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- ===== DESIGN SECTION (IMAGE SLIDER) ===== -->
    <div class="design_section layout_padding">
       <div class="container">
-         <h1 class="design_taital">Our Interior <span>Design Work</span></h1>
-         <p class="design_text">From luxury residences to commercial spaces, we craft environments that inspire with
-            gold leaf elegance.</p>
+         <h2 class="design_taital">Our Interior <span>Design Work</span></h2>
+         <p class="design_text">
+            From luxury residences to commercial spaces in Mysore, we craft environments that inspire with gold leaf
+            elegance and meticulous craftsmanship.
+         </p>
 
          <div class="slider-container">
             <div class="slider-wrapper" id="sliderWrapper">
-               <div class="slide"><img src="images/w2.jpg" alt="Residential Interior"></div>
-               <div class="slide"><img src="images/p2.jpg" alt="Custom Chandelier"></div>
-               <div class="slide"><img src="images/p3.jpg" alt="Commercial Project"></div>
-               <div class="slide"><img src="images/p4.jpg" alt="Architectural Facade"></div>
-               <div class="slide"><img src="images/p5.jpg" alt="Home Design Project"></div>
-               <div class="slide"><img src="images/w7.jpg" alt="Office Design"></div>
+               <div class="slide">
+                  <img src="images/w2.jpg" alt="Luxury residential interior design by Star Group Interiors in Mysore">
+               </div>
+               <div class="slide">
+                  <img src="images/p2.jpg" alt="Custom gold chandelier manufactured by Star Group Interiors">
+               </div>
+               <div class="slide">
+                  <img src="images/p3.jpg" alt="Commercial interior design project by Star Group Interiors">
+               </div>
+               <div class="slide">
+                  <img src="images/p4.jpg" alt="Architectural facade design with gold accents by Star Group Interiors">
+               </div>
+               <div class="slide">
+                  <img src="images/p5.jpg" alt="Home interior design project in Mysore by Star Group Interiors">
+               </div>
+               <div class="slide">
+                  <img src="images/w7.jpg" alt="Modern office interior design by Star Group Interiors">
+               </div>
             </div>
-            <button class="slider-btn prev" id="prevBtn">❮</button>
-            <button class="slider-btn next" id="nextBtn">❯</button>
+            <button class="slider-btn prev" id="prevBtn" aria-label="Previous slide">❮</button>
+            <button class="slider-btn next" id="nextBtn" aria-label="Next slide">❯</button>
          </div>
          <div class="slider-dots" id="sliderDots"></div>
 
@@ -829,66 +1066,87 @@
       </div>
    </div>
 
-   <!-- Company Section -->
+   <!-- ===== COMPANY / PROJECTS SECTION ===== -->
    <div class="company_section layout_padding">
       <div class="container">
          <div class="row">
             <div class="col-sm-12">
-               <h1 class="company_taital">Architecture <span>And Decor Excellence</span></h1>
-               <p class="company_text" style="color: #ccc; margin-bottom: 40px;">Over a decade of
-                  delivering premium interior and exterior projects across India.</p>
+               <h2 class="company_taital">Architecture <span>And Decor Excellence</span></h2>
+               <p class="company_text" style="color: #ccc; margin-bottom: 40px;">
+                  Over a decade of delivering premium interior and exterior projects across India, with a focus on
+                  Mysore and Karnataka.
+               </p>
             </div>
          </div>
          <div class="company_section_2" style="margin-bottom: 50px;">
             <div class="row align-items-center">
                <div class="col-md-6">
-                  <div class="company_img"><img src="images/p5.jpg" alt="Home Design Project"></div>
+                  <div class="company_img">
+                     <img src="images/p5.jpg" alt="Luxury home interior design in Mysore by Star Group Interiors">
+                  </div>
                </div>
                <div class="col-md-6">
                   <h3 class="home_text">Home <span>Interiors</span></h3>
-                  <p class="lorem_text">We create stunning residential spaces that reflect your personality and
-                     lifestyle. From cozy apartments to luxurious villas, our team handles everything from concept to
-                     execution with meticulous attention to detail.</p>
-                  <div class="seemore_bt"><a href="company.html">See More →</a></div>
+                  <p class="lorem_text">
+                     We create stunning residential spaces that reflect your personality and lifestyle. From cozy
+                     apartments to luxurious villas in Mysore, our team handles everything from concept to execution
+                     with meticulous attention to detail.
+                  </p>
+                  <div class="seemore_bt">
+                     <a href="company.html">See More →</a>
+                  </div>
                </div>
             </div>
          </div>
          <div class="company_section_3" style="margin-bottom: 50px;">
             <div class="row align-items-center">
                <div class="col-md-6">
-                  <h3 class="home_text">Office <span>& Commercial Spaces</span></h3>
-                  <p class="lorem_text">Boost productivity and brand image with professionally designed office
-                     interiors. Our commercial projects include corporate offices, retail stores, hotels, and
-                     restaurants across India.</p>
-                  <div class="seemore_bt"><a href="company.html">See More →</a></div>
+                  <h3 class="home_text">Office <span>&amp; Commercial Spaces</span></h3>
+                  <p class="lorem_text">
+                     Boost productivity and brand image with professionally designed office interiors. Our commercial
+                     projects in Mysore and across India include corporate offices, retail stores, hotels, and
+                     restaurants.
+                  </p>
+                  <div class="seemore_bt">
+                     <a href="company.html">See More →</a>
+                  </div>
                </div>
                <div class="col-md-6">
-                  <div class="company_img"><img src="images/p6.jpg" alt="Office Design"></div>
+                  <div class="company_img">
+                     <img src="images/p6.jpg" alt="Commercial office interior design by Star Group Interiors">
+                  </div>
                </div>
             </div>
          </div>
          <div class="company_section_2">
             <div class="row align-items-center">
                <div class="col-md-6">
-                  <div class="company_img"><img src="images/w1.jpg" alt="Furniture Design"></div>
+                  <div class="company_img">
+                     <img src="images/w1.jpg" alt="Custom furniture and chandelier design by Star Group Interiors">
+                  </div>
                </div>
                <div class="col-md-6">
-                  <h3 class="home_text">Furniture <span>& Lighting</span></h3>
-                  <p class="lorem_text">Our specialized division crafts bespoke furniture and custom chandeliers that
-                     become the centerpiece of any space. From classic crystal to contemporary gold installations.</p>
-                  <div class="seemore_bt"><a href="company.html">See More →</a></div>
+                  <h3 class="home_text">Furniture <span>&amp; Lighting</span></h3>
+                  <p class="lorem_text">
+                     Our specialized division crafts bespoke furniture and custom chandeliers that become the
+                     centerpiece of any space. From classic crystal to contemporary gold installations, we bring your
+                     vision to life.
+                  </p>
+                  <div class="seemore_bt">
+                     <a href="company.html">See More →</a>
+                  </div>
                </div>
             </div>
          </div>
       </div>
    </div>
 
-   <!-- Client Section -->
+   <!-- ===== CLIENT TESTIMONIALS ===== -->
    <div class="client_section layout_padding">
       <div class="container">
          <div class="row">
             <div class="col-md-12">
-               <h3 class="client_taital">Clients <span>Says</span></h3>
+               <h2 class="client_taital">Clients <span>Says</span></h2>
             </div>
          </div>
          <div class="client_section_2">
@@ -899,24 +1157,34 @@
                         <div class="col-md-6">
                            <div class="client_taital_main">
                               <div class="client_left">
-                                 <div class="client_img"><img src="images/client-img1.png" alt="Client"></div>
+                                 <div class="client_img">
+                                    <img src="images/client-img1.png"
+                                       alt="Happy client of Star Group Interiors luxury interior design services">
+                                 </div>
                               </div>
                               <div class="client_right">
                                  <h3 class="moark_text">Ramesh K.</h3>
-                                 <p class="client_text">"Star Group Interiors transformed our home into a masterpiece.
-                                    Their custom chandelier is the highlight of our living room."</p>
+                                 <p class="client_text">
+                                    "Star Group Interiors transformed our home in Mysore into a masterpiece. Their
+                                    custom chandelier is the highlight of our living room."
+                                 </p>
                               </div>
                            </div>
                         </div>
                         <div class="col-md-6">
                            <div class="client_taital_main">
                               <div class="client_left">
-                                 <div class="client_img"><img src="images/client-img2.png" alt="Client"></div>
+                                 <div class="client_img">
+                                    <img src="images/client-img2.png"
+                                       alt="Happy client of Star Group Interiors commercial interior design">
+                                 </div>
                               </div>
                               <div class="client_right">
                                  <h3 class="moark_text">Priya S.</h3>
-                                 <p class="client_text">"Professional team with great design sense. They handled our
-                                    office renovation seamlessly. Highly recommend!"</p>
+                                 <p class="client_text">
+                                    "Professional team with great design sense. They handled our office renovation in
+                                    Mysore seamlessly. Highly recommend!"
+                                 </p>
                               </div>
                            </div>
                         </div>
@@ -927,45 +1195,57 @@
                         <div class="col-md-6">
                            <div class="client_taital_main">
                               <div class="client_left">
-                                 <div class="client_img"><img src="images/client-img1.png" alt="Client"></div>
+                                 <div class="client_img">
+                                    <img src="images/client-img1.png"
+                                       alt="Siddiq Sheikh, founder of Star Group Interiors">
+                                 </div>
                               </div>
                               <div class="client_right">
                                  <h3 class="moark_text">Siddiq Sheikh</h3>
-                                 <p class="client_text">"Proud to lead Star Group Interiors. Our commitment to quality
-                                    and innovation has made us a trusted name."</p>
+                                 <p class="client_text">
+                                    "Proud to lead Star Group Interiors. Our commitment to quality and innovation has
+                                    made us a trusted name in Mysore."
+                                 </p>
                               </div>
                            </div>
                         </div>
                         <div class="col-md-6">
                            <div class="client_taital_main">
                               <div class="client_left">
-                                 <div class="client_img"><img src="images/client-img2.png" alt="Client"></div>
+                                 <div class="client_img">
+                                    <img src="images/client-img2.png"
+                                       alt="Happy client of Star Group Interiors custom chandelier services">
+                                 </div>
                               </div>
                               <div class="client_right">
                                  <h3 class="moark_text">Anjali M.</h3>
-                                 <p class="client_text">"The attention to detail in our custom lighting fixtures is
-                                    unmatched. Star Group delivered beyond expectations."</p>
+                                 <p class="client_text">
+                                    "The attention to detail in our custom lighting fixtures is unmatched. Star Group
+                                    delivered beyond our expectations."
+                                 </p>
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-               <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev"><i
-                     class="fa fa-angle-left"></i></a>
-               <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next"><i
-                     class="fa fa-angle-right"></i></a>
+               <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+                  <i class="fa fa-angle-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+               </a>
             </div>
          </div>
       </div>
    </div>
 
-   <!-- Expert Team -->
+   <!-- ===== EXPERT TEAM ===== -->
    <div class="news_section layout_padding">
       <div class="container">
          <div class="row">
             <div class="col-md-12">
-               <h3 class="news_taital">Our <span>Expert Team</span></h3>
+               <h2 class="news_taital">Our <span>Expert Team</span></h2>
             </div>
          </div>
       </div>
@@ -973,15 +1253,21 @@
          <div class="container">
             <div class="row align-items-center">
                <div class="col-md-6">
-                  <div class="news_img"><img src="images/news-img.png" alt="Star Group Team"></div>
+                  <div class="news_img">
+                     <img src="images/news-img.png" alt="Star Group Interiors expert team in Mysore">
+                  </div>
                </div>
                <div class="col-md-6">
                   <div class="news_taita_main">
                      <h3 class="news_taital_1" style="color: var(--gold-light);">Siddiq Sheikh</h3>
-                     <p class="news_text">Founder & Lead Designer at Star Group Interiors. With over a decade of
-                        experience in premium interior and exterior projects, Siddiq leads a team of skilled designers,
-                        craftsmen, and project managers dedicated to excellence.</p>
-                     <div class="readmore_bt"><a href="about.html">Read More →</a></div>
+                     <p class="news_text" style="color: #cccccc; line-height: 1.8;">
+                        Founder &amp; Lead Designer at Star Group Interiors. With over a decade of experience in premium
+                        interior and exterior projects across Mysore and India, Siddiq leads a team of skilled
+                        designers, craftsmen, and project managers dedicated to excellence.
+                     </p>
+                     <div class="readmore_bt">
+                        <a href="about.html">Read More →</a>
+                     </div>
                   </div>
                </div>
             </div>
@@ -989,30 +1275,36 @@
       </div>
    </div>
 
-   <!-- Contact Section -->
+   <!-- ===== CONTACT SECTION ===== -->
    <div class="contact_section layout_padding">
       <div class="container">
          <div class="row">
             <div class="col-sm-12">
-               <h3 class="contact_taital">Contact <span>Us</span></h3>
+               <h2 class="contact_taital">Contact <span>Us</span></h2>
             </div>
          </div>
          <div class="contact_section_2">
             <div class="row">
                <div class="col-md-6">
-                  <div class="mail_section_1"><input type="text" class="mail_text" placeholder="Name"><input
-                        type="email" class="mail_text" placeholder="Email"><input type="tel" class="mail_text"
-                        placeholder="Phone Number"><textarea class="massage-bt" placeholder="Message"
-                        rows="5"></textarea>
-                     <div class="send_bt"><a href="#">SEND INQUIRY</a></div>
+                  <div class="mail_section_1">
+                     <input type="text" class="mail_text" placeholder="Name" aria-label="Your Name">
+                     <input type="email" class="mail_text" placeholder="Email" aria-label="Your Email">
+                     <input type="tel" class="mail_text" placeholder="Phone Number" aria-label="Your Phone Number">
+                     <textarea class="massage-bt" placeholder="Message" rows="5" aria-label="Your Message"></textarea>
+                     <div class="send_bt">
+                        <a href="#">SEND INQUIRY</a>
+                     </div>
                   </div>
                </div>
                <div class="col-md-6">
                   <div class="map_main">
-                     <div class="map-responsive"><iframe
+                     <div class="map-responsive">
+                        <iframe
                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.234567890123!2d76.634567!3d12.312345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf70123456789%3A0x123456789abcdef!2sShop%20No%201%2C%20Belavatta%20Road%2C%20Kaveri%20Nagar%2C%20Bannimantapa%2C%20Mysore%2C%20Karnataka%20570015!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
-                           width="100%" height="368" frameborder="0" style="border:0; width: 100%;"
-                           allowfullscreen=""></iframe></div>
+                           width="100%" height="368" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""
+                           loading="lazy" title="Star Group Interiors Location Map - Mysore">
+                        </iframe>
+                     </div>
                   </div>
                </div>
             </div>
@@ -1020,19 +1312,26 @@
       </div>
    </div>
 
-   <!-- Footer -->
+   <!-- ===== FOOTER ===== -->
    <div class="footer_section layout_padding">
       <div class="container">
          <div class="row">
             <div class="col-lg-3 col-md-6">
-               <div class="footer_logo"><img src="images/logo.jpg" alt="Star Group Interiors" style="max-width: 160px;">
+               <div class="footer_logo">
+                  <img src="images/logo.jpg" alt="Star Group Interiors Logo - Luxury Interior Designers in Mysore"
+                     style="max-width: 160px;">
                </div>
-               <p class="footer_text">Over a decade of premium interior and exterior projects across India. Specialized
-                  in custom chandelier manufacturing.</p>
+               <p class="footer_text">
+                  Over a decade of premium interior and exterior projects across India. Specialized in custom chandelier
+                  manufacturing. Based in Mysore, Karnataka.
+               </p>
             </div>
             <div class="col-lg-3 col-md-6">
                <h3 class="footer_taital">LET US HELP YOU</h3>
-               <p class="footer_text">Contact us for a consultation on your next residential or commercial project.</p>
+               <p class="footer_text">
+                  Contact us for a consultation on your next residential or commercial interior design project in Mysore
+                  or anywhere in India.
+               </p>
             </div>
             <div class="col-lg-3 col-md-6">
                <h3 class="footer_taital">INFORMATION</h3>
@@ -1051,15 +1350,30 @@
                <h3 class="footer_taital">Contact Us</h3>
                <div class="location_text">
                   <ul>
-                     <li><a href="https://maps.app.goo.gl/xVfogbLmKNFhMVxr7" target="_blank"><i
-                              class="fa fa-map-marker"></i><span>Shop No 1, Belavatta Road, Kaveri Nagar, Bannimantapa,
-                              Mysore - 570015</span></a></li>
-                     <li><a href="tel:+919538588293"><i class="fa fa-phone"></i><span>+91 95385 88293 (Siddiq
-                              Sheikh)</span></a></li>
-                     <li><a href="tel:+919071098465"><i class="fa fa-phone"></i><span>+91 90710 98465
-                              (Office)</span></a></li>
-                     <li><a href="mailto:stargroupinteriors46@gmail.com"><i
-                              class="fa fa-envelope"></i><span>stargroupinteriors46@gmail.com</span></a></li>
+                     <li>
+                        <a href="https://maps.app.goo.gl/xVfogbLmKNFhMVxr7" target="_blank" rel="noopener">
+                           <i class="fa fa-map-marker"></i>
+                           <span>Shop No 1, Belavatta Road, Kaveri Nagar, Bannimantapa, Mysore - 570015</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="tel:+919538588293">
+                           <i class="fa fa-phone"></i>
+                           <span>+91 95385 88293 (Siddiq Sheikh)</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="tel:+919071098465">
+                           <i class="fa fa-phone"></i>
+                           <span>+91 90710 98465 (Office)</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="mailto:stargroupinteriors46@gmail.com">
+                           <i class="fa fa-envelope"></i>
+                           <span>stargroupinteriors46@gmail.com</span>
+                        </a>
+                     </li>
                   </ul>
                </div>
             </div>
@@ -1071,19 +1385,20 @@
                   <div class="footer_social_icon">
                      <ul>
                         <li>
-                           <a href="https://www.facebook.com/star_group_interiors" target="_blank">
+                           <a href="https://www.facebook.com/star_group_interiors" target="_blank" rel="noopener"
+                              aria-label="Facebook">
                               <i class="fa fa-facebook"></i>
                            </a>
                         </li>
-
                         <li>
-                           <a href="https://www.instagram.com/star_group_interiors/" target="_blank">
+                           <a href="https://www.instagram.com/star_group_interiors/" target="_blank" rel="noopener"
+                              aria-label="Instagram">
                               <i class="fa fa-instagram"></i>
                            </a>
                         </li>
-
                         <li>
-                           <a href="https://www.youtube.com/@StarGroupInteriors" target="_blank">
+                           <a href="https://www.youtube.com/@StarGroupInteriors" target="_blank" rel="noopener"
+                              aria-label="YouTube">
                               <i class="fa fa-youtube-play"></i>
                            </a>
                         </li>
@@ -1094,13 +1409,17 @@
          </div>
       </div>
    </div>
+
+   <!-- ===== COPYRIGHT ===== -->
    <div class="copyright_section">
       <div class="container">
-         <p class="copyright_text">© 2025 Star Group Interiors. All Rights Reserved. | Metallic Gold Edition</p>
+         <p class="copyright_text">
+            © 2025 Star Group Interiors. All Rights Reserved. | Luxury Interior Designers in Mysore, Karnataka
+         </p>
       </div>
    </div>
 
-   <!-- Slider JavaScript (Auto Slide + Manual Controls - FIXED) -->
+   <!-- ===== SLIDER JAVASCRIPT ===== -->
    <script>
       const sliderWrapper = document.getElementById('sliderWrapper');
       const slides = document.querySelectorAll('.slide');
@@ -1137,7 +1456,7 @@
          if (index < 0) index = totalSlides - 1;
          if (index >= totalSlides) index = 0;
          currentIndex = index;
-         sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+         sliderWrapper.style.transform = 'translateX(-' + currentIndex * 100 + '%)';
          updateDots();
          resetAutoSlide();
       }
@@ -1159,28 +1478,41 @@
       }
 
       // Event listeners
-      prevBtn.addEventListener('click', (e) => { e.preventDefault(); prevSlide(); resetAutoSlide(); });
-      nextBtn.addEventListener('click', (e) => { e.preventDefault(); nextSlide(); resetAutoSlide(); });
+      prevBtn.addEventListener('click', function (e) {
+         e.preventDefault();
+         prevSlide();
+         resetAutoSlide();
+      });
+      nextBtn.addEventListener('click', function (e) {
+         e.preventDefault();
+         nextSlide();
+         resetAutoSlide();
+      });
 
       // Initialize slider
       createDots();
       resetAutoSlide();
 
       // Pause auto-slide on hover
-      const sliderContainer = document.querySelector('.slider-container');
+      var sliderContainer = document.querySelector('.slider-container');
       if (sliderContainer) {
-         sliderContainer.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
-         sliderContainer.addEventListener('mouseleave', () => resetAutoSlide());
+         sliderContainer.addEventListener('mouseenter', function () {
+            clearInterval(autoSlideInterval);
+         });
+         sliderContainer.addEventListener('mouseleave', function () {
+            resetAutoSlide();
+         });
       }
    </script>
 
-   <script src="js/jquery.min.js"></script>
-   <script src="js/popper.min.js"></script>
-   <script src="js/bootstrap.bundle.min.js"></script>
-   <script src="js/jquery-3.0.0.min.js"></script>
-   <script src="js/plugin.js"></script>
-   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-   <script src="js/custom.js"></script>
+   <!-- ===== SCRIPTS (Deferred for faster loading) ===== -->
+   <script src="js/jquery.min.js" defer></script>
+   <script src="js/popper.min.js" defer></script>
+   <script src="js/bootstrap.bundle.min.js" defer></script>
+   <script src="js/jquery-3.0.0.min.js" defer></script>
+   <script src="js/plugin.js" defer></script>
+   <script src="js/jquery.mCustomScrollbar.concat.min.js" defer></script>
+   <script src="js/custom.js" defer></script>
 </body>
 
 </html>
