@@ -136,6 +136,11 @@
          width: auto;
       }
 
+      .navbar-toggler {
+         background-color: var(--gold-main);
+         border: none;
+      }
+
       /* Footer Styles (SAME AS INDEX.HTML) */
       .footer_section {
          background: #020202;
@@ -296,7 +301,7 @@
 
       .project-img {
          width: 100%;
-         height: 1000px;
+         height: 500px;
          object-fit: cover;
          border-bottom: 2px solid rgba(212, 160, 23, 0.3);
       }
@@ -525,6 +530,41 @@
          padding: 80px 0;
       }
 
+      /* MOBILE NAVIGATION CLICK FIX (SAME AS INDEX.HTML) */
+      @media (max-width: 991px) {
+         .navbar-collapse {
+            position: relative;
+            z-index: 99999;
+            background: #000;
+            padding: 15px;
+         }
+
+         .navbar-nav {
+            position: relative;
+            z-index: 99999;
+         }
+
+         .navbar-nav .nav-item {
+            position: relative;
+            z-index: 99999;
+         }
+
+         .navbar-nav .nav-link {
+            display: block;
+            padding: 12px 15px;
+            position: relative;
+            z-index: 99999;
+            pointer-events: auto;
+         }
+
+         .hero-projects,
+         .layout_padding,
+         .cta-section {
+            position: relative;
+            z-index: 1;
+         }
+      }
+
       @media (max-width: 768px) {
          body {
             border-width: 8px;
@@ -542,12 +582,45 @@
             justify-content: center;
             margin-top: 20px;
          }
+
+         .project-img {
+            height: 300px;
+         }
       }
 
-      @media (max-width: 700px) {
+      @media (max-width: 576px) {
+         .hero-projects {
+            padding: 80px 0;
+         }
+
+         .hero-projects h1 {
+            font-size: 28px;
+         }
+
+         .project-img {
+            height: 220px;
+         }
+
+         .project-title {
+            font-size: 22px;
+         }
+
          .video-showcase-wrapper {
             flex-direction: column;
             align-items: center;
+         }
+
+         .video-portrait-card {
+            max-width: 100%;
+            width: 100%;
+         }
+
+         .masonry-grid {
+            grid-template-columns: 1fr;
+         }
+
+         .masonry-item img {
+            height: 220px;
          }
       }
    </style>
@@ -570,6 +643,7 @@
                   <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                   <li class="nav-item"><a class="nav-link" href="design.html">Services</a></li>
                   <li class="nav-item active"><a class="nav-link" href="company.html">Projects</a></li>
+                  <li class="nav-item"><a class="nav-link" href="expo.html">Expo 2026</a></li>
                   <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                </ul>
             </div>
@@ -588,13 +662,13 @@
       </div>
    </div>
 
-   <!-- Featured Kerala Projects Section (ALL NEW PROJECTS ADDED, DUPLICATES AVOIDED) -->
+   <!-- Featured Kerala Projects Section -->
    <div id="featured" class="layout_padding" style="background: #000;">
       <div class="container">
          <h2 class="section-title">Featured <span>Kerala Projects</span></h2>
          <p class="section-sub">Real projects delivered with precision, luxury, and timeless elegance.</p>
 
-         <!-- RADHAS PUNALUR (Already existed) -->
+         <!-- RADHAS PUNALUR -->
          <div class="project-card">
             <img src="images/radha-kerala.jpeg" alt="Radhas Punalur Hospitality Project" class="project-img">
             <div class="project-content">
@@ -613,7 +687,7 @@
             </div>
          </div>
 
-         <!-- RK Wedding Mall Kollam Kerala (NEW - NOT PRESENT BEFORE) -->
+         <!-- RK Wedding Mall Kollam Kerala -->
          <div class="project-card">
             <img src="images/RK-wedding-k.jpeg" alt="RK Wedding Mall Kollam" class="project-img">
             <div class="project-content">
@@ -631,7 +705,7 @@
             </div>
          </div>
 
-         <!-- Yes Bharat karunagapally Kerala (NEW) -->
+         <!-- Yes Bharat karunagapally Kerala -->
          <div class="project-card">
             <img src="images/yes-bharat-k.jpeg" alt="Yes Bharat Karunagapally" class="project-img">
             <div class="project-content">
@@ -648,7 +722,7 @@
             </div>
          </div>
 
-         <!-- Wed land Kollam Kerala (NEW - distinct from Wed Land Attingal) -->
+         <!-- Wed land Kollam Kerala -->
          <div class="project-card">
             <img src="images/wed-land.jpeg" alt="Wed Land Kollam" class="project-img">
             <div class="project-content">
@@ -665,7 +739,7 @@
             </div>
          </div>
 
-         <!-- Yes Bharat Sultan Bathery (NEW) -->
+         <!-- Yes Bharat Sultan Bathery -->
          <div class="project-card">
             <img src="images/yes-bharat-sultan-b.jpeg" alt="Yes Bharat Sultan Bathery" class="project-img">
             <div class="project-content">
@@ -682,7 +756,7 @@
             </div>
          </div>
 
-         <!-- Yes Bharat kalpetta Wayanad Kerala (NEW) -->
+         <!-- Yes Bharat kalpetta Wayanad Kerala -->
          <div class="project-card">
             <img src="images/yes-bharat-k.jpeg" alt="Yes Bharat Kalpetta" class="project-img">
             <div class="project-content">
@@ -700,7 +774,7 @@
             </div>
          </div>
 
-         <!-- Mall Hyderabad (NEW) -->
+         <!-- Mall Hyderabad -->
          <div class="project-card">
             <img src="images/mall-of-hyderabad.jpeg" alt="Mall Hyderabad" class="project-img">
             <div class="project-content">
@@ -717,7 +791,7 @@
             </div>
          </div>
 
-         <!-- Lulu gold Kuttyadi Kerala (NEW) -->
+         <!-- Lulu gold Kuttyadi Kerala -->
          <div class="project-card">
             <img src="images/luke-gold-k.jpeg" alt="Lulu Gold Kuttyadi" class="project-img">
             <div class="project-content">
@@ -734,7 +808,7 @@
             </div>
          </div>
 
-         <!-- Raj Kumari gold Pathanamthitta Kerala (already similar but keep as specific variant) -->
+         <!-- Raj Kumari gold Pathanamthitta Kerala -->
          <div class="project-card">
             <img src="images/raj-kumari.jpeg" alt="Raj Kumari Gold Pathanamthitta" class="project-img">
             <div class="project-content">
@@ -751,7 +825,7 @@
             </div>
          </div>
 
-         <!-- Raj Kumari gold and diamond Pothencode Kerala (NEW) -->
+         <!-- Raj Kumari gold and diamond Pothencode Kerala -->
          <div class="project-card">
             <img src="images/radhas-pulnar-k.jpeg" alt="Raj Kumari Gold & Diamond Pothencode" class="project-img">
             <div class="project-content">
@@ -769,7 +843,7 @@
             </div>
          </div>
 
-         <!-- Bridal craft Tirur Kerala (NEW) -->
+         <!-- Bridal craft Tirur Kerala -->
          <div class="project-card">
             <img src="images/bridal-craft.jpeg" alt="Bridal Craft Tirur" class="project-img">
             <div class="project-content">
@@ -786,7 +860,7 @@
             </div>
          </div>
 
-         <!-- Adoro manjeri Kerala (NEW) -->
+         <!-- Adoro manjeri Kerala -->
          <div class="project-card">
             <img src="images/adoro-k.jpeg" alt="Adoro Manjeri" class="project-img">
             <div class="project-content">
@@ -803,8 +877,7 @@
             </div>
          </div>
 
-         <!-- (Remaining original projects kept for completeness: R&Co, Wed Land Attingal, RK Wedding Centre Kollam earlier version but RK Wedding Mall already added; also Radhas already present) -->
-         <!-- R & Co Corporate Office (original) -->
+         <!-- R & Co Corporate Office -->
          <div class="project-card">
             <img src="images/" alt="R & Co Corporate Office Malappuram" class="project-img">
             <div class="project-content">
@@ -821,7 +894,7 @@
             </div>
          </div>
 
-         <!-- Wed Land Convention Centre Attingal (original) -->
+         <!-- Wed Land Convention Centre Attingal -->
          <div class="project-card">
             <img src="images/w12.jpg" alt="Wed Land Convention Centre Attingal" class="project-img">
             <div class="project-content">
@@ -842,7 +915,6 @@
       </div>
    </div>
 
-   <!-- Rest of the page remains same (Video, Gallery, Stats, Testimonials, CTA, Footer) -->
    <!-- Project Walkthrough Videos Section -->
    <div class="layout_padding" style="background: #0a0a0a;">
       <div class="container">
@@ -903,20 +975,20 @@
          <p class="section-sub">Delivering premium interiors, custom chandeliers, luxury lighting, and architectural
             excellence across Kerala and India.</p>
          <div class="text-center">
-            <span class="location-badge"><i class="fa fa-map-marker"></i> Punalur</span><span class="location-badge"><i
-                  class="fa fa-map-marker"></i> Pathanamthitta</span><span class="location-badge"><i
-                  class="fa fa-map-marker"></i> Malappuram</span><span class="location-badge"><i
-                  class="fa fa-map-marker"></i> Attingal</span><span class="location-badge"><i
-                  class="fa fa-map-marker"></i> Kollam</span><span class="location-badge"><i
-                  class="fa fa-map-marker"></i> Karunagapally</span><span class="location-badge"><i
-                  class="fa fa-map-marker"></i> Sultan Bathery</span><span class="location-badge"><i
-                  class="fa fa-map-marker"></i> Kalpetta</span><span class="location-badge"><i
-                  class="fa fa-map-marker"></i> Kuttyadi</span><span class="location-badge"><i
-                  class="fa fa-map-marker"></i> Pothencode</span><span class="location-badge"><i
-                  class="fa fa-map-marker"></i> Tirur</span><span class="location-badge"><i
-                  class="fa fa-map-marker"></i> Manjeri</span><span class="location-badge"><i
-                  class="fa fa-map-marker"></i> Mysore</span><span class="location-badge"><i
-                  class="fa fa-map-marker"></i> Hyderabad</span>
+            <span class="location-badge"><i class="fa fa-map-marker"></i> Punalur</span>
+            <span class="location-badge"><i class="fa fa-map-marker"></i> Pathanamthitta</span>
+            <span class="location-badge"><i class="fa fa-map-marker"></i> Malappuram</span>
+            <span class="location-badge"><i class="fa fa-map-marker"></i> Attingal</span>
+            <span class="location-badge"><i class="fa fa-map-marker"></i> Kollam</span>
+            <span class="location-badge"><i class="fa fa-map-marker"></i> Karunagapally</span>
+            <span class="location-badge"><i class="fa fa-map-marker"></i> Sultan Bathery</span>
+            <span class="location-badge"><i class="fa fa-map-marker"></i> Kalpetta</span>
+            <span class="location-badge"><i class="fa fa-map-marker"></i> Kuttyadi</span>
+            <span class="location-badge"><i class="fa fa-map-marker"></i> Pothencode</span>
+            <span class="location-badge"><i class="fa fa-map-marker"></i> Tirur</span>
+            <span class="location-badge"><i class="fa fa-map-marker"></i> Manjeri</span>
+            <span class="location-badge"><i class="fa fa-map-marker"></i> Mysore</span>
+            <span class="location-badge"><i class="fa fa-map-marker"></i> Hyderabad</span>
          </div>
       </div>
    </div>
@@ -1026,6 +1098,7 @@
                      <li><a href="about.html">About</a></li>
                      <li><a href="design.html">Services</a></li>
                      <li><a href="company.html">Projects</a></li>
+                     <li><a href="expo.html">Expo 2026</a></li>
                      <li><a href="contact.html">Contact Us</a></li>
                   </ul>
                </div>
@@ -1047,24 +1120,41 @@
                </div>
             </div>
          </div>
-         <div class="footer_social_icon" style="margin-top: 30px;">
-            <ul>
-               <li><a href="https://www.facebook.com/star_group_interiors" target="_blank"><i
-                        class="fa fa-facebook"></i></a></li>
-               <li><a href="https://www.instagram.com/star_group_interiors/" target="_blank"><i
-                        class="fa fa-instagram"></i></a></li>
-               <li><a href="https://www.youtube.com/@StarGroupInteriors" target="_blank"><i
-                        class="fa fa-youtube-play"></i></a></li>
-            </ul>
+         <div class="row" style="margin-top: 20px;">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+               <div class="footer_social_icon">
+                  <ul>
+                     <li>
+                        <a href="https://www.facebook.com/star_group_interiors" target="_blank">
+                           <i class="fa fa-facebook"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.instagram.com/star_group_interiors/" target="_blank">
+                           <i class="fa fa-instagram"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.youtube.com/@StarGroupInteriors" target="_blank">
+                           <i class="fa fa-youtube-play"></i>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
          </div>
       </div>
    </div>
+
+   <!-- Copyright Section (EXACT SAME AS INDEX.HTML) -->
    <div class="copyright_section">
       <div class="container">
          <p class="copyright_text">© 2025 Star Group Interiors. All Rights Reserved. | Metallic Gold Edition</p>
       </div>
    </div>
 
+   <!-- Scripts (SAME AS INDEX.HTML) -->
    <script src="js/jquery.min.js"></script>
    <script src="js/popper.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>

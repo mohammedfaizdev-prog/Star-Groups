@@ -376,6 +376,39 @@
          filter: drop-shadow(0 0 5px #D4A01755);
       }
 
+      /* MOBILE NAVIGATION CLICK FIX (SAME AS INDEX.HTML) */
+      @media (max-width: 991px) {
+         .navbar-collapse {
+            position: relative;
+            z-index: 99999;
+            background: #000;
+            padding: 15px;
+         }
+
+         .navbar-nav {
+            position: relative;
+            z-index: 99999;
+         }
+
+         .navbar-nav .nav-item {
+            position: relative;
+            z-index: 99999;
+         }
+
+         .navbar-nav .nav-link {
+            display: block;
+            padding: 12px 15px;
+            position: relative;
+            z-index: 99999;
+            pointer-events: auto;
+         }
+
+         .contact_section {
+            position: relative;
+            z-index: 1;
+         }
+      }
+
       @media (max-width: 768px) {
          body {
             border-width: 8px;
@@ -400,6 +433,25 @@
             height: 300px;
          }
       }
+
+      @media (max-width: 576px) {
+         .contact_taital {
+            font-size: 26px;
+         }
+
+         .mail_section_1 {
+            padding: 15px;
+         }
+
+         .send_bt a {
+            padding: 10px 25px;
+            font-size: 14px;
+         }
+
+         .contact_info_box {
+            padding: 15px;
+         }
+      }
    </style>
 </head>
 
@@ -419,6 +471,7 @@
                   <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                   <li class="nav-item"><a class="nav-link" href="design.html">Services</a></li>
                   <li class="nav-item"><a class="nav-link" href="company.html">Projects</a></li>
+                  <li class="nav-item"><a class="nav-link" href="expo.html">Expo 2026</a></li>
                   <li class="nav-item active"><a class="nav-link" href="contact.html">Contact Us</a></li>
                </ul>
             </div>
@@ -512,6 +565,7 @@
                      <li><a href="about.html">About</a></li>
                      <li><a href="design.html">Services</a></li>
                      <li><a href="company.html">Projects</a></li>
+                     <li><a href="expo.html">Expo 2026</a></li>
                      <li><a href="contact.html">Contact Us</a></li>
                   </ul>
                </div>
@@ -520,23 +574,47 @@
                <h3 class="footer_taital">Contact Us</h3>
                <div class="location_text">
                   <ul>
-                     <li><a href="https://maps.app.goo.gl/xVfogbLmKNFhMVxr7" target="_blank"><i class="fa fa-map-marker"></i><span>Shop No 1, Belavatta Road, Kaveri Nagar, Bannimantapa, Mysore - 570015</span></a></li>
-                     <li><a href="tel:+919538588293"><i class="fa fa-phone"></i><span>+91 95385 88293 (Siddiq Sheikh)</span></a></li>
-                     <li><a href="tel:+919071098465"><i class="fa fa-phone"></i><span>+91 90710 98465 (Office)</span></a></li>
-                     <li><a href="mailto:stargroupinteriors46@gmail.com"><i class="fa fa-envelope"></i><span>stargroupinteriors46@gmail.com</span></a></li>
+                     <li><a href="https://maps.app.goo.gl/xVfogbLmKNFhMVxr7" target="_blank"><i
+                              class="fa fa-map-marker"></i><span>Shop No 1, Belavatta Road, Kaveri Nagar,
+                              Bannimantapa, Mysore - 570015</span></a></li>
+                     <li><a href="tel:+919538588293"><i class="fa fa-phone"></i><span>+91 95385 88293 (Siddiq
+                              Sheikh)</span></a></li>
+                     <li><a href="tel:+919071098465"><i class="fa fa-phone"></i><span>+91 90710 98465
+                              (Office)</span></a></li>
+                     <li><a href="mailto:stargroupinteriors46@gmail.com"><i
+                              class="fa fa-envelope"></i><span>stargroupinteriors46@gmail.com</span></a></li>
                   </ul>
                </div>
             </div>
          </div>
-         <div class="footer_social_icon" style="margin-top: 30px;">
-            <ul>
-               <li><a href="https://www.facebook.com/star_group_interiors" target="_blank"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="https://www.instagram.com/star_group_interiors/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="https://www.youtube.com/@StarGroupInteriors" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
-            </ul>
+         <div class="row" style="margin-top: 20px;">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+               <div class="footer_social_icon">
+                  <ul>
+                     <li>
+                        <a href="https://www.facebook.com/star_group_interiors" target="_blank">
+                           <i class="fa fa-facebook"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.instagram.com/star_group_interiors/" target="_blank">
+                           <i class="fa fa-instagram"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.youtube.com/@StarGroupInteriors" target="_blank">
+                           <i class="fa fa-youtube-play"></i>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
          </div>
       </div>
    </div>
+
+   <!-- Copyright Section (EXACT SAME AS INDEX.HTML) -->
    <div class="copyright_section">
       <div class="container">
          <p class="copyright_text">© 2025 Star Group Interiors. All Rights Reserved. | Metallic Gold Edition</p>

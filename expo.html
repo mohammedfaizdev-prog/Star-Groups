@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Star Group Interiors | D ARC BUILD EXPO 2026</title>
+    <meta name="keywords" content="D ARC BUILD EXPO 2026, Interior Design Expo, Star Group Interiors, Luxury Interiors">
+    <meta name="description"
+        content="Star Group Interiors at D ARC BUILD EXPO 2026 - June 26-28. Showcasing premium interiors, custom chandeliers.">
+    <meta name="author" content="Star Group Interiors">
+
+    <!-- CSS Vendors -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="images/fevicon.png" type="image/gif">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+    <style>
+        /* ===== METALLIC GOLD / PURE BLACK THEME ===== */
+        :root {
+            --gold-light: #F7D96B;
+            --gold-main: #D4A017;
+            --gold-deep: #8C5A0A;
+            --gold-gradient: linear-gradient(135deg, #F7D96B 0%, #D4A017 45%, #B27C0A 70%, #8C5A0A 100%);
+            --black-pure: #000000;
+            --black-rich: #0a0a0a;
+            --font-primary: 'Montserrat', sans-serif;
+            --font-secondary: 'Poppins', sans-serif;
+        }
+
+        * {
+            transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--black-pure);
+            color: #dddddd;
+            font-family: var(--font-primary);
+            border: 15px solid var(--black-rich);
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            font-family: var(--font-primary);
+        }
+
+        p {
+            font-family: var(--font-secondary);
+            line-height: 1.8;
+        }
+
+        /* ===== HEADER / NAVBAR ===== */
+        .header_section {
+            background: #000000;
+            border-bottom: 1px solid rgba(212, 160, 23, 0.4);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        .bg-light {
+            background-color: #000000 !important;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #f5f5f5 !important;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            position: relative;
+            font-family: var(--font-primary);
+            /* font-size: 14px; */
+            text-transform: uppercase;
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-nav .nav-link.active {
+            color: var(--gold-light) !important;
+            text-shadow: 0 0 5px rgba(247, 217, 107, 0.6);
+        }
+
+        .navbar-light .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: var(--gold-gradient);
+            transition: 0.3s;
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover::after,
+        .navbar-light .navbar-nav .nav-link.active::after {
+            width: 100%;
+        }
+
+        .navbar-brand img {
+            filter: drop-shadow(0 0 6px #D4A01755);
+            max-height: 60px;
+            width: auto;
+        }
+
+        .navbar-toggler {
+            background-color: var(--gold-main);
+            border: none;
+        }
+
+        /* Footer Styles (SAME AS INDEX.HTML) */
+        .footer_section {
+            background: #020202;
+            border-top: 2px solid var(--gold-main);
+            padding: 40px 0;
+        }
+
+        .footer_taital {
+            color: var(--gold-light);
+            font-family: var(--font-primary);
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        .footer_text {
+            color: #bbb;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .footer_menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer_menu ul li a {
+            color: #ccc;
+            text-decoration: none;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .footer_menu ul li a:hover {
+            color: var(--gold-main);
+        }
+
+        .location_text ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .location_text li a {
+            color: #ccc;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .location_text li a:hover {
+            color: var(--gold-main);
+        }
+
+        .footer_social_icon ul {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .footer_social_icon li a {
+            background: #1a1a1a;
+            color: var(--gold-main);
+            border: 1px solid var(--gold-main);
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .footer_social_icon li a:hover {
+            background: var(--gold-main);
+            color: #000;
+        }
+
+        .copyright_section {
+            background: #000;
+            border-top: 1px solid rgba(212, 160, 23, 0.3);
+            padding: 15px 0;
+        }
+
+        .copyright_text {
+            color: #aaa;
+            text-align: center;
+            margin: 0;
+            font-family: var(--font-secondary);
+            font-size: 14px;
+        }
+
+        .copyright_text a {
+            color: var(--gold-main);
+            text-decoration: none;
+        }
+
+        /* ===== EXPO HERO ===== */
+        .expo-hero {
+            position: relative !important;
+            width: 100% !important;
+            min-height: 680px !important;
+            height: 680px !important;
+            background: #000 !important;
+            overflow: hidden !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            border-bottom: 2px solid rgba(212, 160, 23, 0.3);
+        }
+
+        .expo-hero::before {
+            content: "" !important;
+            position: absolute !important;
+            inset: 0 !important;
+            background-image: url("images/hero1.png") !important;
+            background-size: cover !important;
+            background-position: center center !important;
+            background-repeat: no-repeat !important;
+            opacity: 0.35 !important;
+            visibility: visible !important;
+            display: block !important;
+            z-index: 0 !important;
+        }
+
+        .expo-hero::after {
+            content: "" !important;
+            position: absolute !important;
+            inset: 0 !important;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.85) 100%) !important;
+            z-index: 1 !important;
+        }
+
+        .expo-hero>.container {
+            position: relative !important;
+            z-index: 2 !important;
+            width: 100% !important;
+        }
+
+        .expo-hero-content {
+            position: relative !important;
+            z-index: 3 !important;
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            width: 100% !important;
+            text-align: center !important;
+        }
+
+        .expo-hero-badge {
+            display: inline-block;
+            background: rgba(212, 160, 23, 0.15);
+            border: 1px solid var(--gold-main);
+            padding: 10px 30px;
+            border-radius: 50px;
+            color: var(--gold-light);
+            font-size: 13px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            font-family: var(--font-primary);
+            font-weight: 600;
+        }
+
+        .expo-hero h1 {
+            font-size: 64px;
+            font-weight: 800;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 15px;
+            font-family: var(--font-primary);
+            letter-spacing: 1px;
+        }
+
+        .expo-hero .expo-date {
+            font-size: 28px;
+            color: #ffffff;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            font-family: var(--font-secondary);
+        }
+
+        .expo-hero .expo-date span {
+            color: var(--gold-light);
+            font-weight: 600;
+        }
+
+        .expo-hero .expo-subtitle {
+            font-size: 20px;
+            color: #dddddd;
+            max-width: 700px;
+            margin: 20px auto 0;
+            line-height: 1.8;
+            font-family: var(--font-secondary);
+        }
+
+        .expo-hero .expo-subtitle strong {
+            color: var(--gold-light);
+            font-weight: 600;
+        }
+
+        /* ===== EXPO STATS ===== */
+        .expo-stats {
+            background: #0a0a0a;
+            padding: 50px 0;
+            border-bottom: 1px solid rgba(212, 160, 23, 0.15);
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--gold-light);
+            display: block;
+            font-family: var(--font-primary);
+        }
+
+        .stat-label {
+            color: #aaaaaa;
+            font-size: 16px;
+            margin-top: 8px;
+            letter-spacing: 1px;
+            font-family: var(--font-secondary);
+            text-transform: uppercase;
+        }
+
+        /* ===== SECTION TITLES ===== */
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 42px;
+            font-weight: 800;
+            color: #ffffff;
+            font-family: var(--font-primary);
+        }
+
+        .section-title h2 span {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .section-title p {
+            color: #aaaaaa;
+            max-width: 700px;
+            margin: 15px auto 0;
+            font-size: 18px;
+            line-height: 1.8;
+            font-family: var(--font-secondary);
+        }
+
+        /* ===== EXPO DESCRIPTION ===== */
+        .expo-description {
+            background: #000000;
+            padding: 80px 0;
+        }
+
+        .expo-description-text {
+            color: #cccccc;
+            font-size: 18px;
+            line-height: 2;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            font-family: var(--font-secondary);
+        }
+
+        .expo-description-text strong {
+            color: var(--gold-light);
+            font-weight: 600;
+        }
+
+        /* ===== VIDEO GALLERY - REELS STYLE ===== */
+        .video-gallery {
+            background: #0a0a0a;
+            padding: 80px 0;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .video-item {
+            background: #111111;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 160, 23, 0.2);
+            transition: all 0.4s ease;
+            position: relative;
+            aspect-ratio: 9 / 16;
+        }
+
+        .video-item:hover {
+            border-color: var(--gold-main);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(212, 160, 23, 0.15);
+        }
+
+        .video-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            background: #000;
+        }
+
+        .video-item .reels-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 30px 15px 15px;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .video-item:hover .reels-overlay {
+            opacity: 1;
+        }
+
+        .video-item .reels-overlay i {
+            color: var(--gold-light);
+            font-size: 14px;
+            margin-right: 5px;
+        }
+
+        .video-item .reels-overlay span {
+            color: #cccccc;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            font-family: var(--font-secondary);
+        }
+
+        .video-item .sound-indicator {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            pointer-events: none;
+            font-family: var(--font-secondary);
+        }
+
+        .video-item .sound-indicator i {
+            color: var(--gold-main);
+            margin-right: 4px;
+            font-size: 11px;
+        }
+
+        /* ===== IMAGE GALLERY ===== */
+        .image-gallery {
+            background: #000000;
+            padding: 80px 0;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            border: 1px solid rgba(212, 160, 23, 0.15);
+            cursor: pointer;
+            aspect-ratio: 1 / 1;
+            background: #111;
+            transition: all 0.4s ease;
+        }
+
+        .gallery-item:hover {
+            border-color: var(--gold-main);
+            transform: scale(1.03);
+            z-index: 5;
+            box-shadow: 0 10px 30px rgba(212, 160, 23, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-item .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 30px 20px 20px;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .gallery-item .overlay i {
+            color: var(--gold-light);
+            font-size: 24px;
+        }
+
+        /* ===== LIGHTBOX ===== */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 99999;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 85vh;
+            object-fit: contain;
+            border-radius: 8px;
+            border: 2px solid rgba(212, 160, 23, 0.3);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            color: var(--gold-main);
+            font-size: 48px;
+            cursor: pointer;
+            transition: 0.3s;
+            background: none;
+            border: none;
+            z-index: 999999;
+        }
+
+        .lightbox-close:hover {
+            color: var(--gold-light);
+            transform: rotate(90deg);
+        }
+
+        .lightbox-prev,
+        .lightbox-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(212, 160, 23, 0.2);
+            color: var(--gold-main);
+            border: 1px solid var(--gold-main);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999999;
+        }
+
+        .lightbox-prev {
+            left: 30px;
+        }
+
+        .lightbox-next {
+            right: 30px;
+        }
+
+        .lightbox-prev:hover,
+        .lightbox-next:hover {
+            background: var(--gold-main);
+            color: #000;
+        }
+
+        /* ===== CTA SECTION ===== */
+        .expo-cta {
+            background: #0a0a0a;
+            padding: 80px 0;
+            border-top: 1px solid rgba(212, 160, 23, 0.2);
+            border-bottom: 1px solid rgba(212, 160, 23, 0.2);
+            text-align: center;
+        }
+
+        .expo-cta h2 {
+            font-size: 40px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: #ffffff;
+            font-family: var(--font-primary);
+        }
+
+        .expo-cta h2 span {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .expo-cta p {
+            color: #aaaaaa;
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 35px;
+            font-family: var(--font-secondary);
+        }
+
+        .expo-cta .cta-btn {
+            display: inline-block;
+            background: var(--gold-gradient);
+            color: #000000;
+            font-weight: 700;
+            padding: 16px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            font-family: var(--font-primary);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .expo-cta .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(212, 160, 23, 0.4);
+            color: #000;
+            text-decoration: none;
+        }
+
+        /* MOBILE NAVIGATION CLICK FIX (SAME AS INDEX.HTML) */
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                position: relative;
+                z-index: 99999;
+                background: #000;
+                padding: 15px;
+            }
+
+            .navbar-nav {
+                position: relative;
+                z-index: 99999;
+            }
+
+            .navbar-nav .nav-item {
+                position: relative;
+                z-index: 99999;
+            }
+
+            .navbar-nav .nav-link {
+                display: block;
+                padding: 12px 15px;
+                position: relative;
+                z-index: 99999;
+                pointer-events: auto;
+            }
+
+            .expo-hero,
+            .expo-stats,
+            .expo-description,
+            .video-gallery,
+            .image-gallery,
+            .expo-cta {
+                position: relative;
+                z-index: 1;
+            }
+
+            .video-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                border-width: 8px;
+            }
+
+            .expo-hero {
+                min-height: 500px !important;
+                height: 500px !important;
+            }
+
+            .expo-hero h1 {
+                font-size: 32px;
+            }
+
+            .expo-hero .expo-date {
+                font-size: 18px;
+            }
+
+            .expo-hero .expo-subtitle {
+                font-size: 16px;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+            .video-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .expo-cta h2 {
+                font-size: 28px;
+            }
+
+            .stat-number {
+                font-size: 28px;
+            }
+
+            .expo-description-text {
+                font-size: 16px;
+            }
+
+            .footer_social_icon ul {
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .lightbox-prev,
+            .lightbox-next {
+                width: 35px;
+                height: 35px;
+                font-size: 16px;
+            }
+
+            .lightbox-prev {
+                left: 10px;
+            }
+
+            .lightbox-next {
+                right: 10px;
+            }
+
+            .lightbox-close {
+                top: 15px;
+                right: 20px;
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .video-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+
+            .expo-hero {
+                min-height: 400px !important;
+                height: 400px !important;
+            }
+
+            .expo-hero h1 {
+                font-size: 26px;
+            }
+
+            .expo-hero .expo-subtitle {
+                font-size: 14px;
+            }
+
+            .expo-hero .expo-hero-badge {
+                font-size: 11px;
+                padding: 6px 18px;
+                letter-spacing: 2px;
+            }
+
+            .video-item .sound-indicator {
+                font-size: 9px;
+                padding: 2px 8px;
+            }
+
+            .expo-cta h2 {
+                font-size: 22px;
+            }
+
+            .expo-cta .cta-btn {
+                padding: 12px 30px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== HEADER / NAVIGATION (EXACT SAME AS INDEX.HTML) ===== -->
+    <div class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.jpg"
+                        alt="Star Group Interiors Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="design.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="company.html">Projects</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="expo.html">Expo 2026</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ===== EXPO HERO WITH BACKGROUND IMAGE ===== -->
+    <div class="expo-hero">
+
+        <div class="container">
+            <div class="expo-hero-content">
+
+                <div class="expo-hero-badge">
+                    ✦ D ARC BUILD 2026 ✦
+                </div>
+
+                <h1>D ARC BUILD EXPO 2026</h1>
+
+                <p class="expo-date">
+                    <span>June 26 - 28</span> · Bangalore, India
+                </p>
+
+                <p class="expo-subtitle">
+                    Star Group Interiors proudly showcased our
+                    <strong>premium interiors, custom chandeliers,</strong>
+                    and <strong>gold-accented luxury designs</strong>
+                    at India's premier architecture &amp; design exhibition.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ===== EXPO STATS ===== -->
+    <div class="expo-stats">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <span class="stat-number">12+</span>
+                        <span class="stat-label">Exhibits Displayed</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Featured Videos</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Visitors Engaged</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">New Enquiries</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== EXPO DESCRIPTION ===== -->
+    <div class="expo-description">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our <span>Expo Experience</span></h2>
+                <p>A showcase of craftsmanship, innovation, and timeless elegance</p>
+            </div>
+            <p class="expo-description-text">
+                Star Group Interiors made a spectacular debut at the <strong>D ARC BUILD EXPO 2026</strong>,
+                one of India's most prestigious architecture and design exhibitions. Over three incredible days
+                (June 26-28), we captivated visitors with our <strong>bespoke chandelier collections</strong>,
+                <strong>luxury interior mockups</strong>, and <strong>gold-accented architectural solutions</strong>.
+                <br><br>
+                From interior designers and architects to homeowners and commercial developers, our booth attracted
+                enthusiastic crowds who experienced firsthand the <strong>craftsmanship and innovation</strong>
+                that defines Star Group Interiors. Our team of experts was on hand to discuss custom projects,
+                showcase our portfolio, and share the vision behind our <strong>gold luxury aesthetic</strong>.
+            </p>
+        </div>
+    </div>
+
+    <!-- ===== VIDEO GALLERY - REELS STYLE ===== -->
+    <div class="video-gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Expo <span>Highlights</span></h2>
+                <p>Instagram Reels style - No audio, auto-playing</p>
+            </div>
+            <div class="video-grid">
+                <div class="video-item">
+                    <video autoplay muted loop playsinline disablePictureInPicture
+                        controlsList="nodownload nofullscreen noremoteplayback">
+                        <source src="video/expo1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="sound-indicator"><i class="fa fa-volume-off"></i> Muted</div>
+                    <div class="reels-overlay">
+                        <i class="fa fa-play-circle"></i> <span>Reel 1</span>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <video autoplay muted loop playsinline disablePictureInPicture
+                        controlsList="nodownload nofullscreen noremoteplayback">
+                        <source src="video/expo2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="sound-indicator"><i class="fa fa-volume-off"></i> Muted</div>
+                    <div class="reels-overlay">
+                        <i class="fa fa-play-circle"></i> <span>Reel 2</span>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <video autoplay muted loop playsinline disablePictureInPicture
+                        controlsList="nodownload nofullscreen noremoteplayback">
+                        <source src="video/expo3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="sound-indicator"><i class="fa fa-volume-off"></i> Muted</div>
+                    <div class="reels-overlay">
+                        <i class="fa fa-play-circle"></i> <span>Reel 3</span>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <video autoplay muted loop playsinline disablePictureInPicture
+                        controlsList="nodownload nofullscreen noremoteplayback">
+                        <source src="video/expo4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="sound-indicator"><i class="fa fa-volume-off"></i> Muted</div>
+                    <div class="reels-overlay">
+                        <i class="fa fa-play-circle"></i> <span>Reel 4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== IMAGE GALLERY ===== -->
+    <div class="image-gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Expo <span>Gallery</span></h2>
+                <p>Click any image to view in full size</p>
+            </div>
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+    </div>
+
+    <!-- ===== CTA SECTION ===== -->
+    <div class="expo-cta">
+        <div class="container">
+            <h2>Inspired by Our <span>Expo Collection?</span></h2>
+            <p>Get in touch with our team to explore custom interiors, chandeliers, and luxury designs for your space.
+            </p>
+            <a href="contact.html" class="cta-btn">✦ Contact Us Today</a>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER (EXACT SAME AS INDEX.HTML) ===== -->
+    <div class="footer_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer_logo"><img src="images/logo.jpg" alt="Star Group Interiors"
+                            style="max-width: 160px;"></div>
+                    <p class="footer_text">Over a decade of premium interior and exterior projects across India.
+                        Specialized in custom chandelier manufacturing.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer_taital">LET US HELP YOU</h3>
+                    <p class="footer_text">Contact us for a consultation on your next residential or commercial project.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer_taital">INFORMATION</h3>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="design.html">Services</a></li>
+                            <li><a href="company.html">Projects</a></li>
+                            <li><a href="expo.html">Expo 2026</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer_taital">Contact Us</h3>
+                    <div class="location_text">
+                        <ul>
+                            <li><a href="https://maps.app.goo.gl/xVfogbLmKNFhMVxr7" target="_blank"><i
+                                        class="fa fa-map-marker"></i><span>Shop No 1, Belavatta Road, Kaveri Nagar,
+                                        Bannimantapa, Mysore - 570015</span></a></li>
+                            <li><a href="tel:+919538588293"><i class="fa fa-phone"></i><span>+91 95385 88293 (Siddiq
+                                        Sheikh)</span></a></li>
+                            <li><a href="tel:+919071098465"><i class="fa fa-phone"></i><span>+91 90710 98465
+                                        (Office)</span></a></li>
+                            <li><a href="mailto:stargroupinteriors46@gmail.com"><i
+                                        class="fa fa-envelope"></i><span>stargroupinteriors46@gmail.com</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <div class="footer_social_icon">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/star_group_interiors" target="_blank">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/star_group_interiors/" target="_blank">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/@StarGroupInteriors" target="_blank">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== COPYRIGHT SECTION (EXACT SAME AS INDEX.HTML) ===== -->
+    <div class="copyright_section">
+        <div class="container">
+            <p class="copyright_text">© 2025 Star Group Interiors. All Rights Reserved. | Metallic Gold Edition</p>
+        </div>
+    </div>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-prev" id="lightboxPrev">❮</button>
+        <button class="lightbox-next" id="lightboxNext">❯</button>
+        <img src="" alt="Expo Gallery" id="lightboxImage">
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // Load gallery images
+        document.addEventListener('DOMContentLoaded', function () {
+            var galleryGrid = document.getElementById('galleryGrid');
+            var imageNames = [
+                'expo.jpeg', 'expo1.jpeg', 'expo2.jpeg', 'expo3.jpeg',
+                'expo4.jpeg', 'expo5.jpeg', 'expo6.jpeg', 'expo7.jpeg',
+                'expo8.jpeg', 'expo9.jpeg', 'expo10.jpeg', 'expo11.jpeg'
+            ];
+
+            imageNames.forEach(function (name) {
+                var item = document.createElement('div');
+                item.className = 'gallery-item';
+                item.innerHTML = `
+                   <img src="images/${name}" alt="D ARC BUILD EXPO 2026" loading="lazy">
+                   <div class="overlay"><i class="fa fa-search-plus"></i></div>
+                `;
+                item.addEventListener('click', function () {
+                    openLightbox(name);
+                });
+                galleryGrid.appendChild(item);
+            });
+        });
+
+        // Lightbox
+        var currentImageIndex = 0;
+        var imageNames = ['expo.jpeg', 'expo1.jpeg', 'expo2.jpeg', 'expo3.jpeg', 'expo4.jpeg', 'expo5.jpeg', 'expo6.jpeg', 'expo7.jpeg', 'expo8.jpeg', 'expo9.jpeg', 'expo10.jpeg', 'expo11.jpeg'];
+
+        function openLightbox(name) {
+            var index = imageNames.indexOf(name);
+            if (index !== -1) {
+                currentImageIndex = index;
+                updateLightboxImage();
+                document.getElementById('lightbox').classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function updateLightboxImage() {
+            document.getElementById('lightboxImage').src = 'images/' + imageNames[currentImageIndex];
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + imageNames.length) % imageNames.length;
+            updateLightboxImage();
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % imageNames.length;
+            updateLightboxImage();
+        }
+
+        document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+        document.getElementById('lightboxPrev').addEventListener('click', prevImage);
+        document.getElementById('lightboxNext').addEventListener('click', nextImage);
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') prevImage();
+            if (e.key === 'ArrowRight') nextImage();
+        });
+
+        document.getElementById('lightbox').addEventListener('click', function (e) {
+            if (e.target === e.currentTarget) closeLightbox();
+        });
+    </script>
+
+    <!-- Required JS Libraries (SAME AS INDEX.HTML) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

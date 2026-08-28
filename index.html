@@ -1,1118 +1,1188 @@
-<!DOCTYPE html>
-<html lang="en">
+   <!DOCTYPE html>
+   <html lang="en">
+
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <title>Star Group Interiors | Metallic Gold · Luxury Interior & Chandeliers</title>
+      <meta name="keywords"
+         content="Interior Design Mysore, Custom Chandeliers, Premium Interiors, Gold Luxury, Star Group Interiors">
+      <meta name="description"
+         content="Star Group Interiors - full-service luxury design firm. Over a decade of expertise in premium interiors, architectural facades, and custom chandelier manufacturing. Metallic gold edition.">
+      <meta name="author" content="Star Group Interiors">
+
+      <!-- CSS Vendors -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="icon" href="images/fevicon.png" type="image/gif">
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+         rel="stylesheet">
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+      <style>
+         /* ===== METALLIC GOLD / PURE BLACK THEME ===== */
+         :root {
+            --gold-light: #F7D96B;
+            --gold-main: #D4A017;
+            --gold-deep: #8C5A0A;
+            --gold-gradient: linear-gradient(135deg, #F7D96B 0%, #D4A017 45%, #B27C0A 70%, #8C5A0A 100%);
+            --black-pure: #000000;
+            --black-rich: #0a0a0a;
+         }
+
+         * {
+            transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
 
-<head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-   <title>Star Group Interiors | Metallic Gold · Luxury Interior & Chandeliers</title>
-   <meta name="keywords"
-      content="Interior Design Mysore, Custom Chandeliers, Premium Interiors, Gold Luxury, Star Group Interiors">
-   <meta name="description"
-      content="Star Group Interiors - full-service luxury design firm. Over a decade of expertise in premium interiors, architectural facades, and custom chandelier manufacturing. Metallic gold edition.">
-   <meta name="author" content="Star Group Interiors">
-
-   <!-- CSS Vendors -->
-   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-   <link rel="stylesheet" type="text/css" href="css/style.css">
-   <link rel="stylesheet" href="css/responsive.css">
-   <link rel="icon" href="images/fevicon.png" type="image/gif">
-   <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet">
-   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-
-   <style>
-      /* ===== METALLIC GOLD / PURE BLACK THEME ===== */
-      :root {
-         --gold-light: #F7D96B;
-         --gold-main: #D4A017;
-         --gold-deep: #8C5A0A;
-         --gold-gradient: linear-gradient(135deg, #F7D96B 0%, #D4A017 45%, #B27C0A 70%, #8C5A0A 100%);
-         --black-pure: #000000;
-         --black-rich: #0a0a0a;
-      }
-
-      * {
-         transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-      }
-
-      body {
-         background: var(--black-pure);
-         color: #dddddd;
-         font-family: 'Montserrat', sans-serif;
-         border: 15px solid var(--black-rich);
-         overflow-x: hidden;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-         color: #ffffff;
-         letter-spacing: 0.5px;
-      }
-
-      /* navbar styles */
-      .navbar-light .navbar-nav .nav-link {
-         color: #f5f5f5;
-         font-weight: 500;
-         letter-spacing: 0.3px;
-         position: relative;
-      }
-
-      .navbar-light .navbar-nav .nav-link:hover,
-      .navbar-light .navbar-nav .nav-link.active {
-         color: var(--gold-light);
-         text-shadow: 0 0 5px rgba(247, 217, 107, 0.6);
-      }
-
-      .navbar-light .navbar-nav .nav-link::after {
-         content: '';
-         position: absolute;
-         width: 0%;
-         height: 2px;
-         bottom: 0;
-         left: 0;
-         background: var(--gold-gradient);
-         transition: 0.3s;
-      }
-
-      .navbar-light .navbar-nav .nav-link:hover::after {
-         width: 100%;
-      }
-
-      .header_section {
-         background: #000000;
-         border-bottom: 1px solid rgba(212, 160, 23, 0.4);
-         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
-      }
-
-      .bg-light {
-         background-color: #000000 !important;
-      }
-
-      .navbar-toggler {
-         background-color: var(--gold-main);
-         border: none;
-      }
-
-      .navbar-brand img {
-         filter: drop-shadow(0 0 6px #D4A01755);
-         max-height: 60px;
-         width: auto;
-      }
-
-      /* Hero Slider */
-      .hero_slide::before {
-         background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.6) 100%);
-      }
-
-      .hero_content h1 {
-         font-size: 52px;
-         background: var(--gold-gradient);
-         -webkit-background-clip: text;
-         background-clip: text;
-         color: transparent;
-         font-weight: 800;
-      }
-
-      .hero_btn {
-         background: var(--gold-gradient);
-         color: #000000;
-         font-weight: 700;
-         border-radius: 40px;
-         padding: 12px 30px;
-         display: inline-block;
-         text-decoration: none;
-      }
-
-      .hero_btn:hover {
-         transform: translateY(-3px);
-         box-shadow: 0 10px 25px rgba(212, 160, 23, 0.5);
-         color: #000;
-      }
-
-      .carousel-control-prev,
-      .carousel-control-next {
-         background: rgba(0, 0, 0, 0.6);
-         border: 1px solid var(--gold-main);
-         border-radius: 50%;
-         width: 50px;
-         height: 50px;
-         top: 50%;
-         transform: translateY(-50%);
-      }
-
-      /* About Section with Video - FIXED SIZE */
-      .about_section {
-         background: #000000;
-         padding: 80px 0;
-      }
-
-      .about_taital {
-         color: #ffffff;
-         font-weight: 800;
-         font-size: 42px;
-      }
-
-      .about_taital span {
-         background: var(--gold-gradient);
-         -webkit-background-clip: text;
-         background-clip: text;
-         color: transparent;
-      }
-
-      .about_text {
-         color: #cccccc;
-         line-height: 1.7;
-         margin-top: 20px;
-      }
-
-      .about_video_wrapper {
-         max-width: 500px;
-         margin: 0 auto;
-         border-radius: 16px;
-         overflow: hidden;
-         border: 2px solid rgba(212, 160, 23, 0.4);
-         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-      }
-
-      .about_video {
-         width: 100%;
-         height: auto;
-         max-height: 600px;
-         object-fit: cover;
-         display: block;
-      }
-
-      .about_video_wrapper:hover {
-         border-color: var(--gold-main);
-      }
-
-      /* Design Section - Image Slider (FIXED - No overlapping) */
-      .design_section {
-         background: #000000;
-         padding: 80px 0;
-      }
-
-      .design_taital {
-         font-weight: 800;
-         font-size: 42px;
-         text-align: center;
-      }
-
-      .design_taital span {
-         background: var(--gold-gradient);
-         -webkit-background-clip: text;
-         background-clip: text;
-         color: transparent;
-      }
-
-      .design_text {
-         text-align: center;
-         max-width: 1000px;
-         width: 100%;
-         margin: 20px auto 40px;
-         color: #cccccc;
-         font-size: 18px;
-         line-height: 1.8;
-      }
-
-      /* Image Slider Container - FIXED */
-      .slider-container {
-         width: 100%;
-         max-width: 700px;
-         margin: 40px auto;
-         position: relative;
-         overflow: hidden;
-         border-radius: 20px;
-      }
-
-      .slider-wrapper {
-         display: flex;
-         width: 100%;
-      }
-
-      .slide {
-         min-width: 100%;
-         width: 100%;
-         flex: 0 0 100%;
-      }
-
-      .slide img {
-         width: 100%;
-         height: 650px;
-         object-fit: cover;
-         display: block;
-      }
-
-      /* Slider Buttons */
-      .slider-btn {
-         position: absolute;
-         top: 50%;
-         transform: translateY(-50%);
-         background: rgba(0, 0, 0, 0.7);
-         color: var(--gold-main);
-         border: 1px solid var(--gold-main);
-         width: 45px;
-         height: 45px;
-         cursor: pointer;
-         font-size: 24px;
-         border-radius: 50%;
-         transition: 0.3s;
-         z-index: 10;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-      }
-
-      .slider-btn:hover {
-         background: var(--gold-main);
-         color: #000;
-      }
-
-      .slider-btn.prev {
-         left: 15px;
-      }
-
-      .slider-btn.next {
-         right: 15px;
-      }
-
-      /* Dots */
-      .slider-dots {
-         text-align: center;
-         padding: 20px 0 0 0;
-         margin-top: 10px;
-      }
-
-      .dot {
-         display: inline-block;
-         width: 12px;
-         height: 12px;
-         margin: 0 6px;
-         background-color: #555;
-         border-radius: 50%;
-         cursor: pointer;
-         transition: 0.3s;
-      }
-
-      .dot.active {
-         background-color: var(--gold-main);
-         transform: scale(1.2);
-      }
-
-      .dot:hover {
-         background-color: var(--gold-light);
-      }
-
-      /* Company Section - FIXED image sizes */
-      .company_section {
-         background: #000000;
-         padding: 80px 0;
-      }
-
-      .company_taital,
-      .client_taital,
-      .contact_taital,
-      .news_taital {
-         font-weight: 800;
-      }
-
-      .company_taital span,
-      .client_taital span,
-      .contact_taital span,
-      .news_taital span {
-         background: var(--gold-gradient);
-         -webkit-background-clip: text;
-         background-clip: text;
-         color: transparent;
-      }
-
-      .home_text {
-         color: var(--gold-light);
-      }
-
-      .seemore_bt a,
-      .readmore_bt a {
-         color: var(--gold-main);
-         font-weight: 600;
-         text-decoration: none;
-      }
-
-      .seemore_bt a:hover,
-      .readmore_bt a:hover {
-         color: var(--gold-light);
-         letter-spacing: 1px;
-      }
-
-      .company_img img {
-         width: 100%;
-         max-width: 100%;
-         height: 320px;
-         object-fit: cover;
-         border-radius: 16px;
-         border: 1px solid rgba(212, 160, 23, 0.3);
-         transition: 0.3s;
-      }
-
-      .company_img img:hover {
-         transform: scale(1.02);
-         border-color: var(--gold-main);
-      }
-
-      .lorem_text {
-         color: #cccccc;
-         line-height: 1.6;
-      }
-
-      /* Client Section */
-      .client_section {
-         background: #ffffff;
-         padding: 70px 0;
-      }
-
-      .client_taital {
-         color: #000000;
-      }
-
-      .moark_text {
-         color: var(--gold-deep);
-         font-weight: 700;
-      }
-
-      .client_text {
-         color: #2c2c2c;
-      }
-
-      .client_taital_main {
-         display: flex;
-         gap: 20px;
-         align-items: center;
-      }
-
-      .client_img img {
-         width: 80px;
-         height: 80px;
-         border-radius: 50%;
-         object-fit: cover;
-      }
-
-      /* News Section */
-      .news_section {
-         background: #000;
-         padding: 70px 0;
-      }
-
-      .news_taital_1 {
-         color: var(--gold-light);
-      }
-
-      .news_img img {
-         width: 100%;
-         max-width: 100%;
-         height: 350px;
-         object-fit: cover;
-         border-radius: 16px;
-         border: 1px solid rgba(212, 160, 23, 0.3);
-      }
-
-      /* Contact & Footer */
-      .contact_section {
-         background: #000;
-         padding: 70px 0;
-      }
-
-      .mail_text,
-      .massage-bt {
-         background: #1e1e1e;
-         border: 1px solid #333;
-         color: #fff;
-         border-radius: 12px;
-         padding: 12px;
-         width: 100%;
-         margin-bottom: 15px;
-      }
-
-      .mail_text:focus,
-      .massage-bt:focus {
-         outline: none;
-         border-color: var(--gold-main);
-      }
-
-      .send_bt a {
-         background: var(--gold-gradient);
-         color: #000;
-         font-weight: bold;
-         border-radius: 40px;
-         padding: 12px 30px;
-         display: inline-block;
-         text-decoration: none;
-      }
-
-      .send_bt a:hover {
-         transform: translateY(-2px);
-      }
-
-      .map-responsive iframe {
-         width: 100%;
-         height: 368px;
-         border-radius: 16px;
-         border: 2px solid var(--gold-main);
-      }
-
-      .footer_section {
-         background: #020202;
-         border-top: 2px solid var(--gold-main);
-         padding: 40px 0;
-      }
-
-      .footer_taital {
-         color: var(--gold-light);
-      }
-
-      .footer_text {
-         color: #bbb;
-      }
-
-      .footer_menu ul {
-         list-style: none;
-         padding: 0;
-      }
-
-      .footer_menu ul li a {
-         color: #ccc;
-         text-decoration: none;
-      }
-
-      .footer_menu ul li a:hover {
-         color: var(--gold-main);
-      }
-
-      .location_text ul {
-         list-style: none;
-         padding: 0;
-      }
-
-      .location_text li a {
-         color: #ccc;
-         text-decoration: none;
-         display: flex;
-         align-items: center;
-         gap: 10px;
-         margin-bottom: 10px;
-      }
-
-      .location_text li a:hover {
-         color: var(--gold-main);
-      }
-
-      .footer_social_icon ul {
-         display: flex;
-         justify-content: flex-end;
-         gap: 10px;
-         list-style: none;
-      }
-
-      .footer_social_icon li a {
-         background: #1a1a1a;
-         color: var(--gold-main);
-         border: 1px solid var(--gold-main);
-         width: 44px;
-         height: 44px;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         border-radius: 50%;
-         text-decoration: none;
-      }
-
-      .footer_social_icon li a:hover {
-         background: var(--gold-main);
-         color: #000;
-      }
-
-      .copyright_section {
-         background: #000;
-         border-top: 1px solid rgba(212, 160, 23, 0.3);
-         padding: 15px 0;
-      }
-
-      .copyright_text {
-         color: #aaa;
-         text-align: center;
-         margin: 0;
-      }
-
-      .copyright_text a {
-         color: var(--gold-main);
-         text-decoration: none;
-      }
-
-      .read_bt {
-         text-align: center;
-         margin-top: 40px;
-      }
-
-      .read_bt a {
-         background: var(--gold-gradient);
-         color: #000;
-         font-weight: 700;
-         border-radius: 40px;
-         padding: 12px 40px;
-         display: inline-block;
-         text-decoration: none;
-      }
-
-      @media (max-width: 768px) {
          body {
-            border-width: 8px;
+            background: var(--black-pure);
+            color: #dddddd;
+            font-family: 'Montserrat', sans-serif;
+            border: 15px solid var(--black-rich);
+            overflow-x: hidden;
+         }
+
+         h1,
+         h2,
+         h3,
+         h4,
+         h5,
+         h6 {
+            color: #ffffff;
+            letter-spacing: 0.5px;
+         }
+
+         /* navbar styles */
+         .navbar-light .navbar-nav .nav-link {
+            color: #f5f5f5;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            position: relative;
+         }
+
+         .navbar-light .navbar-nav .nav-link:hover,
+         .navbar-light .navbar-nav .nav-link.active {
+            color: var(--gold-light);
+            text-shadow: 0 0 5px rgba(247, 217, 107, 0.6);
+         }
+
+         .navbar-light .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: var(--gold-gradient);
+            transition: 0.3s;
+         }
+
+         .navbar-light .navbar-nav .nav-link:hover::after {
+            width: 100%;
+         }
+
+         .header_section {
+            background: #000000;
+            border-bottom: 1px solid rgba(212, 160, 23, 0.4);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+         }
+
+         .bg-light {
+            background-color: #000000 !important;
+         }
+
+         .navbar-toggler {
+            background-color: var(--gold-main);
+            border: none;
+         }
+
+         .navbar-brand img {
+            filter: drop-shadow(0 0 6px #D4A01755);
+            max-height: 60px;
+            width: auto;
+         }
+
+         /* Hero Slider */
+         .hero_slide::before {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.6) 100%);
          }
 
          .hero_content h1 {
-            font-size: 30px;
+            font-size: 52px;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 800;
          }
 
-         .about_taital,
-         .design_taital,
-         .company_taital {
-            font-size: 32px;
+         .hero_btn {
+            background: var(--gold-gradient);
+            color: #000000;
+            font-weight: 700;
+            border-radius: 40px;
+            padding: 12px 30px;
+            display: inline-block;
+            text-decoration: none;
          }
 
-         .slide img {
-            height: 300px;
+         .hero_btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(212, 160, 23, 0.5);
+            color: #000;
          }
 
-         .company_img img {
-            height: 220px;
+         .carousel-control-prev,
+         .carousel-control-next {
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid var(--gold-main);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            transform: translateY(-50%);
          }
 
-         .news_img img {
-            height: 250px;
+         /* About Section with Video - FIXED SIZE */
+         .about_section {
+            background: #000000;
+            padding: 80px 0;
+         }
+
+         .about_taital {
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 42px;
+         }
+
+         .about_taital span {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+         }
+
+         .about_text {
+            color: #cccccc;
+            line-height: 1.7;
+            margin-top: 20px;
          }
 
          .about_video_wrapper {
-            max-width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 2px solid rgba(212, 160, 23, 0.4);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
          }
 
-         .client_taital_main {
-            flex-direction: column;
+         .about_video {
+            width: 100%;
+            height: auto;
+            max-height: 600px;
+            object-fit: cover;
+            display: block;
+         }
+
+         .about_video_wrapper:hover {
+            border-color: var(--gold-main);
+         }
+
+         /* Design Section - Image Slider (FIXED - No overlapping) */
+         .design_section {
+            background: #000000;
+            padding: 80px 0;
+         }
+
+         .design_taital {
+            font-weight: 800;
+            font-size: 42px;
             text-align: center;
          }
 
-         .footer_social_icon ul {
-            justify-content: center;
-            margin-top: 20px;
+         .design_taital span {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
          }
-      }
 
-      @media (max-width: 576px) {
+         .design_text {
+            text-align: center;
+            max-width: 1000px;
+            width: 100%;
+            margin: 20px auto 40px;
+            color: #cccccc;
+            font-size: 18px;
+            line-height: 1.8;
+         }
+
+         /* Image Slider Container - FIXED */
+         .slider-container {
+            width: 100%;
+            max-width: 700px;
+            margin: 40px auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+         }
+
+         .slider-wrapper {
+            display: flex;
+            width: 100%;
+         }
+
+         .slide {
+            min-width: 100%;
+            width: 100%;
+            flex: 0 0 100%;
+         }
+
          .slide img {
-            height: 250px;
+            width: 100%;
+            height: 650px;
+            object-fit: cover;
+            display: block;
          }
-      }
 
-      .company_img img {
-         width: 100%;
-         height: 400px;
-         object-fit: cover;
-         border-radius: 20px;
-      }
+         /* Slider Buttons */
+         .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: var(--gold-main);
+            border: 1px solid var(--gold-main);
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+            font-size: 24px;
+            border-radius: 50%;
+            transition: 0.3s;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
 
-      .home_text {
-         font-size: 48px;
-         margin-bottom: 25px;
-      }
+         .slider-btn:hover {
+            background: var(--gold-main);
+            color: #000;
+         }
 
-      .lorem_text {
-         font-size: 18px;
-         line-height: 1.8;
-         max-width: 550px;
-      }
-   </style>
-</head>
+         .slider-btn.prev {
+            left: 15px;
+         }
 
-<body>
-   <div class="header_section">
-      <div class="container-fluid">
-         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="Star Group Interiors Logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                  <li class="nav-item"><a class="nav-link" href="design.html">Services</a></li>
-                  <li class="nav-item"><a class="nav-link" href="company.html">Projects</a></li>
-                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-               </ul>
-            </div>
-         </nav>
+         .slider-btn.next {
+            right: 15px;
+         }
+
+         /* Dots */
+         .slider-dots {
+            text-align: center;
+            padding: 20px 0 0 0;
+            margin-top: 10px;
+         }
+
+         .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin: 0 6px;
+            background-color: #555;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+         }
+
+         .dot.active {
+            background-color: var(--gold-main);
+            transform: scale(1.2);
+         }
+
+         .dot:hover {
+            background-color: var(--gold-light);
+         }
+
+         /* Company Section - FIXED image sizes */
+         .company_section {
+            background: #000000;
+            padding: 80px 0;
+         }
+
+         .company_taital,
+         .client_taital,
+         .contact_taital,
+         .news_taital {
+            font-weight: 800;
+         }
+
+         .company_taital span,
+         .client_taital span,
+         .contact_taital span,
+         .news_taital span {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+         }
+
+         .home_text {
+            color: var(--gold-light);
+         }
+
+         .seemore_bt a,
+         .readmore_bt a {
+            color: var(--gold-main);
+            font-weight: 600;
+            text-decoration: none;
+         }
+
+         .seemore_bt a:hover,
+         .readmore_bt a:hover {
+            color: var(--gold-light);
+            letter-spacing: 1px;
+         }
+
+         .company_img img {
+            width: 100%;
+            max-width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 16px;
+            border: 1px solid rgba(212, 160, 23, 0.3);
+            transition: 0.3s;
+         }
+
+         .company_img img:hover {
+            transform: scale(1.02);
+            border-color: var(--gold-main);
+         }
+
+         .lorem_text {
+            color: #cccccc;
+            line-height: 1.6;
+         }
+
+         /* Client Section */
+         .client_section {
+            background: #ffffff;
+            padding: 70px 0;
+         }
+
+         .client_taital {
+            color: #000000;
+         }
+
+         .moark_text {
+            color: var(--gold-deep);
+            font-weight: 700;
+         }
+
+         .client_text {
+            color: #2c2c2c;
+         }
+
+         .client_taital_main {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+         }
+
+         .client_img img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+         }
+
+         /* News Section */
+         .news_section {
+            background: #000;
+            padding: 70px 0;
+         }
+
+         .news_taital_1 {
+            color: var(--gold-light);
+         }
+
+         .news_img img {
+            width: 100%;
+            max-width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 16px;
+            border: 1px solid rgba(212, 160, 23, 0.3);
+         }
+
+         /* Contact & Footer */
+         .contact_section {
+            background: #000;
+            padding: 70px 0;
+         }
+
+         .mail_text,
+         .massage-bt {
+            background: #1e1e1e;
+            border: 1px solid #333;
+            color: #fff;
+            border-radius: 12px;
+            padding: 12px;
+            width: 100%;
+            margin-bottom: 15px;
+         }
+
+         .mail_text:focus,
+         .massage-bt:focus {
+            outline: none;
+            border-color: var(--gold-main);
+         }
+
+         .send_bt a {
+            background: var(--gold-gradient);
+            color: #000;
+            font-weight: bold;
+            border-radius: 40px;
+            padding: 12px 30px;
+            display: inline-block;
+            text-decoration: none;
+         }
+
+         .send_bt a:hover {
+            transform: translateY(-2px);
+         }
+
+         .map-responsive iframe {
+            width: 100%;
+            height: 368px;
+            border-radius: 16px;
+            border: 2px solid var(--gold-main);
+         }
+
+         .footer_section {
+            background: #020202;
+            border-top: 2px solid var(--gold-main);
+            padding: 40px 0;
+         }
+
+         .footer_taital {
+            color: var(--gold-light);
+         }
+
+         .footer_text {
+            color: #bbb;
+         }
+
+         .footer_menu ul {
+            list-style: none;
+            padding: 0;
+         }
+
+         .footer_menu ul li a {
+            color: #ccc;
+            text-decoration: none;
+         }
+
+         .footer_menu ul li a:hover {
+            color: var(--gold-main);
+         }
+
+         .location_text ul {
+            list-style: none;
+            padding: 0;
+         }
+
+         .location_text li a {
+            color: #ccc;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+         }
+
+         .location_text li a:hover {
+            color: var(--gold-main);
+         }
+
+         .footer_social_icon ul {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            list-style: none;
+         }
+
+         .footer_social_icon li a {
+            background: #1a1a1a;
+            color: var(--gold-main);
+            border: 1px solid var(--gold-main);
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            text-decoration: none;
+         }
+
+         .footer_social_icon li a:hover {
+            background: var(--gold-main);
+            color: #000;
+         }
+
+         .copyright_section {
+            background: #000;
+            border-top: 1px solid rgba(212, 160, 23, 0.3);
+            padding: 15px 0;
+         }
+
+         .copyright_text {
+            color: #aaa;
+            text-align: center;
+            margin: 0;
+         }
+
+         .copyright_text a {
+            color: var(--gold-main);
+            text-decoration: none;
+         }
+
+         .read_bt {
+            text-align: center;
+            margin-top: 40px;
+         }
+
+         .read_bt a {
+            background: var(--gold-gradient);
+            color: #000;
+            font-weight: 700;
+            border-radius: 40px;
+            padding: 12px 40px;
+            display: inline-block;
+            text-decoration: none;
+         }
+
+         @media (max-width: 768px) {
+            body {
+               border-width: 8px;
+            }
+
+            .hero_content h1 {
+               font-size: 30px;
+            }
+
+            .about_taital,
+            .design_taital,
+            .company_taital {
+               font-size: 32px;
+            }
+
+            .slide img {
+               height: 300px;
+            }
+
+            .company_img img {
+               height: 220px;
+            }
+
+            .news_img img {
+               height: 250px;
+            }
+
+            .about_video_wrapper {
+               max-width: 100%;
+            }
+
+            .client_taital_main {
+               flex-direction: column;
+               text-align: center;
+            }
+
+            .footer_social_icon ul {
+               justify-content: center;
+               margin-top: 20px;
+            }
+         }
+
+         @media (max-width: 576px) {
+            .slide img {
+               height: 250px;
+            }
+         }
+
+         .company_img img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 20px;
+         }
+
+         .home_text {
+            font-size: 48px;
+            margin-bottom: 25px;
+         }
+
+         .lorem_text {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 550px;
+         }
+
+         /* MOBILE NAVIGATION CLICK FIX */
+         @media (max-width: 991px) {
+
+            .navbar-collapse {
+               position: relative;
+               z-index: 99999;
+               background: #000;
+               padding: 15px;
+            }
+
+            .navbar-nav {
+               position: relative;
+               z-index: 99999;
+            }
+
+            .navbar-nav .nav-item {
+               position: relative;
+               z-index: 99999;
+            }
+
+            .navbar-nav .nav-link {
+               display: block;
+               padding: 12px 15px;
+               position: relative;
+               z-index: 99999;
+               pointer-events: auto;
+            }
+
+            .hero_slider,
+            .about_section,
+            .design_section,
+            .company_section,
+            .client_section,
+            .news_section,
+            .contact_section {
+               position: relative;
+               z-index: 1;
+            }
+         }
+      </style>
+   </head>
+
+   <body>
+      <div class="header_section">
+         <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="Star Group Interiors Logo"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                     <li class="nav-item"><a class="nav-link" href="design.html">Services</a></li>
+                     <li class="nav-item"><a class="nav-link" href="company.html">Projects</a></li>
+                     <li class="nav-item"><a class="nav-link" href="expo.html">Expo 2026</a></li>
+                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
       </div>
-   </div>
 
-   <!-- Hero Slider -->
-   <div class="hero_slider">
-      <div id="heroSlider" class="carousel slide" data-ride="carousel" data-interval="5000">
-         <ol class="carousel-indicators">
-            <li data-target="#heroSlider" data-slide-to="0" class="active"></li>
-            <li data-target="#heroSlider" data-slide-to="1"></li>
-            <li data-target="#heroSlider" data-slide-to="2"></li>
-         </ol>
-         <div class="carousel-inner">
-            <div class="carousel-item active">
-               <div class="hero_slide"
-                  style="background-image: url('images/hero1.png'); min-height: 600px; background-size: cover; background-position: center;">
-                  <div class="hero_content" style="text-align: center; padding: 100px 20px;">
-                     <h1>Premium Interiors & <span class="gold-text">Golden Lighting</span></h1>
-                     <p>Transform your space with our expert interior design solutions.</p>
-                     <a href="contact.html" class="hero_btn">Get a Quote →</a>
-                  </div>
-               </div>
-            </div>
-            <div class="carousel-item">
-               <div class="hero_slide"
-                  style="background-image: url('images/hero2.png'); min-height: 600px; background-size: cover; background-position: center;">
-                  <div class="hero_content" style="text-align: center; padding: 100px 20px;">
-                     <h1>Custom <span class="gold-text">Chandelier</span> Manufacturing</h1>
-                     <p>Bespoke lighting fixtures made to order for your unique space.</p>
-                     <a href="design.html" class="hero_btn">View Collection →</a>
-                  </div>
-               </div>
-            </div>
-            <div class="carousel-item">
-               <div class="hero_slide"
-                  style="background-image: url('images/hero3.png'); min-height: 600px; background-size: cover; background-position: center;">
-                  <div class="hero_content" style="text-align: center; padding: 100px 20px;">
-                     <h1>Architectural <span class="gold-text">Facades & Decor</span></h1>
-                     <p>Elevate your building's exterior with gold-accented facades.</p>
-                     <a href="company.html" class="hero_btn">Explore Projects →</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <a class="carousel-control-prev" href="#heroSlider" role="button" data-slide="prev"><span
-               class="carousel-control-prev-icon"></span></a>
-         <a class="carousel-control-next" href="#heroSlider" role="button" data-slide="next"><span
-               class="carousel-control-next-icon"></span></a>
-      </div>
-   </div>
-
-   <!-- About Section with Video (Smaller Size) -->
-   <div class="about_section layout_padding">
-      <div class="container">
-         <div class="row align-items-center">
-            <div class="col-md-6">
-               <div class="about_taital">About <span>Star Group Interiors</span></div>
-               <p class="about_text">Star Group Interiors is a premier, full-service design and execution firm based
-                  proudly in Mysore, Karnataka. With over a decade of rich industry experience, we successfully deliver
-                  premium interior and exterior projects for commercial and residential clients all across India.
-                  Renowned for our meticulous craftsmanship and professional execution, we have earned distinct
-                  recognition for our specialized division in custom chandelier manufacturing. Our expertise bridges the
-                  gap between classic luxury and contemporary design, creating stunning, tailor-made lighting fixtures
-                  ranging from traditional, grand crystal chandeliers to sleek, minimalist modern designs.</p>
-            </div>
-            <div class="col-md-6">
-               <div class="about_video_wrapper">
-                  <video class="about_video" autoplay muted loop playsinline>
-                     <source src="video/hero-video.mp4" type="video/mp4">
-                     Your browser does not support the video tag.
-                  </video>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-
-   <!-- Design Section with Image Slider (Fixed - No Overlapping) -->
-   <div class="design_section layout_padding">
-      <div class="container">
-         <h1 class="design_taital">Our Interior <span>Design Work</span></h1>
-         <p class="design_text">From luxury residences to commercial spaces, we craft environments that inspire with
-            gold leaf elegance.</p>
-
-         <div class="slider-container">
-            <div class="slider-wrapper" id="sliderWrapper">
-               <div class="slide"><img src="images/w2.jpg" alt="Residential Interior"></div>
-               <div class="slide"><img src="images/p2.jpg" alt="Custom Chandelier"></div>
-               <div class="slide"><img src="images/p3.jpg" alt="Commercial Project"></div>
-               <div class="slide"><img src="images/p4.jpg" alt="Architectural Facade"></div>
-               <div class="slide"><img src="images/p5.jpg" alt="Home Design Project"></div>
-               <div class="slide"><img src="images/w7.jpg" alt="Office Design"></div>
-            </div>
-            <button class="slider-btn prev" id="prevBtn">❮</button>
-            <button class="slider-btn next" id="nextBtn">❯</button>
-         </div>
-         <div class="slider-dots" id="sliderDots"></div>
-
-         <div class="read_bt">
-            <a href="design.html">See More Collection</a>
-         </div>
-      </div>
-   </div>
-
-   <!-- Company Section -->
-   <div class="company_section layout_padding">
-      <div class="container">
-         <div class="row">
-            <div class="col-sm-12">
-               <h1 class="company_taital">Architecture <span>And Decor Excellence</span></h1>
-               <p class="company_text" style="color: #ccc; margin-bottom: 40px;">Over a decade of
-                  delivering premium interior and exterior projects across India.</p>
-            </div>
-         </div>
-         <div class="company_section_2" style="margin-bottom: 50px;">
-            <div class="row align-items-center">
-               <div class="col-md-6">
-                  <div class="company_img"><img src="images/p5.jpg" alt="Home Design Project"></div>
-               </div>
-               <div class="col-md-6">
-                  <h3 class="home_text">Home <span>Interiors</span></h3>
-                  <p class="lorem_text">We create stunning residential spaces that reflect your personality and
-                     lifestyle. From cozy apartments to luxurious villas, our team handles everything from concept to
-                     execution with meticulous attention to detail.</p>
-                  <div class="seemore_bt"><a href="company.html">See More →</a></div>
-               </div>
-            </div>
-         </div>
-         <div class="company_section_3" style="margin-bottom: 50px;">
-            <div class="row align-items-center">
-               <div class="col-md-6">
-                  <h3 class="home_text">Office <span>& Commercial Spaces</span></h3>
-                  <p class="lorem_text">Boost productivity and brand image with professionally designed office
-                     interiors. Our commercial projects include corporate offices, retail stores, hotels, and
-                     restaurants across India.</p>
-                  <div class="seemore_bt"><a href="company.html">See More →</a></div>
-               </div>
-               <div class="col-md-6">
-                  <div class="company_img"><img src="images/p6.jpg" alt="Office Design"></div>
-               </div>
-            </div>
-         </div>
-         <div class="company_section_2">
-            <div class="row align-items-center">
-               <div class="col-md-6">
-                  <div class="company_img"><img src="images/w1.jpg" alt="Furniture Design"></div>
-               </div>
-               <div class="col-md-6">
-                  <h3 class="home_text">Furniture <span>& Lighting</span></h3>
-                  <p class="lorem_text">Our specialized division crafts bespoke furniture and custom chandeliers that
-                     become the centerpiece of any space. From classic crystal to contemporary gold installations.</p>
-                  <div class="seemore_bt"><a href="company.html">See More →</a></div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-
-   <!-- Client Section -->
-   <div class="client_section layout_padding">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12">
-               <h3 class="client_taital">Clients <span>Says</span></h3>
-            </div>
-         </div>
-         <div class="client_section_2">
-            <div id="my_slider" class="carousel slide" data-ride="carousel">
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="row">
-                        <div class="col-md-6">
-                           <div class="client_taital_main">
-                              <div class="client_left">
-                                 <div class="client_img"><img src="images/client-img1.png" alt="Client"></div>
-                              </div>
-                              <div class="client_right">
-                                 <h3 class="moark_text">Ramesh K.</h3>
-                                 <p class="client_text">"Star Group Interiors transformed our home into a masterpiece.
-                                    Their custom chandelier is the highlight of our living room."</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-md-6">
-                           <div class="client_taital_main">
-                              <div class="client_left">
-                                 <div class="client_img"><img src="images/client-img2.png" alt="Client"></div>
-                              </div>
-                              <div class="client_right">
-                                 <h3 class="moark_text">Priya S.</h3>
-                                 <p class="client_text">"Professional team with great design sense. They handled our
-                                    office renovation seamlessly. Highly recommend!"</p>
-                              </div>
-                           </div>
-                        </div>
+      <!-- Hero Slider -->
+      <div class="hero_slider">
+         <div id="heroSlider" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <ol class="carousel-indicators">
+               <li data-target="#heroSlider" data-slide-to="0" class="active"></li>
+               <li data-target="#heroSlider" data-slide-to="1"></li>
+               <li data-target="#heroSlider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="hero_slide"
+                     style="background-image: url('images/hero1.png'); min-height: 600px; background-size: cover; background-position: center;">
+                     <div class="hero_content" style="text-align: center; padding: 100px 20px;">
+                        <h1>Premium Interiors & <span class="gold-text">Golden Lighting</span></h1>
+                        <p>Transform your space with our expert interior design solutions.</p>
+                        <a href="contact.html" class="hero_btn">Get a Quote →</a>
                      </div>
                   </div>
-                  <div class="carousel-item">
-                     <div class="row">
-                        <div class="col-md-6">
-                           <div class="client_taital_main">
-                              <div class="client_left">
-                                 <div class="client_img"><img src="images/client-img1.png" alt="Client"></div>
-                              </div>
-                              <div class="client_right">
-                                 <h3 class="moark_text">Siddiq Sheikh</h3>
-                                 <p class="client_text">"Proud to lead Star Group Interiors. Our commitment to quality
-                                    and innovation has made us a trusted name."</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-md-6">
-                           <div class="client_taital_main">
-                              <div class="client_left">
-                                 <div class="client_img"><img src="images/client-img2.png" alt="Client"></div>
-                              </div>
-                              <div class="client_right">
-                                 <h3 class="moark_text">Anjali M.</h3>
-                                 <p class="client_text">"The attention to detail in our custom lighting fixtures is
-                                    unmatched. Star Group delivered beyond expectations."</p>
-                              </div>
-                           </div>
-                        </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="hero_slide"
+                     style="background-image: url('images/hero2.png'); min-height: 600px; background-size: cover; background-position: center;">
+                     <div class="hero_content" style="text-align: center; padding: 100px 20px;">
+                        <h1>Custom <span class="gold-text">Chandelier</span> Manufacturing</h1>
+                        <p>Bespoke lighting fixtures made to order for your unique space.</p>
+                        <a href="design.html" class="hero_btn">View Collection →</a>
                      </div>
                   </div>
                </div>
-               <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev"><i
-                     class="fa fa-angle-left"></i></a>
-               <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next"><i
-                     class="fa fa-angle-right"></i></a>
+               <div class="carousel-item">
+                  <div class="hero_slide"
+                     style="background-image: url('images/hero3.png'); min-height: 600px; background-size: cover; background-position: center;">
+                     <div class="hero_content" style="text-align: center; padding: 100px 20px;">
+                        <h1>Architectural <span class="gold-text">Facades & Decor</span></h1>
+                        <p>Elevate your building's exterior with gold-accented facades.</p>
+                        <a href="company.html" class="hero_btn">Explore Projects →</a>
+                     </div>
+                  </div>
+               </div>
             </div>
+            <a class="carousel-control-prev" href="#heroSlider" role="button" data-slide="prev"><span
+                  class="carousel-control-prev-icon"></span></a>
+            <a class="carousel-control-next" href="#heroSlider" role="button" data-slide="next"><span
+                  class="carousel-control-next-icon"></span></a>
          </div>
       </div>
-   </div>
 
-   <!-- Expert Team -->
-   <div class="news_section layout_padding">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12">
-               <h3 class="news_taital">Our <span>Expert Team</span></h3>
+
+      <!-- ===== EXPO BANNER (NEW) ===== -->
+      <div class="expo-banner"
+         style="background: linear-gradient(135deg, #0a0a0a 0%, #1a1505 50%, #0a0a0a 100%); padding: 50px 0; border-bottom: 1px solid rgba(212,160,23,0.2); border-top: 1px solid rgba(212,160,23,0.2);">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-8">
+                  <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+                     <span
+                        style="background: var(--gold-gradient); -webkit-background-clip: text; background-clip: text; color: transparent; font-size: 28px; font-weight: 800;">✦</span>
+                     <div>
+                        <h3 style="color: #ffffff; font-weight: 700; margin: 0; font-size: 24px;">We Shined at <span
+                              style="background: var(--gold-gradient); -webkit-background-clip: text; background-clip: text; color: transparent;">D
+                              ARC BUILD EXPO 2026</span></h3>
+                        <p style="color: #aaaaaa; margin: 5px 0 0; font-size: 15px;">June 26-28 · Showcasing our premium
+                           interiors & custom chandeliers</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 text-md-right" style="margin-top: 15px;">
+                  <a href="expo.html"
+                     style="display: inline-block; background: var(--gold-gradient); color: #000000; font-weight: 700; padding: 12px 35px; border-radius: 50px; text-decoration: none; transition: all 0.3s ease;">View
+                     Expo →</a>
+               </div>
             </div>
          </div>
       </div>
-      <div class="news_section_2">
+
+      <!-- About Section with Video (Smaller Size) -->
+      <div class="about_section layout_padding">
          <div class="container">
             <div class="row align-items-center">
                <div class="col-md-6">
-                  <div class="news_img"><img src="images/news-img.png" alt="Star Group Team"></div>
+                  <div class="about_taital">About <span>Star Group Interiors</span></div>
+                  <p class="about_text">Star Group Interiors is a premier, full-service design and execution firm based
+                     proudly in Mysore, Karnataka. With over a decade of rich industry experience, we successfully deliver
+                     premium interior and exterior projects for commercial and residential clients all across India.
+                     Renowned for our meticulous craftsmanship and professional execution, we have earned distinct
+                     recognition for our specialized division in custom chandelier manufacturing. Our expertise bridges the
+                     gap between classic luxury and contemporary design, creating stunning, tailor-made lighting fixtures
+                     ranging from traditional, grand crystal chandeliers to sleek, minimalist modern designs.</p>
                </div>
                <div class="col-md-6">
-                  <div class="news_taita_main">
-                     <h3 class="news_taital_1" style="color: var(--gold-light);">Siddiq Sheikh</h3>
-                     <p class="news_text">Founder & Lead Designer at Star Group Interiors. With over a decade of
-                        experience in premium interior and exterior projects, Siddiq leads a team of skilled designers,
-                        craftsmen, and project managers dedicated to excellence.</p>
-                     <div class="readmore_bt"><a href="about.html">Read More →</a></div>
+                  <div class="about_video_wrapper">
+                     <video class="about_video" autoplay muted loop playsinline>
+                        <source src="video/hero-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                     </video>
                   </div>
                </div>
             </div>
          </div>
       </div>
-   </div>
 
-   <!-- Contact Section -->
-   <div class="contact_section layout_padding">
-      <div class="container">
-         <div class="row">
-            <div class="col-sm-12">
-               <h3 class="contact_taital">Contact <span>Us</span></h3>
+      <!-- Design Section with Image Slider (Fixed - No Overlapping) -->
+      <div class="design_section layout_padding">
+         <div class="container">
+            <h1 class="design_taital">Our Interior <span>Design Work</span></h1>
+            <p class="design_text">From luxury residences to commercial spaces, we craft environments that inspire with
+               gold leaf elegance.</p>
+
+            <div class="slider-container">
+               <div class="slider-wrapper" id="sliderWrapper">
+                  <div class="slide"><img src="images/w2.jpg" alt="Residential Interior"></div>
+                  <div class="slide"><img src="images/p2.jpg" alt="Custom Chandelier"></div>
+                  <div class="slide"><img src="images/p3.jpg" alt="Commercial Project"></div>
+                  <div class="slide"><img src="images/p4.jpg" alt="Architectural Facade"></div>
+                  <div class="slide"><img src="images/p5.jpg" alt="Home Design Project"></div>
+                  <div class="slide"><img src="images/w7.jpg" alt="Office Design"></div>
+               </div>
+               <button class="slider-btn prev" id="prevBtn">❮</button>
+               <button class="slider-btn next" id="nextBtn">❯</button>
+            </div>
+            <div class="slider-dots" id="sliderDots"></div>
+
+            <div class="read_bt">
+               <a href="design.html">See More Collection</a>
             </div>
          </div>
-         <div class="contact_section_2">
+      </div>
+
+      <!-- Company Section -->
+      <div class="company_section layout_padding">
+         <div class="container">
             <div class="row">
-               <div class="col-md-6">
-                  <div class="mail_section_1"><input type="text" class="mail_text" placeholder="Name"><input
-                        type="email" class="mail_text" placeholder="Email"><input type="tel" class="mail_text"
-                        placeholder="Phone Number"><textarea class="massage-bt" placeholder="Message"
-                        rows="5"></textarea>
-                     <div class="send_bt"><a href="#">SEND INQUIRY</a></div>
+               <div class="col-sm-12">
+                  <h1 class="company_taital">Architecture <span>And Decor Excellence</span></h1>
+                  <p class="company_text" style="color: #ccc; margin-bottom: 40px;">Over a decade of
+                     delivering premium interior and exterior projects across India.</p>
+               </div>
+            </div>
+            <div class="company_section_2" style="margin-bottom: 50px;">
+               <div class="row align-items-center">
+                  <div class="col-md-6">
+                     <div class="company_img"><img src="images/p5.jpg" alt="Home Design Project"></div>
+                  </div>
+                  <div class="col-md-6">
+                     <h3 class="home_text">Home <span>Interiors</span></h3>
+                     <p class="lorem_text">We create stunning residential spaces that reflect your personality and
+                        lifestyle. From cozy apartments to luxurious villas, our team handles everything from concept to
+                        execution with meticulous attention to detail.</p>
+                     <div class="seemore_bt"><a href="company.html">See More →</a></div>
                   </div>
                </div>
-               <div class="col-md-6">
-                  <div class="map_main">
-                     <div class="map-responsive"><iframe
-                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.234567890123!2d76.634567!3d12.312345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf70123456789%3A0x123456789abcdef!2sShop%20No%201%2C%20Belavatta%20Road%2C%20Kaveri%20Nagar%2C%20Bannimantapa%2C%20Mysore%2C%20Karnataka%20570015!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
-                           width="100%" height="368" frameborder="0" style="border:0; width: 100%;"
-                           allowfullscreen=""></iframe></div>
+            </div>
+            <div class="company_section_3" style="margin-bottom: 50px;">
+               <div class="row align-items-center">
+                  <div class="col-md-6">
+                     <h3 class="home_text">Office <span>& Commercial Spaces</span></h3>
+                     <p class="lorem_text">Boost productivity and brand image with professionally designed office
+                        interiors. Our commercial projects include corporate offices, retail stores, hotels, and
+                        restaurants across India.</p>
+                     <div class="seemore_bt"><a href="company.html">See More →</a></div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="company_img"><img src="images/p6.jpg" alt="Office Design"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="company_section_2">
+               <div class="row align-items-center">
+                  <div class="col-md-6">
+                     <div class="company_img"><img src="images/w1.jpg" alt="Furniture Design"></div>
+                  </div>
+                  <div class="col-md-6">
+                     <h3 class="home_text">Furniture <span>& Lighting</span></h3>
+                     <p class="lorem_text">Our specialized division crafts bespoke furniture and custom chandeliers that
+                        become the centerpiece of any space. From classic crystal to contemporary gold installations.</p>
+                     <div class="seemore_bt"><a href="company.html">See More →</a></div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-   </div>
 
-   <!-- Footer -->
-   <div class="footer_section layout_padding">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-3 col-md-6">
-               <div class="footer_logo"><img src="images/logo.jpg" alt="Star Group Interiors" style="max-width: 160px;">
-               </div>
-               <p class="footer_text">Over a decade of premium interior and exterior projects across India. Specialized
-                  in custom chandelier manufacturing.</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-               <h3 class="footer_taital">LET US HELP YOU</h3>
-               <p class="footer_text">Contact us for a consultation on your next residential or commercial project.</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-               <h3 class="footer_taital">INFORMATION</h3>
-               <div class="footer_menu">
-                  <ul>
-                     <li><a href="index.html">Home</a></li>
-                     <li><a href="about.html">About</a></li>
-                     <li><a href="design.html">Services</a></li>
-                     <li><a href="company.html">Projects</a></li>
-                     <li><a href="contact.html">Contact Us</a></li>
-                  </ul>
+      <!-- Client Section -->
+      <div class="client_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h3 class="client_taital">Clients <span>Says</span></h3>
                </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-               <h3 class="footer_taital">Contact Us</h3>
-               <div class="location_text">
-                  <ul>
-                     <li><a href="https://maps.app.goo.gl/xVfogbLmKNFhMVxr7" target="_blank"><i
-                              class="fa fa-map-marker"></i><span>Shop No 1, Belavatta Road, Kaveri Nagar, Bannimantapa,
-                              Mysore - 570015</span></a></li>
-                     <li><a href="tel:+919538588293"><i class="fa fa-phone"></i><span>+91 95385 88293 (Siddiq
-                              Sheikh)</span></a></li>
-                     <li><a href="tel:+919071098465"><i class="fa fa-phone"></i><span>+91 90710 98465
-                              (Office)</span></a></li>
-                     <li><a href="mailto:stargroupinteriors46@gmail.com"><i
-                              class="fa fa-envelope"></i><span>stargroupinteriors46@gmail.com</span></a></li>
-                  </ul>
+            <div class="client_section_2">
+               <div id="my_slider" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="client_taital_main">
+                                 <div class="client_left">
+                                    <div class="client_img"><img src="images/client-img1.png" alt="Client"></div>
+                                 </div>
+                                 <div class="client_right">
+                                    <h3 class="moark_text">Ramesh K.</h3>
+                                    <p class="client_text">"Star Group Interiors transformed our home into a masterpiece.
+                                       Their custom chandelier is the highlight of our living room."</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="client_taital_main">
+                                 <div class="client_left">
+                                    <div class="client_img"><img src="images/client-img2.png" alt="Client"></div>
+                                 </div>
+                                 <div class="client_right">
+                                    <h3 class="moark_text">Priya S.</h3>
+                                    <p class="client_text">"Professional team with great design sense. They handled our
+                                       office renovation seamlessly. Highly recommend!"</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="client_taital_main">
+                                 <div class="client_left">
+                                    <div class="client_img"><img src="images/client-img1.png" alt="Client"></div>
+                                 </div>
+                                 <div class="client_right">
+                                    <h3 class="moark_text">Siddiq Sheikh</h3>
+                                    <p class="client_text">"Proud to lead Star Group Interiors. Our commitment to quality
+                                       and innovation has made us a trusted name."</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="client_taital_main">
+                                 <div class="client_left">
+                                    <div class="client_img"><img src="images/client-img2.png" alt="Client"></div>
+                                 </div>
+                                 <div class="client_right">
+                                    <h3 class="moark_text">Anjali M.</h3>
+                                    <p class="client_text">"The attention to detail in our custom lighting fixtures is
+                                       unmatched. Star Group delivered beyond expectations."</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev"><i
+                        class="fa fa-angle-left"></i></a>
+                  <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next"><i
+                        class="fa fa-angle-right"></i></a>
                </div>
             </div>
          </div>
-         <div class="footer_section">
+      </div>
+
+      <!-- Expert Team -->
+      <div class="news_section layout_padding">
+         <div class="container">
             <div class="row">
-               <div class="col-md-6"></div>
-               <div class="col-md-6">
-                  <div class="footer_social_icon">
+               <div class="col-md-12">
+                  <h3 class="news_taital">Our <span>Expert Team</span></h3>
+               </div>
+            </div>
+         </div>
+         <div class="news_section_2">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-md-6">
+                     <div class="news_img"><img src="images/news-img.png" alt="Star Group Team"></div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="news_taita_main">
+                        <h3 class="news_taital_1" style="color: var(--gold-light);">Siddiq Sheikh</h3>
+                        <p class="news_text">Founder & Lead Designer at Star Group Interiors. With over a decade of
+                           experience in premium interior and exterior projects, Siddiq leads a team of skilled designers,
+                           craftsmen, and project managers dedicated to excellence.</p>
+                        <div class="readmore_bt"><a href="about.html">Read More →</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="contact_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h3 class="contact_taital">Contact <span>Us</span></h3>
+               </div>
+            </div>
+            <div class="contact_section_2">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="mail_section_1"><input type="text" class="mail_text" placeholder="Name"><input
+                           type="email" class="mail_text" placeholder="Email"><input type="tel" class="mail_text"
+                           placeholder="Phone Number"><textarea class="massage-bt" placeholder="Message"
+                           rows="5"></textarea>
+                        <div class="send_bt"><a href="#">SEND INQUIRY</a></div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="map_main">
+                        <div class="map-responsive"><iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.234567890123!2d76.634567!3d12.312345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf70123456789%3A0x123456789abcdef!2sShop%20No%201%2C%20Belavatta%20Road%2C%20Kaveri%20Nagar%2C%20Bannimantapa%2C%20Mysore%2C%20Karnataka%20570015!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                              width="100%" height="368" frameborder="0" style="border:0; width: 100%;"
+                              allowfullscreen=""></iframe></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-md-6">
+                  <div class="footer_logo"><img src="images/logo.jpg" alt="Star Group Interiors" style="max-width: 160px;">
+                  </div>
+                  <p class="footer_text">Over a decade of premium interior and exterior projects across India. Specialized
+                     in custom chandelier manufacturing.</p>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <h3 class="footer_taital">LET US HELP YOU</h3>
+                  <p class="footer_text">Contact us for a consultation on your next residential or commercial project.</p>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <h3 class="footer_taital">INFORMATION</h3>
+                  <div class="footer_menu">
                      <ul>
-                        <li>
-                           <a href="https://www.facebook.com/star_group_interiors" target="_blank">
-                              <i class="fa fa-facebook"></i>
-                           </a>
-                        </li>
-
-                        <li>
-                           <a href="https://www.instagram.com/star_group_interiors/" target="_blank">
-                              <i class="fa fa-instagram"></i>
-                           </a>
-                        </li>
-
-                        <li>
-                           <a href="https://www.youtube.com/@StarGroupInteriors" target="_blank">
-                              <i class="fa fa-youtube-play"></i>
-                           </a>
-                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="design.html">Services</a></li>
+                        <li><a href="company.html">Projects</a></li>
+                        <li><a href="expo.html">Expo 2026</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <h3 class="footer_taital">Contact Us</h3>
+                  <div class="location_text">
+                     <ul>
+                        <li><a href="https://maps.app.goo.gl/xVfogbLmKNFhMVxr7" target="_blank"><i
+                                 class="fa fa-map-marker"></i><span>Shop No 1, Belavatta Road, Kaveri Nagar, Bannimantapa,
+                                 Mysore - 570015</span></a></li>
+                        <li><a href="tel:+919538588293"><i class="fa fa-phone"></i><span>+91 95385 88293 (Siddiq
+                                 Sheikh)</span></a></li>
+                        <li><a href="tel:+919071098465"><i class="fa fa-phone"></i><span>+91 90710 98465
+                                 (Office)</span></a></li>
+                        <li><a href="mailto:stargroupinteriors46@gmail.com"><i
+                                 class="fa fa-envelope"></i><span>stargroupinteriors46@gmail.com</span></a></li>
                      </ul>
                   </div>
                </div>
             </div>
+            <div class="footer_section">
+               <div class="row">
+                  <div class="col-md-6"></div>
+                  <div class="col-md-6">
+                     <div class="footer_social_icon">
+                        <ul>
+                           <li>
+                              <a href="https://www.facebook.com/star_group_interiors" target="_blank">
+                                 <i class="fa fa-facebook"></i>
+                              </a>
+                           </li>
+
+                           <li>
+                              <a href="https://www.instagram.com/star_group_interiors/" target="_blank">
+                                 <i class="fa fa-instagram"></i>
+                              </a>
+                           </li>
+
+                           <li>
+                              <a href="https://www.youtube.com/@StarGroupInteriors" target="_blank">
+                                 <i class="fa fa-youtube-play"></i>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
-   </div>
-   <div class="copyright_section">
-      <div class="container">
-         <p class="copyright_text">© 2025 Star Group Interiors. All Rights Reserved. | Metallic Gold Edition</p>
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">© 2025 Star Group Interiors. All Rights Reserved. | Metallic Gold Edition</p>
+         </div>
       </div>
-   </div>
 
-   <!-- Slider JavaScript (Auto Slide + Manual Controls - FIXED) -->
-   <script>
-      const sliderWrapper = document.getElementById('sliderWrapper');
-      const slides = document.querySelectorAll('.slide');
-      const prevBtn = document.getElementById('prevBtn');
-      const nextBtn = document.getElementById('nextBtn');
-      const dotsContainer = document.getElementById('sliderDots');
-      let currentIndex = 0;
-      const totalSlides = slides.length;
-      let autoSlideInterval;
+      <!-- Slider JavaScript (Auto Slide + Manual Controls - FIXED) -->
+      <script>
+         const sliderWrapper = document.getElementById('sliderWrapper');
+         const slides = document.querySelectorAll('.slide');
+         const prevBtn = document.getElementById('prevBtn');
+         const nextBtn = document.getElementById('nextBtn');
+         const dotsContainer = document.getElementById('sliderDots');
+         let currentIndex = 0;
+         const totalSlides = slides.length;
+         let autoSlideInterval;
 
-      // Create dots
-      function createDots() {
-         dotsContainer.innerHTML = '';
-         for (let i = 0; i < totalSlides; i++) {
-            const dot = document.createElement('span');
-            dot.classList.add('dot');
-            if (i === currentIndex) dot.classList.add('active');
-            dot.addEventListener('click', () => goToSlide(i));
-            dotsContainer.appendChild(dot);
+         // Create dots
+         function createDots() {
+            dotsContainer.innerHTML = '';
+            for (let i = 0; i < totalSlides; i++) {
+               const dot = document.createElement('span');
+               dot.classList.add('dot');
+               if (i === currentIndex) dot.classList.add('active');
+               dot.addEventListener('click', () => goToSlide(i));
+               dotsContainer.appendChild(dot);
+            }
          }
-      }
 
-      // Update dots active state
-      function updateDots() {
-         const dots = document.querySelectorAll('.dot');
-         dots.forEach((dot, index) => {
-            if (index === currentIndex) dot.classList.add('active');
-            else dot.classList.remove('active');
-         });
-      }
+         // Update dots active state
+         function updateDots() {
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach((dot, index) => {
+               if (index === currentIndex) dot.classList.add('active');
+               else dot.classList.remove('active');
+            });
+         }
 
-      // Go to specific slide
-      function goToSlide(index) {
-         if (index < 0) index = totalSlides - 1;
-         if (index >= totalSlides) index = 0;
-         currentIndex = index;
-         sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
-         updateDots();
+         // Go to specific slide
+         function goToSlide(index) {
+            if (index < 0) index = totalSlides - 1;
+            if (index >= totalSlides) index = 0;
+            currentIndex = index;
+            sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+            updateDots();
+            resetAutoSlide();
+         }
+
+         // Next slide
+         function nextSlide() {
+            goToSlide(currentIndex + 1);
+         }
+
+         // Previous slide
+         function prevSlide() {
+            goToSlide(currentIndex - 1);
+         }
+
+         // Reset auto-slide timer
+         function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = setInterval(nextSlide, 4000);
+         }
+
+         // Event listeners
+         prevBtn.addEventListener('click', (e) => { e.preventDefault(); prevSlide(); resetAutoSlide(); });
+         nextBtn.addEventListener('click', (e) => { e.preventDefault(); nextSlide(); resetAutoSlide(); });
+
+         // Initialize slider
+         createDots();
          resetAutoSlide();
-      }
 
-      // Next slide
-      function nextSlide() {
-         goToSlide(currentIndex + 1);
-      }
+         // Pause auto-slide on hover
+         const sliderContainer = document.querySelector('.slider-container');
+         if (sliderContainer) {
+            sliderContainer.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+            sliderContainer.addEventListener('mouseleave', () => resetAutoSlide());
+         }
+      </script>
 
-      // Previous slide
-      function prevSlide() {
-         goToSlide(currentIndex - 1);
-      }
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
 
-      // Reset auto-slide timer
-      function resetAutoSlide() {
-         clearInterval(autoSlideInterval);
-         autoSlideInterval = setInterval(nextSlide, 4000);
-      }
-
-      // Event listeners
-      prevBtn.addEventListener('click', (e) => { e.preventDefault(); prevSlide(); resetAutoSlide(); });
-      nextBtn.addEventListener('click', (e) => { e.preventDefault(); nextSlide(); resetAutoSlide(); });
-
-      // Initialize slider
-      createDots();
-      resetAutoSlide();
-
-      // Pause auto-slide on hover
-      const sliderContainer = document.querySelector('.slider-container');
-      if (sliderContainer) {
-         sliderContainer.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
-         sliderContainer.addEventListener('mouseleave', () => resetAutoSlide());
-      }
-   </script>
-
-   <script src="js/jquery.min.js"></script>
-   <script src="js/popper.min.js"></script>
-   <script src="js/bootstrap.bundle.min.js"></script>
-   <script src="js/jquery-3.0.0.min.js"></script>
-   <script src="js/plugin.js"></script>
-   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-   <script src="js/custom.js"></script>
-</body>
-
-</html>
+   </html>
